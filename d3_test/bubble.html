@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<body>
+
+
+<script src="d3.js"></script>
+<script src="js/bubble_chart.js"></script>
+<div id="word_bubble"></div>
+<script>
+var url = "data/words.json";
+//var color = ["#6E2721","#C4372C","#E45E20","#E9A309","#EEB400","#FAD000","#B5C4E4","#91A5D5","#5879C1","#3F68B8"]
+
+//var color = ["#435F7F","#C4372C","#E45E20","#E9A309","#EEB400","#FAD000","#B5C4E4","#91A5D5","#5879C1","#3F68B8"];
+//var color = ["#435F7F","#2864A9","#8FBAE3","#578AC7","#3B76BA"];//{'35055':"#6E2721", '34916':"#C4372C"};
+
+var colours = ["#6E2721","#C4372C","#E45E20","#E9A309","#EEB400","#FAD000","#B5C4E4","#91A5D5","#5879C1","#3F68B8"];
+
+colours.reverse();
+bubble1.bubble_chart("#word_bubble", url,colours)
+
+</script>
+
+
+<body>
+
+</body>
+

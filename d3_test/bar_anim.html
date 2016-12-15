@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+<head>
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 960px;
+}
+  .chart {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  }
+
+  .axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+    display: none;
+  }
+
+  .bar {
+    fill: #8BC53F;
+  }
+
+</style>
+
+<script type="text/javascript" src="d3.js"></script>
+
+<script type="text/javascript">
+//var data = [{"date":"2012-03-20","total":3},{"date":"2012-03-21","total":8},{"date":"2012-03-22","total":2},{"date":"2012-03-23","total":10},{"date":"2012-03-24","total":3},{"date":"2012-03-25","total":20},{"date":"2012-03-26","total":12}];
+
+
+var url = "data/published_last_week.json";
+d3.json(url, function(data) {
+var t = 1297110663, // start time (seconds since epoch)
+    v = 70; // start value (subscribers)
+   // data = d3.range(33).map(next); // starting dataset
+  
+function next() {
+    return {
+        time: ++t,
+          value: v = ~~Math.max(10, Math.min(90, v + 10 * (Math.random() - .5)))
+    };
+}
+
+var w = 20,
+    h = 80;
+  
+var x = d3.scale.linear()
+      .domain([0, 1])
+      .range([0, data.length]);
+  
+var y = d3.scale.linear()
+    .domain([0, d3.max(data, function(d) { return d.count; })])
+    .range([height - margin.top - margin.bottom, 0]);
+
+var chart = d3.select("#chart").append("svg")
+     .attr("class", "chart")
+     .attr("width", w * data.length - 1)
+     .attr("height", h);
+
+chart.selectAll("rect")
+ .data(data)
+ .enter().append("rect")
+ .attr("x", function(d, i) { return w*i; })
+ .attr("y", function(d) { return h -  d.count; })                  //new----
+ .attr("width", w)
+ .transition().delay(function (d,i){ return i * 300;})
+ .duration(600)
+ .attr("height", function(d) { return d.count; })
+.attr('y', function(d) { return h - margin.top - margin.bottom - (h - margin.top - margin.bottom - y(d.count)) })
+
+  })
+</script>
+</head>
+<body>
+
+    <div id="chart"></div>
+    </body>
+</html>

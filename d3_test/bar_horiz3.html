@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+  <head>
+<style>
+
+
+
+
+     </style>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+</style>
+<body>
+
+    <h1>GUN HOMICIDES VS OWNERSHIP:</h1>
+<script src="d3.js"></script>
+<script>
+var distances = [2.23, 2.39, 2.59, 2.77, 3.05,2.23, 2.39, 1.59, 2.77, 3.05];
+var distances = [2.23, 2.39, 2.59, 2.77, 3.05,2.23, 2.39, 1.59, 2.77, 3.05];
+
+var colors = ["#2EC9FF", "#F2DC00"];
+d3.select('body').selectAll('div')
+  .data(distances)
+  .enter()
+    .append('div')
+    .html('...')
+    .style('width', '20px')
+    .style('background', function(d,i){ return colors[i % 2]})
+    .style('opacity', 0)
+    .on("mouseover", function(){
+      d3.select(this).transition().duration(300)
+        .style("background-color", "#FFD700");
+    })
+    .on("mouseout", function(){
+      d3.select(this).transition().duration(300)
+        .style("background-color", "#333");})
+    .transition()
+      .delay(function(d, i) { return i * 300 })
+      .duration(300)    
+      .style('width', function(d) { return (d * 150) + 'px'; })
+      .style('opacity', 1)
+      .text(function(d) { return d + ' miles'; });
+</script>
+<br>
+<span style="margin-top: 40px;"><span style="width: 20px; height: 20px; padding-right: 15px; background:#2EC9FF"> &nbsp </span> GUN HOMICIDE PER 100 000 PEOPLE </span>
+<span> &nbsp <span style="width: 20px; height: 20px; padding-right: 15px;background:#F2DC00">&nbsp</span> GUN OWNERSHIP PER 100 PEOPLE</span>

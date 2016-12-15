@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<label><input type="checkbox"> Sort values</label>
+<script type="text/javascript" src="d3.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+
+var colours = ["#6E2721","#C4372C","#E45E20","#E9A309","#EEB400","#FAD000","#B5C4E4","#91A5D5","#5879C1","#3F68B8"];
+var gender_colours = ["#27AAE1", "#EC008C"];
+var page = 0;
+colours.reverse();
+
+var rows = 40;
+var cols = 30;
+var w = 960,  
+    h = 500; 
+var margin = 40;
+var scale = d3.scale.linear();
+var radius = 8;
+
+var history_url = "http://test.radarboy.com/~silver_beast/twitterzeitgeist/locations/history/";
+
+d3.select("svg")
+       .remove();
+  var svg = d3.select("body").append("svg")
+    .attr("width", w)
+    .attr("height", h);
+
+var root = d3.select(svg)
+
+var tooltip = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+
+function previous(func, seed) {
+  return function(d, i) {
+    return i > 0 ? func(data[i-1], i-1) : (seed || 0);
+  }
+}
+
+
+function addGraph(history_url) {
+
+
+
+  d3.json(history_url, function(error, data2) {
+
+
+    if (error) {  //If error is not null, something went wrong.
+          //alert(error);
+          console.log("!!DATA LOAD ERROR: " + error);  //Log the error.
+          $('#subheadline').html("DATA LOAD ERROR.");
+        } else {      //If no error, the file loaded correctly. Yay!
+          //console.log(data);   //Log the data.
+        }
+  data = data2;
+
+
+  var minXDataPoint = d3.min(data, function(d) { return d['Location']['lat'];});
+  var maxXDataPoint = d3.max(data, function(d) { return d['Location']['lat'];});
+  var minYDataPoint = d3.min(data, function(d) { return d['Location']['lng'];});
+  var maxYDataPoint = d3.max(data, function(d) { return d['Location']['lng'];});
+
+  var minDist = d3.min(data, function(d) { return d['Location']['dist'];});
+  var maxDist = d3.max(data, function(d) { return d['Location']['dist'];});
+
+var xScale = d3.scale.linear()
+        .domain([minXDataPoint, maxXDataPoint])
+        //.range([ 0 + margin, w-margin]);
+        .rangeRound([ 0, rows]);
+
+var yScale = d3.scale.linear()
+        .domain([minYDataPoint, maxYDataPoint])
+        //.range([0+margin, h-margin]);
+        .rangeRound([ 0, cols]);
+
+var distScale = d3.scale.linear()
+        .domain([minDist, maxDist])
+        .range([1, 80]);
+
+var colourScale = d3.scale.linear()
+        .domain([minDist, maxDist])
+        .range([0, 9]);
+
+var dot = svg
+        .selectAll("rect")
+        // .data(data, function(d) { return "delegate-" + d['Location']['registration_id']; })
+         .data(data)
+    
+        dot
+        //.enter()
+        .append("svg:rect")
+        .attr("class", "dots")
+        .style("opacity", .1) 
+      //.attr("id", function(d, i) { return "delegate-" + d['Location']['registration_id']})
+  .attr("class", function(d){ return d['Registration']['gender'] == "female" ? "female" : "male" })
+  .style("opacity",0.6) 
+  //.attr("r", radius) 
+  .attr("width", 20)
+  .attr("height", 20)
+  // .attr("x", function(d, i) { return i>0 ? rows * xScale(data[i-1]['Location']['lat']): 0 })
+  // .attr("y", function(d, i) { return i>0 ? cols * yScale(data[i-1]['Location']['lng']): 0 })  
+    .attr("x", function(d) { return 20*xScale(d['Location']['lat'])})
+    .attr("y", function(d) { return 20*yScale(d['Location']['lng'])})    
+  .on("mouseover", function(d, i) {  
+        tooltip.html(d['Registration']['name']) 
+          .style("left", (d3.event.pageX) + "px")     
+          .style("top", (d3.event.pageY - 28) + "px");        
+        tooltip.transition()        
+              .duration(300)      
+              .style("opacity", .9);                 
+  })                  
+  .on("mouseout", function(d) {       
+              tooltip.transition()        
+                  .duration(500)      
+                  .style("opacity", 0);   
+  });
+      //.attr("width", function(d,i) { return 5})
+      // .attr("r", 0)
+    
+      //.style("fill", function(d){ return colours[Math.round(colourScale(d['Location']['dist']))]})
+
+// dot.transition() 
+//       .attr("x", function(d) { return 20*xScale(d['Location']['lat'])})
+//       .attr("y", function(d) { return 20*yScale(d['Location']['lng'])})
+//       .style("opacity", .4) 
+//       //.attr("r",15)
+//       .delay(function(d, i) { return 10*i})
+//       .duration(500)
+//        .each("end",function() { // as seen above
+//         d3.select(this)
+//         .transition().duration(50) 
+//        //.attr("cx", function(d) { return w-xScale(d['Location']['lat'])})
+//       //.attr("cy", function(d) { return h-yScale(d['Location']['lng'])})
+
+//       //  .attr("r",radius)
+//        // .remove();     // we could have had another
+//                            // .each("end" construct here.
+//    });
+
+
+ //  var lines = svg.selectAll("line")
+ //  .append('line')
+ //  .attr( {
+ //    'stroke-width': 2,
+ //    stroke: '#000',
+ //    x1: previous(function(d) { return w-xScale(d['Location']['lat'])}), 
+ //    y1: previous(function(d) { return h-yScale(d['Location']['lng'])}),
+ //    x2: function(d) { return w-xScale(d['Location']['lat'])},
+ //    y2: function(d) { return h-yScale(d['Location']['lng'])}
+ // });
+
+//$('#headline').html(name);
+var format = d3.time.format("%H:%M %p")
+var time = format(new Date(data[0]['Location']['created']));
+
+$('#subheadline').html(time);
+
+ });
+
+
+}
+
+
+/* dropdown stuff */
+
+var url = "http://test.radarboy.com/~silver_beast/twitterzeitgeist/locations/all_people"
+d3.json(url, function(data) {
+//console.log(data);
+var dropDown = d3.select("#peeps").append("select")
+                    .attr("name", "people-list").on("change", alertChange);
+var options = dropDown.selectAll("option")
+      .data(data)
+      .enter()
+      .append("option");
+
+options.text(function (d) { return d['Location']['name'] + "-- " + d['Location']['registration_id']; })
+       .attr("value", function (d) { return d['Location']['registration_id']; });
+
+
+
+
+function alertChange() {
+          //the name isn't important, but has to match the name
+          //you added to the menu's "change" event listener.
+    var selectedValue = d3.event.target.value;
+         //get the name of the selected option from the change event object
+    console.log("================"+selectedValue);
+    //dot.attr("class","active");
+    d3.selectAll("circle")
+    .classed( "active", false )
+    .classed( "unselected", false )
+    .attr('class', 'unselected')
+
+    var person = "#delegate-"+selectedValue;
+     d3.select(person).attr('class', 'active');
+
+}
+
+ addGraph(history_url+page);
+
+setInterval(function() {
+  page+=1;
+  addGraph(history_url+page);
+}, 1500);
+
+ });
+
+
+
+</script>
+<body>
+<div id="peeps"></div>
+<h2 id="subheadline">Loading...</h2>
+<h1 id="headline">Movement by gender</h1>
+</body>

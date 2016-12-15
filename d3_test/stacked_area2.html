@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style>
+
+</style>
+<body>
+<h1>This week:</h1>
+<script src="d3.js"></script>
+
+
+
+<script>
+//var url = "data/oscar_mentions.json";
+var url = "data/stacked.csv";
+stacked(url);
+
+
+function stacked(url){
+  //alert(url);
+//var format = d3.time.format("%Y-%m-%d");
+var format = d3.time.format("%Y/%m/%d");
+
+var margin = {top: 20, right: 30, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var x = d3.time.scale()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var z = d3.scale.category20c();
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .ticks(d3.time.days);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .ticks(3)
+    .orient("left");
+
+var stack = d3.layout.stack()
+    .offset("zero")
+    .values(function(d) { return d.values; })
+    .x(function(d) { return d.published; })
+    .y(function(d) { return d.title; });
+
+var nest = d3.nest()
+    .key(function(d,i) { return d.id; });
+
+var area = d3.svg.area()
+    //.interpolate("cardinal")
+    .x(function(d) { return x(d.published); })
+    .y0(function(d) { return y(d.y0); })
+    .y1(function(d) { return y(d.y0 + d.y); });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// d3.json(url, function(data) {
+//   
+  //var data = data.data;
+d3.csv(url, function(data) {
+  console.log(data);
+  data.forEach(function(d) {
+    d.published = format.parse(d.published);
+    d.title = +d.title;
+  });
+var tooltip = d3.select("body")
+  .append("div")
+  .attr("class", "circle-text")
+  .style("position", "absolute")
+  .style("z-index", "10")
+  .style("visibility", "hidden")
+  .html("<div style='z-index: 21;color: #00ADEE; font-size: 60px'>40% </div>");
+
+  var layers = stack(nest.entries(data));
+
+  x.domain(d3.extent(data, function(d) { return d.published; }));
+  y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
+
+  svg.selectAll(".layer")
+      .data(layers)
+    .enter().append("path")
+      .attr("class", "layer")
+      .attr("d", function(d) { return area(d.values); })
+      .style("fill", function(d, i) { 
+        if (i == 0) return "#E4EDED"; 
+        else return z(i); })
+              .on("mouseover", function(){return tooltip.style("visibility", "visible");})
+  .on("mousemove", function(){return tooltip.style("top", (event.pageY-100)+"px").style("left",(event.pageX+10)+"px");})
+  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
+});
+}
+
+
+</script>

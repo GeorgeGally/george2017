@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Dynamically adjusting the vertical scale</title>
+		<script type="text/javascript" src="d3.js"></script>
+		<style type="text/css">
+		#heading { font-weight: bold;}
+			text, rect {
+				cursor: pointer;
+				-moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+transition: all 0.3s;
+			}
+			rect:hover {
+				fill: orange;
+			}	
+
+	#tooltip {
+				position: absolute;
+				width: 200px;
+				height: auto;
+				padding: 10px;
+				background-color: white;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				pointer-events: none;
+			}
+
+			#tooltip.hidden {
+				display: none;
+			}
+
+			#tooltip p {
+				margin: 0;
+				font-family: sans-serif;
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+
+		<h1>What they're saying</h1>
+
+		<script type="text/javascript">
+		//var url = "https://api.brandseye.com?callback=?&Authorization=API_KEY 1vlcab7o3e234ngsl2y4fgr7q";
+		//var url = "https://api.brandseye.com"
+		//url += "/rest/accounts/BEQU94AA/mentions";
+		//url += "?callback=?&Authorization=Basic 1vlcab7o3e234ngsl2y4fgr7q"; 
+		//$.getJSON(url, data, callback);
+		var url = "data/oscar.json";
+				var w = 1000;
+				var h = 700;
+
+		d3.json(url, function(data) {
+			//alert(data);
+			//Width and height
+			//dataset = data.data;
+			dataset = data;
+
+			//Width and height
+	
+			var yScale = d3.scale.ordinal()
+							.domain(d3.range(dataset.length))
+							.rangeRoundBands([0, h], 0.09);
+
+			var xScale = d3.scale.linear()
+							.domain([0, d3.max(dataset, function(d) { return d.count; })])
+							.range([0, w]);
+
+			//Define key function, to be used when binding data
+			var word = function(d) {
+				return d.word;
+			};
+
+			//Create SVG element
+			var svg = d3.select("#bar_graph")
+						.append("svg")
+						.attr("width", w)
+						.attr("height", h);
+
+			//Create bars
+			svg.selectAll("rect")
+			   .data(dataset, word)		//Bind data with custom word function
+			   .enter()
+			   .append("rect")
+			   .attr("y", function(d, i) {
+			   		return yScale(i);
+			   })
+			   .attr("x", function(d) {
+			   		return 0;
+			   })
+			   .attr("height", yScale.rangeBand())
+			   .attr("width", function(d) {
+			   		return xScale(d.count);
+			   })
+			   .attr("fill", function(d) {
+					return "rgb(0, 0, " + (d.count) + ")";
+			   })
+			    .on("mouseover", function(d) {
+
+					//Get this bar's x/y values, then augment for the tooltip
+					var yPosition = parseFloat(d3.select(this).attr("y"));
+					var xPosition = parseFloat(d3.select(this).attr("x")) + d3.select(this).attr("width")/2;
+
+					//Update the tooltip position and value
+					d3.select("#tooltip")
+						.style("left", xPosition + "px")
+						.style("top", yPosition + 150 + "px")						
+						.select("#value")
+						.text(d.count);
+
+					d3.select("#tooltip")
+						.select("#heading")
+						.text(d.word);
+
+					//Show the tooltip
+					d3.select("#tooltip").classed("hidden", false);
+
+			   })
+			   .on("mouseout", function() {
+
+					//Hide the tooltip
+					d3.select("#tooltip").classed("hidden", true);
+
+			   })
+
+			//Create labels
+			svg.selectAll("text")
+			   .data(dataset, word)		//Bind data with custom word function
+			   .enter()
+			   .append("text")
+			   .text(function(d) {
+			   		return d.word;
+			   })
+			   .attr("text-anchor", "left")
+			   .attr("y", function(d, i) {
+			   		return yScale(i) + yScale.rangeBand() / 2+ 4;
+			   })
+			   .attr("x", function(d) {
+			   		return 2;
+			   })
+			   .attr("font-family", "sans-serif")
+			   .attr("font-size", "12px")
+			   .attr("fill", "white");
+
+
+	
+		})
+		
+			//var url = "data/oscar.json";
+			var url = "data/sentiment_male.json";
+
+		d3.json(url, function(data) {
+
+
+//data = [[0,50,"#AA8888"], [50,75,"#88BB88"], [75,100,"#8888CC"]]
+
+var width = 800,
+    height = 250,
+    radius = Math.min(width, height) / 2;
+
+
+var color = d3.scale.ordinal()
+    .range(["#0000cc", "#00cc00", "#cc0000", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(radius - 70);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function (d) {
+    return d.count;
+});
+
+
+//var data2 = [];
+//alert(this);
+var pos = 0;
+var neg = 0;
+var neutral = 0;
+for (var i = 0; i < data.length; i++) {
+	if (data[i].sentiment < 1) {
+		neg ++;
+	} else if (data[i].sentiment == 1) {
+		neutral ++;
+	} else {
+		pos ++;
+	}
+};
+//console.log(pos);
+//alert(pos);
+var data2 = [{"sentiment": "positive","count": pos},{"sentiment": "neutral","count": neutral},{"sentiment": "negative","count": neg}]; 
+var svg = d3.select("#svg_donut").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("id", "pieChart")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+		console.log(data2);
+    var path = svg.selectAll("path")
+      .data(pie(data2))
+      .enter()
+      .append("path")
+       .on("mouseover", function(d) {
+
+					//Get this bar's x/y values, then augment for the tooltip
+					var yPosition = parseFloat(d3.select(this).attr("y"));
+					var xPosition = parseFloat(d3.select(this).attr("x")) + d3.select(this).attr("width")/2;
+
+					//Update the tooltip position and value
+					d3.select("#tooltip")
+						.style("left", xPosition + "px")
+						.style("top", yPosition+ "px")						
+						.select("#value")
+						.text(d.count);
+
+					d3.select("#tooltip")
+						.select("#heading")
+						.text(d.sentiment);
+
+					//Show the tooltip
+					d3.select("#tooltip").classed("hidden", false);
+
+			   })
+			   .on("mouseout", function() {
+
+					//Hide the tooltip
+					d3.select("#tooltip").classed("hidden", true);
+
+			   });
+
+      path.transition()
+      .duration(500)
+      .attr("fill", function(d, i) { return color(d.data.sentiment); })
+      .attr("d", arc)
+	      .each(function(d) { this._current = d; });
+
+
+function change(data){
+    path.data(pie(data));
+    path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
+
+}
+
+// Store the displayed angles in _current.
+// Then, interpolate from _current to the new angles.
+// During the transition, _current is updated in-place by d3.interpolate.
+function arcTween(a) {
+  var i = d3.interpolate(this._current, a);
+  this._current = i(0);
+  return function(t) {
+    return arc(i(t));
+  };
+}
+
+
+		})
+
+		</script>
+
+<h1>Top words</h1>
+<svg id="bar_graph" width="600" height="400">
+</svg>
+
+<h1>Sentiment</h1>
+<svg id="svg_donut" width="600" height="400">
+</svg>
+
+<div id="tooltip" class="hidden">
+<p><span id="heading">Important Label Heading</span></p> <p><span id="value">100</span></p>
+</div>
+
+	</body>
+</html>

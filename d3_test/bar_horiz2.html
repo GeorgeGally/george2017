@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+     <title>Bar Chart</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=9">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <style type="text/css">
+
+
+
+
+
+     </style>
+  </head>
+  <body>
+    <h1>GUN HOMICIDES VS OWNERSHIP:</h1>
+    <div id="chart"></div>
+
+        <br>
+<span style="margin-top: 40px;"><span style="width: 20px; height: 20px; padding-right: 15px; background:#2EC9FF"> &nbsp </span> GUN HOMICIDE PER 100 000 PEOPLE </span>
+<span> &nbsp <span style="width: 20px; height: 20px; padding-right: 15px;background:#F2DC00">&nbsp</span> GUN OWNERSHIP PER 100 PEOPLE</span>
+
+    <script src="d3.js"></script>
+
+    <script>
+function renderChart() {
+var colors = ["#2EC9FF", "#F2DC00"];
+var data = d3.csv.parse(d3.select('#csv').text());
+var valueLabelWidth = 40; // space reserved for value labels (right)
+var barHeight = 25; // height of one bar
+var barLabelWidth = 100; // space reserved for bar labels
+var barLabelPadding = 10; // padding between bar and bar labels (left)
+var gridLabelHeight = 18; // space reserved for gridline labels
+var gridChartOffset = 6; // space between start of grid and first bar
+var maxBarWidth = 400; // width of the bar with the max value
+ 
+// accessor functions 
+var barLabel = function(d) { return d['Name']; };
+var barValue = function(d) { return parseFloat(d['Population (mill)']); };
+ 
+// scales
+var yScale = d3.scale.ordinal().domain(d3.range(0, data.length)).rangeBands([0, data.length * barHeight]);
+var y = function(d, i) { return yScale(i); };
+var yText = function(d, i) { return y(d, i) + yScale.rangeBand() / 2; };
+var x = d3.scale.linear().domain([0, d3.max(data, barValue)]).range([0, maxBarWidth]);
+// svg container element
+var chart = d3.select('#chart').append("svg")
+  .attr('width', maxBarWidth + barLabelWidth + valueLabelWidth)
+  .attr('height', 600);
+// grid line labels
+var gridContainer = chart.append('g')
+  .attr('transform', 'translate(' + barLabelWidth + ',' + 320 + ')'); 
+  
+  gridContainer.selectAll("text").data(x.ticks(10)).enter().append("text")
+  .attr("x", x)
+  .attr("dy", -3);
+  // .attr("text-anchor", "middle")
+  // .text(String);
+// vertical grid lines
+gridContainer.selectAll("line").data(x.ticks(10)).enter().append("line")
+  .attr("x1", x)
+  .attr("x2", x)
+  .attr("y1", 0)
+  .attr("y2", yScale.rangeExtent()[1] + gridChartOffset)
+  .style("stroke", "none");
+// bar labels
+var labelsContainer = chart.append('g')
+  .attr('transform', 'translate(' + (barLabelWidth - barLabelPadding) + ',' + (gridLabelHeight + gridChartOffset) + ')'); 
+
+labelsContainer.selectAll('text').data(data).enter().append('text')
+  .attr('y', yText)
+  .attr('stroke', 'none')
+  .attr('fill', 'black')
+  .attr("dy", ".15em") // vertical-align: middle
+  .attr('text-anchor', 'end')
+  .text(barLabel);
+// bars
+var barsContainer = chart.append('g')
+  .attr('transform', 'translate(' + barLabelWidth + ',' + (gridLabelHeight + gridChartOffset) + ')'); 
+
+barsContainer.selectAll("rect").data(data).enter().append("rect")
+  .attr('y', y)
+  .attr('height', yScale.rangeBand()-8)
+  .attr('width', function(d) { return x(barValue(d)); })
+  .attr('stroke', 'none')
+  .attr('fill', function(d,i){ return colors[i % 2]});
+// bar value labels
+
+//barsContainer.selectAll("rect").transform();
+
+
+// add this as a rollover
+
+// barsContainer.selectAll("text").data(data).enter().append("text")
+//   .attr("x", function(d) { return x(barValue(d)); })
+//   .attr("y", yText)
+//   .attr("dx", 3) // padding-left
+//   .attr("dy", ".15em") // vertical-align: middle
+//   .attr("text-anchor", "start") // text-align: right
+//   .attr("fill", "black")
+//   .attr("stroke", "none")
+//   .text(function(d) { return d3.round(barValue(d), 2); });
+// start line
+// barsContainer.append("line")
+//   .attr("y1", -gridChartOffset)
+//   .attr("y2", yScale.rangeExtent()[1] + gridChartOffset)
+//   .style("stroke", "#000");
+
+}
+    </script>
+    <script id="csv" type="text/csv">Name,Population (mill),Average Life Expectancy,Area (1000 sq mi),Continent
+US,308.3,78.2,3784.191,America
+ ,82.3,79.4,137.847,Europe
+Brazil,193.3,71.99,3287.612,America
+ ,65.4,80.98,244.339,Europe
+UK,1339,73,3705.407,Asia
+ ,62,79.4,93.800,Europe
+India,1184,64.7,1236.085,Asia
+ ,127.4,82.6,145.920,Asia
+S. Africa,950,49.3,471.445,Africa
+ ,178.9,71.3,387.000,Africa
+</script>
+
+
+    <script>renderChart();</script>
+
+
+  </body>
+</html>

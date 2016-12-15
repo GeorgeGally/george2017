@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Dynamically adjusting the vertical scale</title>
+		<script type="text/javascript" src="d3.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style type="text/css">
+
+		body {
+  font: 20px;
+  background: #E4EDED;;
+  padding: 30px;
+}
+
+
+  h1, p, label { text-transform: uppercase;
+    color: #fff;}
+      //text { display: none;}
+      //rect:hover { display: inline-block;}  
+
+
+		#heading { font-weight: bold;}
+			text, rect {
+				cursor: pointer;
+				-moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+transition: all 0.3s;
+			}
+			rect:hover {
+				fill: orange;
+			}	
+		#bar { position: relative;}
+
+
+		</style>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+
+		<h1>What they're saying</h1>
+
+		<script type="text/javascript">
+	
+		var url = "data/sentiment.json";
+			//var url = "data/sentiment_male.json";
+			//var url = "data/sentiment_female.json";
+// 		var url = "https://api.brandseye.com";
+// url += "/rest/accounts/BEQU94AA/mentions";
+// url += "?callback=?&Authorization=Basic 1y44uif7ov0zm9w21k90b9mgu"; 
+
+		d3.json(url, function(data) {
+
+
+
+
+
+
+//data = [[0,50,"#AA8888"], [50,75,"#88BB88"], [75,100,"#8888CC"]]
+
+var width = 800,
+    height = 250,
+    radius = Math.min(width, height) / 2;
+
+
+var color = d3.scale.ordinal()
+    .range(["#0000cc", "#00cc00", "#ddd", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(radius - 70);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function (d) {
+    return d.count;
+});
+
+
+//var data2 = [];
+//alert(this);
+var pos = 0;
+var neg = 0;
+var neutral = 0;
+for (var i = 0; i < data.length; i++) {
+	if (data[i].sentiment < 1) {
+		neg += data[i].count;
+	} else if (data[i].sentiment == 1) {
+		neutral += data[i].count;
+	} else {
+		pos += data[i].count;
+	}
+};
+console.log("pos "+pos);
+console.log("neg:" + neg);
+console.log("neutral:" + neutral);
+// alert(pos);
+// alert(neg);
+var data2 = [{"sentiment": "positive","count": pos},{"sentiment": "neutral","count": neutral},{"sentiment": "negative","count": neg}]; 
+var data3 = [{"sentiment": "positive","count": pos},{"sentiment": "negative","count": neg}]; 
+var data4 = {
+  sentiment: [pos, neutral, neg],
+};
+var colors = ["#2EC9FF","#FF2E8D"]; 
+console.log(data3);
+
+//////////////////////////////////////
+
+// var xScale = d3.scale.linear()
+// .domain([0, d3.max(data3, function(d) { return d[0]; })])
+// .range([0, width]);
+var yScale = d3.scale.linear()
+.domain([0, d3.max(data3, function(d) { return d[0]; })])
+.range([0, height]);
+
+
+var svg = d3.select("#bar")
+		.append("svg")
+		.attr("width", width)
+		.attr("height", height);
+
+			//Create bars
+			svg.selectAll("rect")
+			   .data(data3)
+			   .enter()
+			   .append("rect")
+			   .attr("x", function(d, i) {
+			   		return 100+i*160;
+			   })
+			   .attr("y", function(d) {
+			   		return 200-d.count/20;
+			   })
+			   .attr("width", 150)
+			   .attr("height", function(d) {
+			   		return d.count/20;
+			   })
+			   .attr("fill", function(d,i) {
+					return colors[i];
+			   });
+
+
+
+
+
+
+//////////////////////////////////////
+
+
+
+var svg = d3.select("#svg_donut").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("id", "pieChart")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+		//console.log(data2);
+    var path = svg.selectAll("path")
+      .data(pie(data3))
+      .enter()
+      .append("path")
+       .on("mouseover", function(d) {
+
+					//Get this bar's x/y values, then augment for the tooltip
+					var yPosition = parseFloat(d3.select(this).attr("y"));
+					var xPosition = parseFloat(d3.select(this).attr("x")) + d3.select(this).attr("width")/2;
+
+					//Update the tooltip position and value
+					d3.select("#tooltip")
+						.style("left", xPosition + "px")
+						.style("top", yPosition+ "px")						
+						.select("#value")
+						.text(d.count);
+
+					d3.select("#tooltip")
+						.select("#heading")
+						.text(d.sentiment);
+
+					//Show the tooltip
+					d3.select("#tooltip").classed("hidden", false);
+
+			   })
+			   .on("mouseout", function() {
+
+					//Hide the tooltip
+					d3.select("#tooltip").classed("hidden", true);
+
+			   });
+
+      path.transition()
+      .duration(500)
+      .attr("fill", function(d, i) { return color(d.data.sentiment); })
+      .attr("d", arc)
+	      .each(function(d) { this._current = d; });
+
+
+function change(data){
+    path.data(pie(data));
+    path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
+
+}
+
+// Store the displayed angles in _current.
+// Then, interpolate from _current to the new angles.
+// During the transition, _current is updated in-place by d3.interpolate.
+function arcTween(a) {
+  var i = d3.interpolate(this._current, a);
+  this._current = i(0);
+  return function(t) {
+    return arc(i(t));
+  };
+}
+
+
+	
+
+
+
+var width = 460,
+    height = 300,
+    radius = Math.min(width, height) / 2;
+
+var color = d3.scale.category20();
+var degree = Math.PI/180; // just to convert the radian-numbers
+var pie = d3.layout.pie().sort(null).startAngle(-90*degree).endAngle(90*degree);
+
+
+var arc = d3.svg.arc()
+    .innerRadius(radius - 100)
+    .outerRadius(radius - 50);
+
+var svg = d3.select("#doughnut").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var path = svg.selectAll("path")
+    .data(pie(data4.sentiment))
+  	.enter()
+  	.append("path")
+    .attr("fill", function(d, i) { return color(i); })
+    //.attr("d", arc);
+      .transition().delay(function(d, i) { return i * 1500; }).duration(1500)
+  .attrTween('d', function(d) {
+       var i = d3.interpolate(d.startAngle+0.1, d.endAngle);
+       return function(t) {
+           d.endAngle = i(t);
+         return arc(d);
+       }
+  });
+
+
+
+	})
+
+		</script>
+
+
+<p>Sentiment</p>
+<svg id="svg_donut" width="600" height="400">
+</svg>
+
+
+<div id="doughnut" width="600" height="400">
+	<p>Sentiment Breakdown</p>
+</div>
+
+<div id="bar" width="600" height="400">
+	<p>Tweets by Gender</p>
+</div>
+
+<div id="tooltip" class="hidden">
+<p><span id="heading">Important Label Heading</span></p> <p><span id="value">100</span></p>
+</div>
+
+	</body>
+</html>

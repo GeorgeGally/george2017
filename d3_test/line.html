@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+path {fill:none;}
+
+</style>
+
+<label><input type="checkbox"> Sort values</label>
+<script type="text/javascript" src="d3.js"></script>
+
+</head>
+<body>
+
+  <svg id="main"></svg>
+  <h1>Social Media Mentions</h1>
+<script type="text/javascript">
+var url = "data/sentiment.json";
+var margin = 50;
+var points = 10;
+d3.json(url, function(data) {
+    var svg = d3.select("#main");
+    var line = d3.svg.line()
+    .x(function(d) { return d[0]+margin; })
+    .y(function(d) { return d[1] + 200; })
+    //.interpolate("monotone")
+    ;
+
+    var lineFunction = d3.svg.line()
+                        .x(function(d) { return d.x; })
+                        .y(function(d) { return d.y; })
+                         .interpolate("linear");
+
+function init(){
+    var randData = [];
+    for (var i = 0; i < points; i++){
+        randData.push([i*50, Math.random() * 100]);
+    }
+
+
+
+     svg.data([randData])
+        .append("svg:path")
+        
+        .attr("d", line)
+
+        .attr("fill", "none")
+         .style("stroke", "#000")
+            .style("stroke-width", 3);
+    svg.selectAll("circle")
+        .data(randData)
+       .enter().append("circle")
+        .attr("cx", function(d,i){ return d[0] + margin; })
+        .attr("cy", function(d,i){ return d[1] + 200 })
+        .attr("fill", "#00BAF2")
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 2)
+        .attr("r", 6);
+
+    setInterval(refresh, 2200);
+}        
+
+
+
+              
+              
+function refresh(){
+   var randData = [];
+    for (var i = 0; i < points; i++){
+        randData.push([i*50, Math.random() * 100]);
+    }
+    
+    svg.data([randData])
+        .select("path")
+        .transition()
+        .duration(500)
+        .ease("bounce")
+        .attr("d", line);
+      svg.selectAll("circle")
+        .data(randData)
+      .transition()
+      .ease("bounce")
+        .duration(400)
+        .attr("cy", function(d,i){ return d[1] + 200 });
+}
+init();
+});
+
+</script>
+    </body>
+</html>

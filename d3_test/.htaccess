@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+Header set Access-Control-Allow-Origin *
+    RewriteEngine on
+    #RewriteRule    ^$    webroot/    [L]
+    #RewriteRule    (.*) webroot/$1    [L]
+    #RewriteBase   /~silver_beast/twitterzeitgeist/
+</IfModule>

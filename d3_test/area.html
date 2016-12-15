@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<body>
+
+  <h1 style="margin-top: -20px;">Tweet intensity:</h1> <br>
+  <p class="subhead">Tweets per second: </p>
+  <h2>2.8</h2>
+<script src="d3.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="index.js"></script>
+<style>
+
+
+</style>
+</head>
+<body>
+<script>
+
+var SPACING = 85;
+var PADDING = 55;
+
+var data = d3.range(10).map(function(d, i) {
+    return {x: i * SPACING, y: (Math.random()*100)};
+});
+var h = d3.max(data, function(d) { return d.y; }) + 15;
+
+/* Create the lookup table */
+var table = [];
+data.forEach(function(d) {
+    table[d.x] = d.y;
+});
+
+ var tip = d3.tip()
+      .attr('class', 'd3-tip')
+      .html(function(d, i) { return '<span>' + data[i] + '</span>' + ' ' })
+      .offset([-12, 0])
+
+    vis = d3.select('#graph')
+      .append('svg')
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 800)
+    .attr("height", 400)
+    .append("g")
+    .attr("transform", "translate(0, 95)");
+   
+  
+var area = svg.selectAll("path").data([data]).enter().append("path")
+    .attr(
+        "d",
+        d3.svg.area()
+            .x(function(d) { return d.x; })
+            .y0(h)        
+            .y1(h)
+    );
+
+ area.call(tip) 
+ area
+    .on('mouseover', function(d) {
+        tip.attr('class', 'd3-tip animate').show(d)
+      })  
+
+
+area.transition().duration(500)
+.ease("in").attr(
+        "d",
+        d3.svg.area()
+            .x(function(d) { return d.x; })
+            .y0(h)        
+            .y1(function(d) { return d.y; })
+    );
+
+var xAxis = d3.svg.axis()
+    .scale(area.x)
+    .ticks(4)
+    .orient("bottom");
+
+
+var yAxis = d3.svg.axis()
+    .scale(area.y)
+    .orient('left')
+    .ticks(4)
+    .tickPadding(8);
+
+
+
+
+var text = svg.selectAll("text")
+         .data(data)
+         .enter()
+         .append("text")
+         .text(function(d) {
+            return d.value;
+         })
+         .attr("text-anchor", "middle")
+         .attr("font-family", "sans-serif")
+         .attr("font-size", "11px")
+         .attr("fill", "white");
+
+
+function update() {    
+    var x = d3.mouse(this)[0];
+    var y;
+    
+    if ( table[x] === undefined ) {
+        var lower = x - (x % SPACING);
+        var upper = lower + SPACING;
+        var between = d3.interpolateNumber(table[lower], table[upper]);
+        y = between( (x % SPACING) / SPACING );
+    } else {
+        y = table[x];
+    }
+    
+    circle
+        .attr("cx", x)
+        .attr("cy", y-50);
+
+    tip
+        .attr("x", x)
+       .attr("y", y-150);
+
+}
+
+
+
+</script>
+</head>
+<body>
+  <div id="graph">
+
+  </div>
+<div class="canvas">
+  <div class="triangle-down"></div>
+</div>
+

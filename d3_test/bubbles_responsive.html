@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<script src="d3.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<div id="container">
+  <svg id="chart" width="800" height="600"
+    viewBox="0 0 800 600"
+    perserveAspectRatio="xMinYMid">
+
+  </svg>
+</div>
+
+
+  <script type="text/javascript">
+  /* graph stuff*/
+
+
+
+var url = "data/words.json";
+bubble(url);
+
+function bubble(url){
+
+d3.json(url, function(data) {
+var dataset = data.data;
+var margin = {top: 0, right: 0, bottom: 0, left: 0},
+    width = 1120 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+var n = 50,
+    m = 15,
+    padding = 8,
+    radius = d3.scale.sqrt().range([10, 45]);
+    //color = d3.scale.category10().domain(d3.range(m));
+
+var color = ["#6E2721","#C4372C","#E45E20","#E9A309","#EEB400","#FAD000","#B5C4E4","#91A5D5","#5879C1","#3F68B8"];
+
+var minDataPoint = d3.min(dataset, function(d) { return d['count'];});
+var maxDataPoint = d3.max(dataset, function(d) { return d['count'];});
+var radiusScale = d3.scale.linear().domain([minDataPoint,maxDataPoint]).range([20,150]);
+
+// var minColour = 0;
+// var maxColour = color.length;
+// var colourScale = d3.scale.linear().domain([0,data.length]).range([0,color.length]);
+
+// var newScaledColor = [];
+// for (var i = 0; i < dataset.length; i++) {
+// newScaledColor[i] = colourScale(dataset[i].count);
+// }
+// console.log(newScaledColor);
+
+console.log(dataset[0][0]);
+console.log("min: "+ minDataPoint);
+console.log("max: "+ maxDataPoint);
+
+var newScaledData = [];
+for (var i = 0; i < dataset.length; i++) {
+newScaledData[i] = radiusScale(dataset[i].count);
+}
+
+console.log(newScaledData);
+
+
+
+graph = {"nodes" : []};
+var i = 0;
+data.data.forEach(function (d, i) {
+      graph.nodes.push({ "name": d.word, "radius": newScaledData[i], "color": color[i] });
+      // graph.links.push({ "source": d.source,
+      //                    "target": d.target,
+      //                    "value": +d.value });
+     i++;
+     });
+
+
+console.log(graph.nodes);
+
+var force = d3.layout.force()
+    .nodes(graph.nodes)
+    .size([width, height])
+    .gravity(.01)
+    .charge(0)
+    .on("tick", tick)
+    .start();
+
+var svg = d3.select("#chart").append("svg")
+    .append("g");
+
+
+
+
+var bubble = svg.selectAll(".bubble")
+      .data(graph.nodes)
+      .enter().append("g")
+      .attr("class", "bubble")
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .call(force.drag);
+
+bubble.append("circle")
+      .style("fill", function(d) { return d.color; })
+      .attr("r", function(d) { return d.radius; })
+      //.attr("r", function(d) { return radiusScale(d['count']); })
+      .attr("line-height", function(d) { return d.radius*2; });
+      
+bubble.append("text")
+      .attr("text-anchor", "middle")
+      .text(function(d) { return d.name; })
+      .style("font-size", "22px") // initial guess
+      .style("font-family", "'Oswald', sans-serif")
+      .style("text-transform", "uppercase")
+      .style("font-size", function(d) { 
+        var size =  (2 * d.radius - 8) / this.getComputedTextLength() * 20;
+        //console.log("size "+ size);
+        return Math.min(size, 20) + "px"
+       // return size + "px"
+
+       // return + "px"; 
+      })
+      .attr("dy", function(d) { return 5;})
+      .style("fill", "#fff")
+      .style("padding-top", "15px");
+function tick(e) {
+  bubble
+      .each(cluster(10 * e.alpha * e.alpha))
+      .each(collide(.3))
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+}
+
+
+var headline = svg.append('text')
+    .text('Whats being talked about')
+    .attr('x', 50)
+    .attr('y', 120)
+    .attr("class", "headline")
+
+
+// Move d to be adjacent to the cluster node.
+function cluster(alpha) {
+  var max = {};
+
+  // Find the largest node for each cluster.
+  graph.nodes.forEach(function(d) {
+    if (!(d.color in max) || (d.radius > max[d.color].radius)) {
+      max[d.color] = d;
+    }
+  });
+
+  return function(d) {
+    var node = max[d.color],
+        l,
+        r,
+        x,
+        y,
+        i = -1;
+
+    if (node == d) return;
+
+    x = d.x - node.x;
+    y = d.y - node.y;
+    l = Math.sqrt(x * x + y * y);
+    r = d.radius + node.radius;
+    if (l != r) {
+      l = (l - r) / l * alpha;
+      d.x -= x *= l;
+      d.y -= y *= l;
+      node.x += x;
+      node.y += y;
+    }
+  };
+}
+
+// Resolves collisions between d and all other circles.
+function collide(alpha) {
+  var quadtree = d3.geom.quadtree(graph.nodes);
+  return function(d) {
+    var r = d.radius + radius.domain()[1] + padding,
+        nx1 = d.x - r,
+        nx2 = d.x + r,
+        ny1 = d.y - r,
+        ny2 = d.y + r;
+    quadtree.visit(function(quad, x1, y1, x2, y2) {
+      if (quad.point && (quad.point !== d)) {
+        var x = d.x - quad.point.x,
+            y = d.y - quad.point.y,
+            l = Math.sqrt(x * x + y * y),
+            r = d.radius + quad.point.radius + (d.color !== quad.point.color) * padding;
+        if (l < r) {
+          l = (l - r) / l * alpha;
+          d.x -= x *= l;
+          d.y -= y *= l;
+          quad.point.x += x;
+          quad.point.y += y;
+        }
+      }
+      return x1 > nx2
+          || x2 < nx1
+          || y1 > ny2
+          || y2 < ny1;
+    });
+  };
+}
+
+})
+
+
+}
+ 
+
+
+  /* responsive SVG stuff*/
+
+
+  var chart = $("#chart"),
+      aspect = chart.width() / chart.height(),
+      container = chart.parent();
+      $(window).on("resize", function() {
+      var targetWidth = container.width();
+      chart.attr("width", targetWidth);
+      chart.attr("height", Math.round(targetWidth / aspect));
+  }).trigger("resize");
+  </script>
+</body>
+
+</html>
+

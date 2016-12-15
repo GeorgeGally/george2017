@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <!-- NOTE: This is important and d3 will fail to load if missing -->
+    <meta charset="utf-8"></meta>
+  </head>
+
+  <body>
+    <div id="graph-container"></div>
+
+        <script>
+      var myStockDataSources = [
+        {
+          id: 'stock-1',
+          dimensions: {
+            x: 'date',
+            y: 'price'
+          },
+          data: [ { "date": 1363381320821, "price": 100.52 }, { "date": 1363381330060, "price": 101.05 } ]
+        }
+      ];
+      var myStockGraph = glimpse.graphBuilder.create('line')
+        .data(myStockDataSources)
+        .render('#graph-container');
+    </script>
+    
+    <script src="d3.js"></script>
+
+    <script src="js/glimpse.min.js"></script>
+  </body>
+</html>

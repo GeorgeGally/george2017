@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="d3.js"></script>
+<script src="js/line_graph.js"></script>
+<style>
+
+
+rect:hover {
+fill-opacity: 1;
+fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus text {
+  text-align: middle;
+}
+.focus circle {
+  fill: #E45E20;
+  stroke: none;
+}
+
+.range {
+    fill: #eee;
+    opacity: .4;
+    pointer-events: all;
+    shape-rendering: crispEdges;
+}
+</style>
+</head>
+<body>
+
+
+<script>
+
+
+url = "data/oscar_mentions.json";
+l1.line_graph(url);
+
+</script>
+
+</body>
+</html>

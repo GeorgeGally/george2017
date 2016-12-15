@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<style>
+
+  body{ font-family: 'Oswald', sans-serif;
+  background: #E4EDED; padding: 50px; 
+ color: #fff;
+ }
+  h1, p { text-transform: uppercase;
+    color: #fff;}
+      //text { display: none;}
+      //rect:hover { display: inline-block;}  
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font: 20px sans-serif;
+  fill: #ddd;
+
+}
+
+.browser text {
+
+  text-anchor: end;
+}
+.x.axis path {
+      stroke-width: 0px;
+}
+
+.y.axis path {
+      stroke-width: 0px;
+}
+
+</style>
+<script src="d3.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<h1>Word usage:</h1>
+
+<script>
+
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var parseDate = d3.time.format("%y-%b-%d").parse,
+    formatPercent = d3.format(".0%");
+
+var x = d3.time.scale()
+    .range([0, width]);
+
+
+var y = d3.scale.linear()
+    .range([height, 0]).nice();
+
+var color = d3.scale.category20();
+var colors = ["#E4EDED","#6E2721","#C4372C","#E45E20","#E9A309","#EEB400","#FAD000","#B5C4E4","#91A5D5","#5879C1","#3F68B8"];
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .ticks(4)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(0);
+
+var area = d3.svg.area()
+    .x(function(d) { return x(d.date); })
+    .y0(function(d) { return y(d.y0); })
+    .y1(function(d) { return y(d.y0 + d.y); });
+
+var stack = d3.layout.stack()
+    .values(function(d) { return d.values; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.tsv("data/dummy_data.tsv", function(error, dataset) {
+ 
+// var bins = {};
+// dataset.forEach(function(t) {
+//     var key = t.date;
+//     bins[key] = bins[key] || 0;
+//     bins[key] += t.amount;
+// });
+data = dataset;
+
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+
+  data.forEach(function(d) {
+    d.date = parseDate(d.date);
+  });
+
+  var browsers = stack(color.domain().map(function(name) {
+    return {
+      name: name,
+      values: data.map(function(d) {
+        return {date: d.date, y: d[name] / 100};
+      })
+    };
+  }));
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+  var browser = svg.selectAll(".browser")
+      .data(browsers)
+    .enter().append("g")
+      .attr("class", "browser");
+
+  browser.append("path")
+      .attr("class", "area")
+      .attr("d", function(d) { return area(d.values); })
+      .style("fill", function(d, i) { return colors[i]; })
+      .style("stroke", "none");
+
+  browser.append("text")
+      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.y0 + d.value.y / 2) + ")"; })
+      .attr("x", -width/2)
+      .attr("dy", ".95em")
+      //.attr("dx", 100)
+      .attr("fill", "#fff")
+      .text(function(d) { return d.name; });
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      //.attr("transform", "translate(-100,0)")
+      .call(yAxis);
+});
+
+</script>
+

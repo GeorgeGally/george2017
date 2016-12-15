@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script type="text/javascript" src="js/stream_graph.js"></script>
+<style>
+
+div { padding: 0;}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+button {
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
+
+</style>
+<body>
+
+<script src="d3.js"></script>
+ <script type="text/javascript" src="index.js"></script>
+<div id="stream_graph">
+
+<div class="chart">
+</div>
+</div>
+<script>
+
+Stream.streamGraph("data/streamdata.csv", "blue");
+
+</script>

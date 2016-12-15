@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+<head></head>
+<body>
+<label><input type="checkbox"> Sort values</label>
+<script type="text/javascript" src="d3.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+<script type="text/javascript" src="js/d3.bin.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+
+// var margin = {top: 20, right: 20, bottom: 30, left: 40},
+//     width = 960 - margin.left - margin.right,
+//     height = 500 - margin.top - margin.bottom;
+
+// var randomX = d3.random.normal(width / 2, 80),
+//     randomY = d3.random.normal(height / 2, 80),
+//     points = d3.range(2000).map(function() { return [randomX(), randomY()]; });
+
+// var radius = d3.scale.sqrt()
+//     .domain([0, 50])
+//     .range([0, 20]);
+
+// var hexbin = d3.hexbin()
+//     .size([width, height])
+//     .radius(20);
+
+// var x = d3.scale.identity()
+//     .domain([0, width]);
+
+// var y = d3.scale.linear()
+//     .domain([0, height])
+//     .range([height, 0]);
+
+// var xAxis = d3.svg.axis()
+//     .scale(x)
+//     .orient("bottom")
+//     .tickSize(6, -height);
+
+// var yAxis = d3.svg.axis()
+//     .scale(y)
+//     .orient("left")
+//     .tickSize(6, -width);
+
+
+
+
+var locations_url = "http://test.radarboy.com/~silver_beast/twitterzeitgeist/locations/individual/";
+
+
+
+locations_url += "3"
+
+
+//d3.json(locations_url, function(data) {
+
+    // var minXDataPoint = d3.min(data, function(d) { return d['Location']['lat'];});
+    // var maxXDataPoint = d3.max(data, function(d) { return d['Location']['lat'];});
+    // var minYDataPoint = d3.min(data, function(d) { return d['Location']['lng'];});
+    // var maxYDataPoint = d3.max(data, function(d) { return d['Location']['lng'];});
+
+    // var minDist = d3.min(data, function(d) { return d['Location']['dist'];});
+    // var maxDist = d3.max(data, function(d) { return d['Location']['dist'];});
+
+    // var xScale = d3.scale.linear()
+    //     .domain([minXDataPoint, maxXDataPoint])
+    //     .range([ 0 + margin, width-margin]);
+
+    // var yScale = d3.scale.linear()
+    //     .domain([minYDataPoint, maxYDataPoint])
+    //     .range([0+margin, height-margin]);
+
+    // var distScale = d3.scale.linear()
+    //     .domain([minDist, maxDist])
+    //     .range([1, 80]);
+
+    // var colourScale = d3.scale.linear()
+    //     .domain([minDist, maxDist])
+    //     .range([0, 9]);
+
+  var margin = {top: 40, right: 40, bottom: 40, left: 40},
+    w = 380 - margin.left - margin.right,
+    h = 380 - margin.top - margin.bottom;
+ 
+var color = d3.scale.linear()
+    .domain([0, 3])
+    .range(["yellow", "darkred"])
+    .interpolate(d3.interpolateLab);
+ 
+var x = d3.scale.linear()
+    .domain([0, 100])
+    .range([0, w]);
+ 
+var y = d3.scale.linear()
+    .domain([0, 100])
+    .range([h, 0]);
+ 
+var yinv = d3.scale.linear()
+    .domain([0, 100])
+    .range([0, h]);
+ 
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+ 
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+ 
+var side = 10;
+ 
+var bins = d3.bin()
+    .size([w, h])
+    .side(side);
+ 
+var svg = d3.select("body").append("svg")
+    .attr("width", w + margin.left + margin.right)
+    .attr("height", h + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" +margin.left+ "," +margin.top+ ")");
+ 
+var points = [];
+ 
+//d3.csv("scatterplot01.csv", function(error, data) {
+
+d3.json(locations_url, function(data) {
+      data = data['data'];
+  data.forEach(function(d) {
+    //d.time = +d.time;
+    
+    d['Location']['lat'] = +d['Location']['lat'];
+    d['Location']['lng'] = +d['Location']['lng'];
+    //d.intensity = +d.intensity;
+    points.push([d['Location']['lat'], d['Location']['lng']]);
+    //points.push([d.time, d.intensity]);
+  });
+ 
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + h + ")")
+      .call(xAxis);
+ 
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
+ 
+ 
+svg.selectAll(".square")
+      .data(bins(points))
+      .enter().append("rect")
+      .attr("class", "square")
+      .attr("x", function(d) { return x(d.x); })
+      .attr("y", function(d) { return y(d.y)-yinv(side); })    
+      .attr("width", x(side))
+      .attr("height", yinv(side))
+      .style("fill", function(d) { return color(d.length); });
+});
+       // })
+
+</script>
+
+<div id="chart"></div>
+</body>
+</html>
