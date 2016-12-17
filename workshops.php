@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>George Gally - Grunt Chat</title>
+	<title>George Gally - Workshops</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
