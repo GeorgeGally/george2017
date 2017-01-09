@@ -52,7 +52,7 @@
 ================================================== */
 	body {
 		background: #fafafa;
-		font: 18px/25px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font: 20px/25px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #333;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
@@ -74,11 +74,16 @@
 			margin-bottom: 4px;
 		}
 
-	h2 a { text-decoration: none; color: #000;}
+	h2 a { text-decoration: none; color: #8CC63F; font-size: 24px; line-height: 34px;}
 	/*h2 a:hover { text-decoration: underline; color: #8CC63F !important; }*/
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 21px; line-height: 32px; margin-bottom: 10px; }
-	h5 { font-family: Helvetica, 'Oswald', serif; font-size: 17px; line-height: 24px; margin-bottom: 10px;}
+	h5 {
+		font-family: Helvetica, serif;
+		color: #555;
+		font-size: 19px;
+		line-height: 24px; margin-bottom: 10px;
+	}
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
 
@@ -102,8 +107,8 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #603913; text-decoration: underline; outline: 0; }
-	a:hover, a:focus { color: #8CC63F; }
+	a, a:visited { color: #8CC63F; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: #603913; }
 	p a, p a:visited { line-height: inherit; }
 
 
