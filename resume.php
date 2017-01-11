@@ -47,10 +47,6 @@
 	</div>
 
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
 
@@ -64,14 +60,14 @@
 	<br><hr>
 
 		</div>
-		
+
       <div class="add-top  add-bottom  one-third column">
 
 <h5>Hi. I'm George Gally, designer, creative director, coder, tinkerer and dreamer.</h5>
 <br>
 I am a senior creative, with over 15 years experience, especially interested in pushing innovation, physical real world interactions, and the quirky and unusual. I have built an award winning career in advertising and design working in both above the line and digital agencies in Cape Town, Johannesburg, Hong Kong, Berlin and Tokyo.
 <br><br>
-I am South Africa's most awarded digital creative and one of only two people ever to win a Loerie Grand Prix (South Africa's most important advertising awards) in the digital category.  
+I am South Africa's most awarded digital creative and one of only two people ever to win a Loerie Grand Prix (South Africa's most important advertising awards) in the digital category.
 <br><br>
 
 
@@ -84,15 +80,15 @@ I am South Africa's most awarded digital creative and one of only two people eve
 
 <div class="add-top  add-bottom  one-third column">
 Although I see myself mainly as a visual artist, I am also a self-taught creative coder, able to programme in most computer languages. When not designing, I spend my time making music, thinking and tinkering about with technology, and working in experiential art.  <br><br>
-I have a Cum Laude degree in Social Science from the University of Cape Town and a Diploma in Journalism from Cape Technikon. 
+I have a Cum Laude degree in Social Science from the University of Cape Town and a Diploma in Journalism from Cape Technikon.
 
 
-<!-- 
+<!--
 I have an blog (<a href="http://www.radarboy.com">http://www.radarboy.com</a>) where I post mainly about light art, and other stuff that interests me, and occasionally a personal project.<br><br>
   And I like to play with Twitter, with <a href="www.radarboy_japan">radarboy_japan</a> having a more of an art, human interest and casual theme and a new experiment <a href="www.twitter.com/radarboy3000">radarboy3000</a> - a more honed down stream of what me and my brand stand for.
   <br><br> -->
 <br><br><br>
-        <a href="downloads/george_gally_resume.zip">
+        <a href="http://radarboy.com/george/george_galanakis_resume%202017.pdf">
       <img src="images/pdf_icon_image_transparent.png" width="76"><br>
       <small>Download PDF resume</small>
 
@@ -100,7 +96,7 @@ I have an blog (<a href="http://www.radarboy.com">http://www.radarboy.com</a>) w
   <h4> <a href="http://radarboy.com">radarboy.com</a></h4>
   <h4> <a href="http://twitter.com/radarboy_japan">Twitter: @radarboy_japan</a></h4>
   <h4> <a href="https://www.linkedin.com/in/georgegally">LinkedIn Profile</a></h4>
-    <h4> <a href="http://radarboy.tumblr.com">Radarboy Tumblr</a></h4>
+    <h4> <a href="https://www.instagram.com/radarboy3000/">Instagram</a></h4>
 </div>
 
 <div class="sixteen columns add-bottom">
@@ -113,7 +109,7 @@ I have an blog (<a href="http://www.radarboy.com">http://www.radarboy.com</a>) w
     <br><hr>
     </div>
   <div class="one-third column">
-     
+
      <h4 class="big-top">Creative Director<br>TBWA Digital Arts Network</h4>
     <div class="small-top">June 2014-Present,<br>Hong Kong</div>
   </div>
@@ -133,7 +129,7 @@ I have an blog (<a href="http://www.radarboy.com">http://www.radarboy.com</a>) w
 
 
   <div class="one-third column">
-     
+
      <h4 class="big-top">Creative Director Innovation<br>Quirk Agency</h4>
     <div class="small-top">June 2013-April 2014, Johannesburg,<br>South Africa</div>
   </div>
@@ -144,7 +140,7 @@ I have an blog (<a href="http://www.radarboy.com">http://www.radarboy.com</a>) w
     I also served as a bridge between the tech team and creative departments as well as consulting on technology from a creative viewpoint. <br><br>
     Member of “dream team” concept team. <br><br>
     Most recently I have worked on facial recognition, data visualisation, digital mirrors, working with the microsoft kinect and Leap Motion.
-    
+
     <br>
     <br>
     Clients included Internet Solutions, DSTV, Durex, PPC Cement, RAB.
@@ -155,7 +151,7 @@ I have an blog (<a href="http://www.radarboy.com">http://www.radarboy.com</a>) w
 
 
   <div class="one-third column">
-     
+
      <h4 class="big-top">Co-founder Gigham, <br>Google Umbono Startup Accelerator</h4>
   <div class="small-top">January 2012- June 2013, Cape Town, South Africa</div>
   </div>
@@ -169,16 +165,16 @@ Launched in 6 cities - Johannesburg, Cape Town, Durban, Port Elizabeth, Bloemfon
 Finalist in Demo Africa, Nairobi, Kenya. <br>
 Voted Top 40 new startups in Africa. <br>
 Massive learning curve both in business, internet psychology, user acquisition and coding.
-    
+
     <br><br>
     <hr>
 <br>
   </div>
 
-  
+
 
   <div class="one-third column">
-     
+
     <h4 class="big-top">Experiental Artist </h4>
     <div class="small-top">January 2009 - December 2011, Berlin, Germany</div>
 
@@ -190,7 +186,7 @@ Invited to exhibit at Salone Internazionale del Mobile. <br>
 Held a number of other exhibitions, events and performances throughout the city. <br>
 Member of the Absolut Made consultative body <br>
 Held freelance Creative Director positions at Crumpler, Berlin and Ogilvy, Cape Town. <br>
-Built startup, music search engine Walaa, which eventually pivoted to become Gigham. 
+Built startup, music search engine Walaa, which eventually pivoted to become Gigham.
     <br><br><hr>
     <br>
   </div>
@@ -198,7 +194,7 @@ Built startup, music search engine Walaa, which eventually pivoted to become Gig
 
 
   <div class="one-third column">
-     
+
      <h4 class="big-top">Associate Creative Director<br>Ogilvy &amp; Mather Japan </h4>
     <div class="small-top">August 2007- December 2008, Tokyo, Japan</div>
 
@@ -212,15 +208,15 @@ Jetstar team award as the best 360 Account at Ogilvy in Asia. <br>
 Directed Jetstar 2009 launch TV commercial. <br>
 Jetstar winner of 2008 Asian Integrated Marketing Awards. <br>
 Worked as ACD as part of Sokenbicha (Coca Cola's and Japan's biggest mixed tea brand) team. One of the biggest accounts in Japan. <br>
-Sokenbicha ads repeatedly scored the highest link test scores in the brand's history. 
-    
+Sokenbicha ads repeatedly scored the highest link test scores in the brand's history.
+
     <br><br><hr>
     <br>
   </div>
 
 
     <div class="one-third column">
-     
+
       <h4 class="big-top">Creative Director/Co-Founder  <br>Radarboy</h4>
        <div class="small-top">November 1998- September 2002, Cape Town, South Africa</div>
     </div>
@@ -233,12 +229,12 @@ Leading the creative team at Radarboy we won a host of awards, with me becoming 
 Website voted one of the top 10 flash sites in the World. <br>
 Showcased at Design Indaba as example of great South African design. <br>
 Developed a cult following for our quirky take on things, with many CDs citing Radarboy as inspiration to getting into the industry. <br>
-Focused quite heavily on applications, and content creation, many of our products, I believe, were way ahead of their time. IOLNewsSaver - pre-RSS days, an application that pulled live news stories to your desktop in a simple, clean, and extremely usable manner. SouthBooth - an in-store music listening kiosk. Scoreboard - live rugby union news and scoreboard desktop application/screensaver. Bannersport - world’s first banner ad sport games. NewsBanner - world’s first live news headline banner ads. <br> 
+Focused quite heavily on applications, and content creation, many of our products, I believe, were way ahead of their time. IOLNewsSaver - pre-RSS days, an application that pulled live news stories to your desktop in a simple, clean, and extremely usable manner. SouthBooth - an in-store music listening kiosk. Scoreboard - live rugby union news and scoreboard desktop application/screensaver. Bannersport - world’s first banner ad sport games. NewsBanner - world’s first live news headline banner ads. <br>
 Worked on the Lucky Strike campaign for almost two years - that became the talk of the town and implemented a number of innovative and quirky solutions for them - including magazines, installations, registration sites, games and content. Work was ported to a number of other countries and presented to their global brand managers as great brand content and use of the brand. <br>
 Clients included Shell, Independent Newspapers, Minolta,, Ster Kinekor, Lucky Strike, MWeb, JWT, Jupiter Drawing Room, British American Tobacco, Rembrandt Group, Baker Street, K-TV. <br>
 Digital thinktank member at the Independent Newspaper Group. <br>
 Founding member of Boom Room technology forum. <br>
-    
+
     <br><br><hr>
 
   </div>
@@ -247,16 +243,16 @@ Founding member of Boom Room technology forum. <br>
 
 
   <div class="one-third column">
-     
+
     <h4 class="big-top"> Art Director <br><span class="BroonGrey">Tinderbox Interactive </span></h4>
-  
+
   </div>
 
   <div class="two-thirds column">
 
 
 <p>Designed and developed websites and ground breaking multimedia projects for some of the biggest clients in South Africa. <br><br>
-  Contributed significantly to Tinderbox being recognised as the top new media studio in South Africa. <br><br>Awarded a Loerie Grand Prix - still today the one of only two Grand Prix that has ever been awarded in the Digital - as well as a host of other <a href="http://127.0.0.1/~Admin/george_old/awards.php?info=4&id=1">awards</a>. 
+  Contributed significantly to Tinderbox being recognised as the top new media studio in South Africa. <br><br>Awarded a Loerie Grand Prix - still today the one of only two Grand Prix that has ever been awarded in the Digital - as well as a host of other <a href="http://127.0.0.1/~Admin/george_old/awards.php?info=4&id=1">awards</a>.
   <br><br>
   Clients included MNet (TV station), MWeb (ISP), Internet Solutions (ISP), Roche, Dynajets, Tommy Hilfigger.
 
@@ -269,9 +265,9 @@ Founding member of Boom Room technology forum. <br>
 
 
     <div class="one-third column">
-     
-      <h4>Freelance Creative Director/Art Director: 
-        
+
+      <h4>Freelance Creative Director/Art Director:
+
         <br>
         <span class="BroonGrey">Ogilvy Cape Town, <br>Bates Japan, <br>Hypu Japan, <br>Brand Architecture, <br>Crumpler, <br>IMJ Japan, <br>Cyber Media</span>
 
@@ -282,7 +278,7 @@ Founding member of Boom Room technology forum. <br>
   <div class="two-thirds column">
 
     I have held freelance and contract positions at a number of esteemed organizations, working on diverse projects ranging from brand strategies, user interface design, web and application design, packaging and print design, touch screen kiosks, TV and video, events, exhibition design and product design. <br><br>
-    I have worked on a number of high profile clients such as: <br> 
+    I have worked on a number of high profile clients such as: <br>
     Lucky Strike, Onistuka Tiger, Yokugawa, Renault, Peugeot, Ponds, Disney, Tokyo Designers Block, Canon, Docomo, Tokyo American Club, Museum Tokyo, EcoDecor Brand (winner of Good Design Award 2007).<br><br>
 
     Before going into a career as an art director, I also worked as a journalist at the famous Daily Dispatch in East London South Africa (where I rose to being the youngest bereau chief in South Africa), Caxton Press and as parliamentary Correspondent for Capital Radio 604, and freelanced for South African Press Association, Reuters, Sunday Times, Cape Argus, 702, Style, Student Life and Enterprise Magazine. </p>
@@ -297,16 +293,16 @@ Founding member of Boom Room technology forum. <br>
     </div>
 
     <div class="one-third column">
-       <h4>Bachelor of Social Science</h4>    
+       <h4>Bachelor of Social Science</h4>
     </div>
-  
+
     <div class="two-thirds column">
- 
+
       University of Cape Town, 1994
       Accolades: Deans Merit List. <br>
       Top 10 students in class. <br>
       Majored in Political Studies. <br><br>
-    
+
     </div>
 
    <div class="one-third column">
@@ -314,7 +310,7 @@ Founding member of Boom Room technology forum. <br>
     </div>
 
   <div class="two-thirds column">
-  
+
     Concept Interactive, 1996 <br>
     Majored in Graphic Design and Multimedia. <br>
 
@@ -322,22 +318,22 @@ Founding member of Boom Room technology forum. <br>
 
    <div class="sixteen columns">
   <br><br>
-   
+
 
     <br><br>
 
   <h5>Further Education/Conferences:</h5>
     <br><hr>
 <br>
-Demo Africa, 
+Demo Africa,
   Nairobi: 2013 <br>
-UX Camp Europe, 
+UX Camp Europe,
   Berlin: 2012 <br>
 Webinale,
   Berlin: 2012 <br>
-UX Camp Europe, 
+UX Camp Europe,
   Berlin: 2011 <br>
-Invision Future of Technology Conference, 
+Invision Future of Technology Conference,
   San Francisco: 2000 <br>
 Design Indaba
   Cape Town: 1999, 2000 and 2001,2002 <br>
@@ -346,9 +342,9 @@ FlashForward,
   New York: 2001 <br>
 Digital Underground Conference,
   Cape Town: 2001 <br>
-IDN Fresh Conference, 
+IDN Fresh Conference,
   Hong Kong: 2001 <br>
-Cape Town Documentary Film Festival Workshop, 
+Cape Town Documentary Film Festival Workshop,
   Cape Town, 2002 <br>
 Damelin College C++ course,
   Cape Town, 1998 <br> <br><br>
@@ -358,11 +354,11 @@ Damelin College C++ course,
   <br>   <h5>Tecnologies and skills:</h5> <br><hr>
 
 
-    
+
 <br>
 
 
-I'm a designer, first and foremost. Highly skilled in the Adobe Suite of products. I love vector graphics and loved the aesthetics of Flash - where I spent most of my early career experimenting. 
+I'm a designer, first and foremost. Highly skilled in the Adobe Suite of products. I love vector graphics and loved the aesthetics of Flash - where I spent most of my early career experimenting.
 As a Creative Director, you also get to (unfortunately) spend a lot of time in Powerpoint, but these days I try, and encourage my team, to build presentations only in HTML.<br>
 <br>
 In coding, I'm most excited about Javascript and putting most of my learning time into this. But would say I have most experience in PHP, Processing and Actionscript. <br>
@@ -373,11 +369,11 @@ PHP, Javascript, Java/Processing, Actionscript, Ruby.
 
 <br><br>
 Libraries and Frameworks: <br>
-CakePHP, Ruby on Rails, d3.js and most recently been dabbling in Meteor, OpenFrameworks and Cinder. 
+CakePHP, Ruby on Rails, d3.js and most recently been dabbling in Meteor, OpenFrameworks and Cinder.
 
 <br><br>
 Technologies: <br>
-Data visualization, face tracking, motion reactive, sound reactive, kinect, light installations, arduino, 
+Data visualization, face tracking, motion reactive, sound reactive, kinect, light installations, arduino,
 LED, physical computing, sensors.
 <br> <br><br>
   </div>

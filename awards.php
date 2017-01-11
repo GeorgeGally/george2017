@@ -42,7 +42,6 @@
 	<div class="back-header">
 
 		<a href="index.html">< Back</a> &nbsp;
-		<a href="resume.php">Resume ></a>
 
 	</div>
 
