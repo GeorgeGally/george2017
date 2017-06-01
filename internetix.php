@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -52,9 +52,9 @@
 
 		<div class="sixteen columns add-bottom">
 
-			<h2 class="remove-bottom add-top">Internetix</h2>
-			<h4>Mirco-geolocation visualisations and installation</h4>
-			Concept, art direction, design, animation, programming <br>
+			<h1 class="remove-bottom add-top">Internetix</h1>
+			Mirco-geolocation visualisations and installation <br>
+
 
 		</div>
 
@@ -72,7 +72,7 @@
 				How much data can we glean and infer when we do track people?
 				What can the data tell us about people's movement in a space? <br><br>
 
-      	Beautiful and understated, and sometimes funny, large-scale installation with ambient pieces that played with data and revealed obscure connections between delegates. <br><br>
+      	Beautiful and understated, and sometimes funny, large-scale installation with ambient pieces that played with data and revealed obscure connections between delegates. <br>
 
 
 
@@ -190,6 +190,9 @@
 					 <iframe src="../d3_test/chord2.html" scrolling="no" style="width: 100%;height:630px;overflow: hidden;border: none" ></iframe>
 					<br>
 
+					<h3>
+					Concept, art direction, design, animation, programming <br>
+					</h3>
 				</div>
 
 

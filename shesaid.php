@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#shesaid">< Back</a> &nbsp;
 		<a href="nmuf.php">Next ></a>
 
 	</div>
@@ -50,14 +50,14 @@
 
 	<div class="container">
 		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">She Said</h1>
-			<h5>Installation/Twitter visualization</h5>
+			<h1 class="remove-bottom">She Said</h1>
+			Installation/Twitter visualization
 
 			Concept, design, programming <br>
 			Processing. php. Twitter<br>
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 <img src="images/degrading3.jpg" width="100%"> <br>	<br>
@@ -65,19 +65,19 @@
 <img src="images/degrading5.jpg" width="100%"> <br>	<br>
 <!-- <img src="images/degrading.jpg" width="100%"> <br>	<br> -->
 <img src="images/degrading2.jpg" width="100%"> <br>	<br>
-<!-- <img src="images/shesaid.jpg" width="100%"> <br> -->	
+<!-- <img src="images/shesaid.jpg" width="100%"> <br> -->
 
 
 
 
-</div>	
+</div>
 
 	<div class="one-third column">
 
 		<p>
 		An installation visualizing what women are saying about other woman on Twitter <br><br>
 		The concept started out as a comment of the under-representation of women's opinions on the internet. I wanted the tweets to appear organic and slowly dissolve into dust. <br><br>
-		But soon realized that what women were saying about each other turned out to be mainly trash talk and decided to let viewers draw their own conclusions about what it all meant. 
+		But soon realized that what women were saying about each other turned out to be mainly trash talk and decided to let viewers draw their own conclusions about what it all meant.
 		<br><br>
 		<a href="http://radarboy.com/lab/she_said.html" target="_blank">View here.</a>
 		</p>

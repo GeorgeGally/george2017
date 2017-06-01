@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,42 +44,39 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#morsetweet">< Back</a> &nbsp;
 		<a href="reaktiv.php">Next ></a>
 
 	</div>
 	<div class="container">
 		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">MorseTweet</h1>
-			<h5>Twitter hack</h5>
-			Concept, programming <br>
-			Technologies: PHP, MySql, Twitter<br>
-			Medium: Online
-			<hr />
+			<h1>MorseTweet</h1>
+			Twitter hack
+
 		</div>
-		
-		
+
+
 
 		<div class="sixteen columns">
 			<img src="images/morsetweet.gif" style="max-width: 100%;"> <br>	<br><br>
-			
+
 		</div>
 
 		<div class="one-third column">
-			
-			<p>	
-			Communication over distance is now easy - but essentially there's no difference in concept between Morse Code 
+
+			<p>
+			Communication over distance is now easy - but essentially there's no difference in concept between Morse Code
 			and sending binary bits and bytes down a fibre optic cable.   <br><br>
 			While many people are extremely worried about privacy - they continue to share a large portion of their lives
-			online. 
+			online.
 			<br><br>
 			</p>
 
 		</div>
 
 		<div class="one-third column">
-			Inspired by Jens Wunderling's <a href="http://defaulttopublic.net/tweetleak/index.html">Default to Public</a> and a fantastic kids book "How to be a spy" 
-			I wanted to hack the privacy message in a playful way. And using Twitter to send 'encoded' messages seemed 
+			Inspired by Jens Wunderling's <a href="http://defaulttopublic.net/tweetleak/index.html">Default to Public</a> and a fantastic kids book "How to be a spy"
+			I wanted to hack the privacy message in a playful way. And using Twitter to send 'encoded' messages seemed
 			ridiculous enough to make me build MorseTweet. <br>
 		</div>
 
@@ -93,14 +90,16 @@
 
 
 		<div class="sixteen columns">
-			<img src="images/morse.jpg" width="100%">	<br><br>		
+			<img src="images/morse.jpg" width="100%">	<br><br>
 		</div>
 
 		<div class="two-thirds columns">
-			<img src="images/morsetweet_site.jpg">	<br><br>		
+			<img src="images/morsetweet_site.jpg">	<br><br>
 		</div>
 
-
+		Concept, programming <br>
+		Technologies: PHP, MySql, Twitter<br>
+		Medium: Online
 
 	</div><!-- container -->
 

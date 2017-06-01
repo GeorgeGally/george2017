@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>George Gally - The Five Stages</title>
+	<title>George Gally - #Code365</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -18,9 +18,8 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
-
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,59 +37,56 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#cowsite">< Back</a> &nbsp;
 
 	</div>
 
 
 	<div class="container">
-		<div class="sixteen columns half-bottom ">
-			<h1 class="add-top">The Five Stages</h1>
-			Instalation
+		<div class="sixteen columns add-top add-bottom">
+			<h2 class="remove-bottom">#Code365</h2>
+			<h3>Website</h3>
 
-
-			<br>
 
 		</div>
 
 
 		<div class="two-thirds column">
 
-			<img src="images/elektroscope.jpg" width="600"> <br>
+			<img src="images/cowsite3.jpg" width="600"> <br>
 
-			<img src="images/elektroscope2.jpg" width="600"> <br>
 
-			<img src="images/elektroscope3.jpg" width="600"> <br>
-
-			<img src="images/elektroscope4.jpg" width="600"> <br>
 
 		</div>
 
 		<div class="one-third column">
 
-			<h5>The emotional machine</h5>
 			<p>
+				<h3>Sound Reactive. Motion Reactive. Generative.</h3>
 
-			Something that I'm deeply interested in is anthropomorphism and our perceived emotions of inanimate objects. <br><br>
+					I've spend the last year on a personal project called <b>#code365</b> - coding a new visualisation project each and #everyday. Pretty tough while holding down a day job and making time for my significant other. But immensly rewarding and I can definately see how I've grown as a coder and an artist. <br><br>
 
-			<b>The Five Stages</b> is a minimal tower of light and sound, representing the five stages of grief. A study of controlled chaos where the computer is in control - effecting our emotions, by showing its own perceived emotions. A moody room, that ebbs from a deep trance-enducing state, to the edge of chaos.<br><br>
+					The project was born out of me wanting to concentrate more on media art and in order to improve my Javascript skills, having been mainly working in Processing for the last couple of years.<br><br>
 
-			The installation is in essence an AI feedback loop, where the sound generates the visuals and where the visuals, coupled with visitors' presence, in turn generate the sound. <br><br>
+					The whole system is running on top of a ported Javascript version of my award winning RBVJ software, which I used to use for VJing and running installations. <br><br>
 
-			<b>The Five Stages</b> was developed as part of my Schmiede Residency in Hallein, Austria in September 2016.
+					Check out my <a href="http://instagram.com/radarboy3000" target="_blank">instagram for more.</a> <br><br>
+					You can also see them live <a href="http://radarboy.com/code365_player">here</a> Press SPACEBAR to go to new visualisation (but warning, there's also a lot of unsorted gunk that may not work or may be ugly). <br>
+					<br><br>
+
 			</p>
 
-			<h3><p>Concept. Design. Coding. Sound Design</p></h3>
-			<p>#Javascript #ProjectionMapping #SoundReactive #MotionReactive #SoundDesign</p>
+
 		</div>
+
+
 
 
 	</div><!-- container -->
 
 
-<?php include("footer.php"); ?>
-<?php include("tracker.php"); ?>
-
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
 
 <!-- End Document

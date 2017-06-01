@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#tshirtmaker">< Back</a> &nbsp;
 		<a href="dancemotion.php">Next ></a>
 
 	</div>
@@ -49,39 +49,40 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">TShirtmaker</h1>
-			<h5>Custom pixel tee app</h5>
+		<div class="sixteen columns half-bottom">
+			<h1>TShirtmaker</h1>
+			Custom pixel tee app
 
-		
-			Concept, design, programming <br>
-			Flash, php, vinyl cutting, tshirt<br>
+			<br><br>
 
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
-<img src="images/tshirtmaker2b.jpg" width="600"> <br>	
+<img src="images/tshirtmaker2b.jpg" width="600"> <br>
 
-</div>	
+</div>
 
 	<div class="one-third column">
 <p>
-	An application to design your own 8-bit icon, or clone or modify another design and get your very own individualized t-shirt. 
+	An application to design your own 8-bit icon, or clone or modify another design and get your very own individualized t-shirt.
 	<br><br>
 	I've always loved pixel art and always wanted to build a crowd-sourced gallery. What is more, living in a small city like Cape Town there's always the possibility of brand monoculture.
-	No one loves seeing someone wearing the same tshirt as you.  
+	No one loves seeing someone wearing the same tshirt as you.
 
 
 </p>
 
 <p>
-	 Awarded a Construction Gold. <br><br>The T-Shirts were made by famous South African designer Coppelia. 
+	 Awarded a Construction Gold. <br><br>The T-Shirts were made by famous South African designer Coppelia.
 </p>
 
 
+			Concept, design, programming <br>
+			Flash, php, vinyl cutting, tshirt<br>
+			
 	</div>
 
 

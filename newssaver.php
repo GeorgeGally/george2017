@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,13 +58,13 @@
 			Medium: Screensaver/Desktop App<br>
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
-<img src="images/newsflash.jpg" width="600"> <br>	
+<img src="images/newsflash.jpg" width="600"> <br>
 
-</div>	
+</div>
 
 	<div class="one-third column">
 
@@ -73,17 +73,17 @@
 </p>
 
 <p>
-	As part of a task team set up by Independent Newspapers' editor, I served as a digital innovation advisor. 
+	As part of a task team set up by Independent Newspapers' editor, I served as a digital innovation advisor.
 	Looking at their traffic reports and bandwidth usage, we noticed that the front page of the site was taking a lot of strain, while often really interesting stories were never being accessed because they lay deeper in the site and didn't fit the front-page profile.
-	</p>	
+	</p>
 
 <p>
-	One of the concepts we came up with to drive traffic to the newspaper's site was Newsflash. 
-	At the time this was a radical innovation, serving live news to the desktop, pre-RSS days, as a screensaver and desktop application. 
-	Because of the simple and slick interface,it significantly increased traffic to the site and deeper stories were getting many more hits than before. 
-	Clients loved it. And so did I - for years it served as my primary news consumption channel. 
+	One of the concepts we came up with to drive traffic to the newspaper's site was Newsflash.
+	At the time this was a radical innovation, serving live news to the desktop, pre-RSS days, as a screensaver and desktop application.
+	Because of the simple and slick interface,it significantly increased traffic to the site and deeper stories were getting many more hits than before.
+	Clients loved it. And so did I - for years it served as my primary news consumption channel.
 
-	<br><br>Other concepts included Live News banners placed on other sites which, as with the screensaver, linked directly to the stories. 
+	<br><br>Other concepts included Live News banners placed on other sites which, as with the screensaver, linked directly to the stories.
 
 </p>
 

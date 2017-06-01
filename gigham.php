@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,9 +44,9 @@
 
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h2 class="remove-bottom add-top">Gigham</h2>
-			<h5>Events marketplace startup</h5>
+		<div class="sixteen columns half-bottom">
+			<h1 class="add-top">Gigham</h1>
+			Events marketplace startup
 
 		</div>
 

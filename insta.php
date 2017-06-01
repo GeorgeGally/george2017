@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,26 +57,26 @@
 			Concept. Design. Programming. Meteor.js. Google Maps. <br>
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 <img src="images/insta20.jpg" width="100%" style="border: 4px solid #fff"> <br>
-<!-- <img src="images/insta_big1.jpg" width="100%" style="border: 4px solid #fff"> <br> -->	
-<img src="images/insta_big5.jpg" width="100%" style="border: 4px solid #fff"> <br>	
-<img src="images/insta_big2b.jpg" width="100%" style="border: 4px solid #fff"> <br>	
-<img src="images/insta_big4.jpg" width="100%" style="border: 4px solid #fff"> <br>	
-<img src="images/insta_big3b.jpg" width="100%" style="border: 4px solid #fff"> <br>	
-</div>	
+<!-- <img src="images/insta_big1.jpg" width="100%" style="border: 4px solid #fff"> <br> -->
+<img src="images/insta_big5.jpg" width="100%" style="border: 4px solid #fff"> <br>
+<img src="images/insta_big2b.jpg" width="100%" style="border: 4px solid #fff"> <br>
+<img src="images/insta_big4.jpg" width="100%" style="border: 4px solid #fff"> <br>
+<img src="images/insta_big3b.jpg" width="100%" style="border: 4px solid #fff"> <br>
+</div>
 
 	<div class="one-third column">
 <p>
-		Zeigeist is a fascinating window into the into what's going on in an area or City.  A live geo-located Instagram and Twitter visualisatuon and feed that allows you the ability to filter by location or tag. 
-</p>	
+		Zeigeist is a fascinating window into the into what's going on in an area or City.  A live geo-located Instagram and Twitter visualisatuon and feed that allows you the ability to filter by location or tag.
+</p>
 
 <p>
-		
+
 	As part as an effort to learn Meteor.js as well as to build a social listening tool for a client, I built Zeigeist - an alternative news engine. <br>
-	
+
 </p>
 <p>Demo coming soon...
 </p>

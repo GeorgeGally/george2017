@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,7 +39,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#saville">< Back</a> &nbsp;
 		<a href="ocb.php">Next ></a>
 
 	</div>
@@ -50,40 +50,41 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Homage to Pete</h1>
-			<h5>Installation</h5>
+		<div class="sixteen columns half-bottom">
+			<h1>Homage to Pete</h1>
+			Installation
+			<br><br>
 
-			Motion detection, sound reactive, installation, projection <br>
-			Concept, design, animation, programming <br>
-			Technologies: Java/Processing, video camera<br>
+
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
-<img src="images/saville.jpg" width="600"> <br>	
+<img src="images/saville.jpg" width="600"> <br>
 
-</div>	
+</div>
 
 	<div class="one-third column">
 <p>
 	Reactive Video Installation, Exhibited at the SuperDeluxe, Tokyo, Japan
-A homage to Peter Saville's iconic New Oder album cover. The application builds upon light values and sound input. 
+A homage to Peter Saville's iconic New Oder album cover. The application builds upon light values and sound input.
 
 </p>
 
 <p>
 
 You can <a href="http://www.radarboy.com/v10/wp-content/code/saville/applet">view here</a>.  <br><br>
-You need a webcam to view. Instructions: 
+You need a webcam to view. Instructions:
 Press 's' to turn on sound reactive response.
-Use up and down arrow keys to increase or decrease the grid. 
+Use up and down arrow keys to increase or decrease the grid.
 Drag with mouse to change perspective.
 
 </p>
-
+Motion detection, sound reactive, installation, projection <br>
+Concept, design, animation, programming <br>
+Technologies: Java/Processing, video camera<br>
 	</div>
 
 
@@ -94,16 +95,9 @@ Drag with mouse to change perspective.
 
 	</div><!-- container -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
 
 <!-- End Document
 ================================================== -->

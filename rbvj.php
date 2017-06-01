@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#rbvj">< Back</a> &nbsp;
 		<a href="saville.php">Next ></a>
 
 	</div>
@@ -50,27 +50,25 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-	
 
 
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">RBVJ</h1>
-			<h5>Application - performance</h5>
 
-			Sound Reactive, Motion Reactive, installation, performance, software <br>
-			Concept, art direction, design, animation, programming <br>
-			Technologies: Processing, Flash, 
+		<div class="sixteen columns half-bottom">
+			<h1>RBVJ</h1>
+			Application - performance
+
+			<br><br>
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
-<img src="images/rbvj2.jpg" width="600"> <br>	
-<img src="images/design_indaba.jpg" width="600"> <br>	
-<img src="images/ocb_projections.jpg" width="600"> <br>	
+<img src="images/rbvj2.jpg" width="600"> <br>
+<img src="images/design_indaba.jpg" width="600"> <br>
+<img src="images/ocb_projections.jpg" width="600"> <br>
 
-<iframe src="//player.vimeo.com/video/97687770?byline=0&amp;portrait=0&amp;color=ff0179" width="600" height="427" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+<iframe src="//player.vimeo.com/video/97687770?byline=0&amp;portrait=0&amp;color=ff0179" width="600" height="427" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 
@@ -78,42 +76,37 @@
 
 
 <p>
-Not satisfied with current VJ applications, and the noisy layered effects of club visuals, while wanting something for my personal performances and to be able to fit my design style, I built RBVJ. 
+Not satisfied with current VJ applications, and the noisy layered effects of club visuals, while wanting something for my personal performances and to be able to fit my design style, I built RBVJ.
 </p>
 
 <p>
-The project, along with a number of visuals were open-sourced, quite unusual for the time (around 2001) and found it's way into a number of other productions. 
+The project, along with a number of visuals were open-sourced, quite unusual for the time (around 2001) and found it's way into a number of other productions.
 It also served as a platform for me to develop with various sound and motion reactive experiments and performances were held at various events around Cape Town, Berlin and Tokyo.
 </p>
 
 
 <p>
-Originally written in Flash, it was later ported to Processing. 
+Originally written in Flash, it was later ported to Processing.
 <br><br>
 
 Winner of a Construction Award Gold at the <a href="http://www.designindaba.com/">Design Indaba.</a>
 </p>
 
-
+Sound Reactive, Motion Reactive, installation, performance, software <br>
+Concept, art direction, design, animation, programming <br>
+Technologies: Processing, Flash,
 
 
 
 </div>
-		
+
 
 	</div><!-- container -->
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
+	
 
 <!-- End Document
 ================================================== -->

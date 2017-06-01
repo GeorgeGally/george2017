@@ -18,9 +18,8 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -50,16 +49,15 @@
 	<div class="container">
 		<div class="sixteen columns">
 			<h1 class="remove-bottom" style="margin-top: 40px">Earth Plays the Blues</h1>
-			<h5>Generative Creative Coding Experiment</h5>
+			Generative Creative Coding Experiment
 
 
-			<br>
+			<br><br><br>
 
-			<hr />
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="half-top two-thirds column">
 
 			<img src="images/earth_plays_the_blues5.jpg" width="600"> <br><br>
 
@@ -73,7 +71,7 @@
 
 		</div>
 
-		<div class="one-third column">
+		<div class="half-top one-third column">
 			<h5>Listening to maps</h5>
 			<p>
 				Imagining what different places would sound like. The earth as a song. <br><br>

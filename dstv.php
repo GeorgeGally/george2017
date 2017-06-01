@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,8 +44,8 @@
 
 	<div class="container">
 		<div class="sixteen columns add-bottom">
-			<h2 class="remove-bottom add-top">DSTV Oscar Trial</h2>
-			<h4>TV, mobile, print, online</h4>
+			<h1 class="remove-bottom half-top">DSTV Oscar Trial</h1>
+			TV, mobile, print, online
 
 		</div>
 

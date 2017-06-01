@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -50,14 +50,14 @@
 
 		<div class="sixteen columns add-bottom">
 
-			<h2 class="remove-bottom add-top">Sea Silo</h2>
+			<h1 class="remove-bottom">Sea Silo</h1>
 			Concept, coding, design, animation <br>
 			<br><br>
 			<b>Large form artwork visualising shipping data.</b> <br><br>
 
 			Amsterdam’s identity has always been linked to the sea. And the sea is changing.
 90% everything we own and use, at some point, travels to us by container ship, through a vast network of ocean routes and ports that most of us know almost nothing about.
-			 <br><br>
+			 <br>
 
 		</div>
 
@@ -88,7 +88,7 @@
 
 					<p>The outcome of an augumented architecture workshop with <a href="http://www.refikanadol.com/">Refik Anadol</a> in Amerstam for the Fiber Festival. <br>
 					The sea has always played a massive part in human civilization. Today, it's importance is greater than it has ever been, yet it is also less acknowledged than it has ever been.
-					</p> 
+					</p>
 					<p>To show the scale and impact shipping has, minimal large scale live data visualisations are projected onto the inside of a grain silo in Zeeburgereiland, itself, reclaimed land, essentially sitting in the sea.</p> <br><br>
 
 

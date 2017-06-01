@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,7 +41,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#sound">< Back</a> &nbsp;
 		<a href="gruntchat.php">Next ></a>
 
 	</div>
@@ -53,16 +53,13 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Seeing Sound</h1>
-			<h5>Installation</h5>
+		<div class="sixteen columns half-top">
+			<h1>Seeing Sound</h1>
+			Motion detection, sound reactive, installation, projection <br><br>
 
-			Motion detection, sound reactive, installation, projection <br>
-			Concept, design, animation, programming <br>
-			Java/Processing, video camera<br>
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
@@ -72,19 +69,19 @@
 		<img src="images/sound4.jpg" width="600"> <br>
 		<img src="images/sound5.jpg" width="600"> <br>
 		<img src="images/sound.jpg" width="600"> <br>
-		<br><br>	
+		<br><br>
 
-		</div>	
+		</div>
 
 			<div class="one-third column">
 <p>
-	I have been fascinated with visualising sound from as long as I knew it was possible. 
-	My work is very heavily inflienced minimalism. 
-	All graphics are completely computational. 
+	I have been fascinated with visualising sound from as long as I knew it was possible.
+	My work is very heavily inflienced minimalism.
+	All graphics are completely computational.
 	<br><br>
 	Initially built in Processing, and running through my custom RBVJ application, they are now being ported to JavaScript. <br>
 	<br>See <a href="http://radarboy.com">http://radarboy.com</a> and <a href="http://radarboy.tumblr.com">http://radarboy.tumblr.com</a> for updates.
-</p>	
+</p>
 
 <p>
 You can also see a couple of (very rough) showcase vids below.
@@ -92,18 +89,20 @@ You can also see a couple of (very rough) showcase vids below.
 
 <p>
 
+	Concept, design, animation, programming <br>
+	Java/Processing, video camera<br>
 
 </p>
 
 	</div>
-	
+
 		<div class="sixteen columns">
-			
+
 			<iframe src="//player.vimeo.com/video/9445172" width="960" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/9445172">Sound Reactive Sequence</a> from <a href="http://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 			<iframe src="//player.vimeo.com/video/10048961" width="960" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/10048961">Sound Waves</a> from <a href="http://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-</div>	
+</div>
 
 
 

@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#graffiti">< Back</a> &nbsp;
 		<a href="shesaid.php">Next ></a>
 
 	</div>
@@ -49,45 +49,38 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Graffiti Machine</h1>
-			<h5>Graffiti Box Installation <br>RESFEST, Cape Town</h5>
+		<div class="sixteen columns half-bottom">
+			<h1>Graffiti Machine</h1>
+			Graffiti Box Installation <br>RESFEST, Cape Town
 
-			Concept, design, hacking, programming <br>
-			Flash. Discarded keyboard.<br>
+			<br><br>
 
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
-			<img src="images/resfest.gif" width="600"> <br>	
-			<img src="images/graffiti.jpg" width="600"> <br>		
+			<img src="images/resfest.gif" width="600"> <br>
+			<img src="images/graffiti.jpg" width="600"> <br>
 
-		</div>	
+		</div>
 
 		<div class="one-third column">
 
 			<p>
 			I made this graffiti box in the days before Flash could easily be interfaced with physical computing environments by pulling apart an old keyboard and wiring it to an arcade joystick. This method proved to be quite effective as we used it in a few other installations.
 			</p>
-
+			Concept, design, hacking, programming <br>
+			Flash. Discarded keyboard.<br>
 		</div>
 
 	</div><!-- container -->
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
 
 
 <!-- End Document

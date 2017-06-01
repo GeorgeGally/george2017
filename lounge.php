@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#lounge">< Back</a> &nbsp;
 		<a href="seiko.php">Next ></a>
 
 	</div>
@@ -49,24 +49,23 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">The Lounge Room</h1>
-			<h5>Sound Reactive TV Installation <br>Mind The Box, Berlin</h5>
+		<div class="sixteen columns half-bottom">
+			<h1>The Lounge Room</h1>
+			Sound Reactive TV Installation <br>Mind The Box, Berlin
 
-			Concept, design, programming<br>
-			Processing. TV. Arduino. Infrared sensor. Remote control. Knitting. <br>
+			<br><br>
 
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
-			<img src="images/lounge1.jpg" width="600"> <br>	
-			<img src="images/lounge2.jpg" width="600"> <br>	
-			<img src="images/lounge3.jpg" width="600"> <br>		
+			<img src="images/lounge1.jpg" width="600"> <br>
+			<img src="images/lounge2.jpg" width="600"> <br>
+			<img src="images/lounge3.jpg" width="600"> <br>
 
-		</div>	
+		</div>
 
 		<div class="one-third column">
 
@@ -77,31 +76,23 @@
 			<p>
 			A TV remote control could be used to control the “channels” on the TV and hence the lighting of the room. The channels were actually various sound reactive applications running off a laptop. The computer was connected to an Arduino with an infra-red sensor to communicated with the remote control.
 			</p>
-			
+
 			<p>
 			Featured was also a knitting channel which showed visitors how to knit, with wool and knitting needles provided.
 			</p>
 
 			<p>
+				Concept, design, programming<br>
+				Processing. TV. Arduino. Infrared sensor. Remote control. Knitting. <br>
 			Medium: Arduino, Infra-Red sensor, TV, Remote Control, Flash, PHP.
-			</p>	
+			</p>
 		</div>
 
 	</div><!-- container -->
 
 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
-
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
 <!-- End Document
 ================================================== -->

@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,10 +44,10 @@
 
 	<div class="container">
 
-		<div class="sixteen columns add-bottom">
+		<div class="sixteen columns half-bottom">
 
-			<h2 class="remove-bottom" style="margin-top: 40px">RoboMaker</h2>
-			<h4>Installation</h4>
+			<h1>RoboMaker</h1>
+			Installation
 
 		</div>
 
@@ -91,7 +91,7 @@ Client: Standard Chartered Bank, Hong Kong.<br>
 
 			<?php include("footer.php"); ?>
 			<?php include("tracker.php"); ?>
-			
+
 
 <!-- End Document
 ================================================== -->

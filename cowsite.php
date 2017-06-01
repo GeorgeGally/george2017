@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/Skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,9 +44,9 @@
 
 
 	<div class="container">
-		<div class="sixteen columns add-top add-bottom">
-			<h2 class="remove-bottom">Radarboy Cowsite</h2>
-			<h5>Website</h5>
+		<div class="sixteen columns half-top half-bottom">
+			<h1>Radarboy Cowsite</h1>
+			Website
 
 
 		</div>

@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/Skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,25 +49,23 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Look to the sky</h1>
-			<h5>Outdoor Installation</h5>
+		<div class="sixteen columns half-top add-bottom">
+			<h1>Look to the sky</h1>
+			Outdoor Installation <br><br>
 
-		
-			30m x 8m. Plastic wire, fishing line, light.<br>
-			<hr />
+			<hr/>
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
 
-<img src="images/look3.jpg" width="600"> <br>	
-<img src="images/look4.jpg" width="600"> <br>	
-<img src="images/look5.jpg" width="600"> <br>	
-<img src="images/look1.jpg" width="600"> <br>	
-<img src="images/look2.jpg" width="600"> <br>	
-</div>	
+<img src="images/look3.jpg" width="600"> <br>
+<img src="images/look4.jpg" width="600"> <br>
+<img src="images/look5.jpg" width="600"> <br>
+<img src="images/look1.jpg" width="600"> <br>
+<img src="images/look2.jpg" width="600"> <br>
+</div>
 
 <div class="one-third column">
 	<p>
@@ -75,15 +73,15 @@
 	</p>
 
 	<p>
-I have always been fascinated by space as a representation of the future and the hope (and good design) that it inspires. And minimalism has played an important 
-role in the space future I like to imagine. Inspired by German abstract sculptor <a href="http://www.norbert-kricke.de/e/index.shtml">Norbert Krick</a> and his Raumplastik series. 
-</p>	
+I have always been fascinated by space as a representation of the future and the hope (and good design) that it inspires. And minimalism has played an important
+role in the space future I like to imagine. Inspired by German abstract sculptor <a href="http://www.norbert-kricke.de/e/index.shtml">Norbert Krick</a> and his Raumplastik series.
+</p>
 <p>
 	Exhibited at Salone di Mobile, Milan Italy. <br><br>
 Look to the Sky was made possible through the kind assistance of <a href="http://fillmybox.tumblr.com/">Mind The Box</a>, a Berlin art-collective, and <a href="http://www.process4.it/">Process 4 Labs</a>.
 </p>
 
-
+30m x 8m. Plastic wire, fishing line, light.<br>
 	</div>
 
 

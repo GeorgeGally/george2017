@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.html#ydetag">< Back</a> &nbsp;
 		<a href="trailer.php">Next ></a>
 
 	</div>
@@ -49,31 +49,28 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">This Space to Let</h1>
-			<h5>Human Data Installation</h5>
+		<div class="sixteen columns half-bottom">
+			<h1>This Space to Let</h1>
+			Human Data Installation <br><br>
 
-			Installation, data collection and visualisation <br>
-			Concept, design, animation, programming <br>
-			Technologies: Flash. Analogue.<br>
 
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
-<img src="images/tolet4.jpg" width="600"> <br>	
-<img src="images/tolet3.jpg" width="600"> <br>	
-<img src="images/tolet1.jpg" width="600"> <br>	
-<img src="images/tolet2.jpg" width="600"> <br>	
+<img src="images/tolet4.jpg" width="600"> <br>
+<img src="images/tolet3.jpg" width="600"> <br>
+<img src="images/tolet1.jpg" width="600"> <br>
+<img src="images/tolet2.jpg" width="600"> <br>
 
 
 
-</div>	
+</div>
 
 	<div class="one-third column">
-	
+
 
 <p>
 For the 3rd 'Softserve' art event ( YDETAG ) which dealt with the theme of advertising, Radarboy's installation treated the event as a media vehicle. Rooms were monitored over the course of the night and evaluated. This information was then represented as a live 3-D bar graph and on TV screens which advertised their value to 'media buyers'.
@@ -81,6 +78,9 @@ For the 3rd 'Softserve' art event ( YDETAG ) which dealt with the theme of adver
 </p>
 
 
+			Installation, data collection and visualisation <br>
+			Concept, design, animation, programming <br>
+			Technologies: Flash. Analogue.<br>
 
 	</div>
 

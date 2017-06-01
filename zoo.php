@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,9 +43,9 @@
 	</div>
 
 	<div class="container">
-		<div class="sixteen columns add-top add-bottom">
-			<h2 class="remove-bottom half-top">Digital Zoo</h2>
-			<h5>Networked media artwork</h5>
+		<div class="sixteen columns half-top add-bottom">
+			<h1 class="remove-bottom">Digital Zoo</h1>
+			Networked media artwork
 
 		</div>
 
@@ -101,7 +101,7 @@ Medium: LED, Basic Stamp, Webcam, motion sensors.<br>
 	The work was comissioned by Low-fi and on show at the <a href="http://www.stills.org/">Stills Gallery in Edinburgh, Scotland</a>  as part of the <a href="http://www.eif.co.uk/">Edinburgh Festival.</a> <br>
 </p>
 
-<!-- 
+<!--
 <p>
 More information on the <a href="http://radarboy.com/zoo/operation.html" target="_blank">project archive</a> <br>
 <a href="http://turbulence.org/blog/2005/09/21/the-digital-zoo/">http://turbulence.org/blog/2005/09/21/the-digital-zoo/</a>
