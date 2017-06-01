@@ -54,8 +54,8 @@
 	<div class="two-thirds column">
 
 
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Creative coding workshop by <a href="https://twitter.com/radarboy_japan">@radarboy_japan</a> at <a href="https://twitter.com/xinchejian">@xinchejian</a>.<br>Please meet &quot;Blood Rain&quot;, my favorite:<a href="https://t.co/15kI9HRQtv">https://t.co/15kI9HRQtv</a> <a href="https://t.co/stnjqsCvOr">pic.twitter.com/stnjqsCvOr</a></p>&mdash; Drix (@CedHon) <a href="https://twitter.com/CedHon/status/802785132578885632">November 27, 2016</a></blockquote>
-		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Creative coding workshop by <a href="https://twitter.com/radarboy_japan">@radarboy_japan</a> at <a href="https://twitter.com/xinchejian">@xinchejian</a>.<br>Please meet &quot;Blood Rain&quot;, my favorite:<a href="https://t.co/15kI9HRQtv">https://t.co/15kI9HRQtv</a> <a href="https://t.co/stnjqsCvOr">pic.twitter.com/stnjqsCvOr</a></p>&mdash; Drix (@CedHon) <a href="https://twitter.com/CedHon/status/802785132578885632">November 27, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 </div>
