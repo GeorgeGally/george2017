@@ -1,7 +1,8 @@
 <div id="footer">
 	<div id="footer_details">
-			<b>Portfolio. George Gally. </b> <br><br>
-
+		<div style="margin-bottom: 10px;">
+			<b>Portfolio. George Gally. </b>
+		</div>
 			<a class="active" href="index.php">Works</a> &nbsp;
 			<!-- <a class="active" href="lab.html">Experimental</a> &nbsp; -->
 			<a class="active" href="workshops.php">Workshops</a> &nbsp;
@@ -11,5 +12,5 @@
 </div>
 
 
-<br><br>
+
 </div>

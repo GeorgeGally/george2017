@@ -58,7 +58,18 @@
 
 		</div>
 
-    	<div class="sixteen columns add-bottom">
+		<div class="sixteen columns">
+		<div style="position: relative; width: 100%; height: 100%">
+				<div id="people_move" width="960" height="500"> &nbsp; </div>
+
+					<iframe src="../d3_test/history2b2.html" scrolling="no" style="width: 100%;height:650px;overflow: hidden;border: none" ></iframe>
+
+				</div>
+				<br><br>
+
+		</div>
+
+    <div class="two-thirds column">
 
 
 		   <b>Large form artwork tracking of Internetix delegate's using their phones mac addresses over the wifi network. A first in Africa.</b> <br><br>
@@ -78,30 +89,18 @@
 
 		</div>
 
+		<div class="one-third column">
 
-  	<div class="sixteen columns">
-  	<div style="position: relative; width: 100%; height: 100%">
-				<div id="people_move" width="960" height="500"> &nbsp; </div>
-				<div style="position: absolute; top: 0; ">
-					<div style="color: #fff; text-align:center; margin: 280px auto 0 auto; width: 900px; ">
-				<p>
-					<h1 style="color: #fff;">Internetix</h1>
-					</p>
-				</div>
-				</div>
-					<iframe src="../d3_test/history2b2.html" scrolling="no" style="width: 100%;height:650px;overflow: hidden;border: none" ></iframe>
+	 </div>
 
-				</div>
-<br><br>
-<p>
-			Using wifi triangulation I was able to identify delegates' movement (with their permission) in the venues in Cape Town and Johannesburg. And able to cross-refernce their social accounts and other data to build an ever-changing playful data and connection map.
-		</p>
-	</div>
 
 		<div class="sixteen columns add-top add-bottom">
 
           <iframe src="../d3_test/motion4.html" scrolling="no" style="width: 960px;height:700px;overflow: hidden;border: none" ></iframe>
     	<br><br>
+			<p>
+						Using wifi triangulation I was able to identify delegates' movement (with their permission) in the venues in Cape Town and Johannesburg. And able to cross-refernce their social accounts and other data to build an ever-changing playful data and connection map.
+					</p>
      	</div>
 
 <div class="two-thirds column">
@@ -126,7 +125,7 @@
    	</div>
 
 
-		<!-- <div class="sixteen columns graph add-top add-bottom" style="background: #efefef; cursor: pointer">
+		<div class="sixteen columns graph add-top add-bottom" style="background: #efefef; cursor: pointer">
 			<div class="click_bar" width="960" height="500">
 					<div style="text-align: center; height: 20px; margin-top: 240px">
 						Click to begin
@@ -145,7 +144,7 @@
 			</div>
 			<div id="graph2"></div>
 
-		</div> -->
+		</div>
 
 
 		<div class="sixteen columns add-top add-bottom"> <br>
@@ -153,41 +152,26 @@
 		</div>
 
 
-		<div class="two-thirds column">
-			<img src="images/influence.png" width="100%">
-		</div>
+		<div class="sixteen columns">
+			<img src="images/influence2.jpg" width="100%">
+
 		<br><br>
-		<div class="one-third column">
+
 			Location of the most influetial people in the room <br><br>
-				</div>
-
-		<div class="two-thirds column">
-      <img src="images/internetix_around_you.jpg" width="100%">
-      	</div>
-
-		<div class="one-third column">
 			Connecting people in the room in unexcepted ways.<br><br>
-				</div>
-
-		<div class="two-thirds column">
-			<img src="images/internetix_moodley.jpg" width="100%">
-
-
-			<img src="images/7.jpg" width="100%">
-			<!-- <img src="images/2.jpg" width="800"> -->
-			<!-- <img src="images/4.jpg" width="800"> -->
-
-
-		</div>
-
-		<div class="one-third column">
 			Large lunch time projection of delegate movements.<br><br>
 				</div>
+
+		<!-- <div class="two-thirds column">
+      <img src="images/internetix_around_you.jpg" width="100%">
+      	</div> -->
+
+
 
 				<div class="sixteen columns add-top add-bottom">
 
 
-					 <iframe src="../d3_test/chord2.html" scrolling="no" style="width: 100%;height:630px;overflow: hidden;border: none" ></iframe>
+					 <!-- <iframe src="../d3_test/chord2.html" scrolling="no" style="width: 100%;height:630px;overflow: hidden;border: none" ></iframe> -->
 					<br>
 
 					<h3>

@@ -20,7 +20,7 @@
   ================================================== -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -244,7 +244,7 @@ Founding member of Boom Room technology forum. <br>
 
   <div class="one-third column">
 
-    <h4 class="big-top"> Art Director <br><span class="BroonGrey">Tinderbox Interactive </span></h4>
+    <h4 class="big-top"> Art Director <br><span>Tinderbox Interactive </span></h4>
 
   </div>
 
@@ -269,7 +269,7 @@ Founding member of Boom Room technology forum. <br>
       <h4>Freelance Creative Director/Art Director:
 
         <br>
-        <span class="BroonGrey">Ogilvy Cape Town, <br>Bates Japan, <br>Hypu Japan, <br>Brand Architecture, <br>Crumpler, <br>IMJ Japan, <br>Cyber Media</span>
+        <span>Ogilvy Cape Town, <br>Bates Japan, <br>Hypu Japan, <br>Brand Architecture, <br>Crumpler, <br>IMJ Japan, <br>Cyber Media</span>
 
       </h4>
 
