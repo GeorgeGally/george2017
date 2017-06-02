@@ -69,7 +69,7 @@
   </div>
 
   <div class="two-thirds column">
-
+Winner 2017 W3C Web Audio competition<br>
 
 Grand Prix Loerie for Thinking Multimedia<br>
 Gold Invision New Media Award (San Francisco) for Capsule 02<br>
