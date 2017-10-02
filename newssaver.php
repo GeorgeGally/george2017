@@ -18,8 +18,8 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/style.css">
 
 
 	<!--[if lt IE 9]>
@@ -36,37 +36,26 @@
 </head>
 <body>
 
-		<div class="back-header">
-
-		<a href="index.html">< Back</a> &nbsp;
-		<a href="tshirtmaker.php">Next ></a>
-
+	<div class="back-header">
+		<a href="commercial.html#newssaver">< Back</a> &nbsp;
 	</div>
 
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns half-bottom">
 			<h1 class="remove-bottom" style="margin-top: 40px">IOL Newsflash</h1>
-			<h5>Application</h5>
-			Concept, design, animation<br>
-			Technologies: Flash, Objective C<br>
-			Medium: Screensaver/Desktop App<br>
-			<hr />
+			Application
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-bottom">
 
-<img src="images/newsflash.jpg" width="600"> <br>
+				<img src="images/newsflash.jpg" width="600px"> <br>
 
-</div>
+		</div>
 
-	<div class="one-third column">
+	<div class="two-thirds column">
 
 <p>
 	News screensaver and live banner ad.
@@ -86,28 +75,22 @@
 	<br><br>Other concepts included Live News banners placed on other sites which, as with the screensaver, linked directly to the stories.
 
 </p>
-
-
+<b>
+Concept, design, animation<br>
+Technologies: Flash, Objective C<br>
+Medium: Screensaver/Desktop App<br>
+</b>
 	</div>
 
 
+</div><!-- container -->
 
 
 
-		</div>
+			<?php include("footer.php"); ?>
+			<?php include("tracker.php"); ?>
 
-	</div><!-- container -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
 
 <!-- End Document
 ================================================== -->

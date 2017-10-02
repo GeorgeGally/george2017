@@ -19,9 +19,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,11 +46,13 @@
 	<div class="menu">
 
 
-			<a class="active" href="#portie">Portfolio</a>
-			<a class="active" href="commercial.html">Experimental</a>
-			<a class="active" href="workshops.php">Workshops</a>
-			<a href="http://radarboy.com/george/george_galanakis_resume%202017.pdf">Resume</a>
-			<a href="awards.php">Awards</a>
+		<a href="index.html#seasilo" class="button none"><button> Works</button></a>
+		<a href="commercial.html" class="button"><button> Commercial</button></a>
+		<a href="http://radarboy.com/george/George_Gally_Resume_2017.pdf"><button>Resume</button></a>
+		<a href="awards.php"><button class="button">Awards</button></a>
+		<a class="active" href="workshops.php"><button value="works">Workshops</button></a>
+
+
 
 	</div>
 
@@ -60,11 +62,11 @@
 <div class="container">
 
 
-<div class="sixteen columns add-top add-bottom">
-
+<div class="sixteen columns half-top">
+	<h1>Commercial Work:</h1>
 	<h5 class="add-top add-bottom">
 
-		Hi, I'm George Gally, a multi-disciplined Digital Creative Director, media artist, maker and data hacker. An unusual hybrid of creative, at the convergence of art copy, code, and innovation. I'm into creating great content, minimalism, data, computer vision and driving innovation. <br><br>
+		I'm a multi-disciplined Digital Creative Director, experience designer, maker and data hacker. An unusual hybrid of creative, at the convergence of art, code, and innovation. I'm into user experience, data, computer vision, rapid-protyping and driving innovation. I'm an ideas guy, strategist and researcher, constantly growing my broad skillset and knowledge, with a broad network of connections with hackers, makers, creative coders, engineers and researchers from around the world. I have years of experience in advertising, experience design, as a CD, and Innovation Director and consultant. <br><br>
 
 
 	</h5>
@@ -73,10 +75,40 @@
 
 
 
-<!-- QUOTE -->
-<div class="sixteen columns add-top add-bottom">
 
-		<div class="quote add-bottom">
+
+<a id="portie"></a>
+
+
+<!-- LUCKY STRIKE -->
+<a id="lucky"></a>
+<div class="sixteen columns half-top half-bottom">
+
+
+	<div class="preview_box2">
+
+		<div class="big_pic_holder" style=" width: 100%; text-align: center; background: #999967;">
+			<a href="lucky.php"><img src="images/lucky_turntable4.jpg"></a>
+		</div>
+
+	</div>
+
+		<h2><a href="lucky.php">Lucky Strike</a></h2>
+
+		<b>360 Campaign. Digital. Events. Physical Computing.</b>
+		<br>
+
+		A collaboration and brand curatorship with Lucky Strike that extended for over two years, encompassing and massive ammount of groundbreaking work, including digital, magazines, events, dark materkeing hacks and installations. <br>
+		<a class="add-top" href="lucky.php">View More...</a>
+
+
+
+</div>
+
+<!-- QUOTE -->
+<div class="sixteen columns half-bottom">
+
+		<div class="quote">
 
 		<p><i>"George is the quintessential artist... carving out new forms of experiences and brand expressions that exist at the intersection of art, culture, technology, brands and people. I love the way his brain works. He has ideals that make perfect sense in a world that will only arrive in a few years time, but George relentlessly closes that gap and is a constant reminder to me how sexy technology can, and should, be. He is the thinking man's artist we all need on our teams." </i></p>
 
@@ -87,33 +119,34 @@
 </div>
 
 
-<a id="portie"></a>
 
 
-<!-- LUCKY STRIKE -->
-<a id="lucky"></a>
-<div class="sixteen columns add-top">
+<!-- INTERNETIX -->
+<a id="internetix"></a>
+<div class="sixteen columns">
 
+	<div class="big_pic_holder" style="padding-top: 70px; width: 100%; text-align: center; background: #000;">
 
-	<div class="preview_box2">
+			<p>
+				<a href="internetix.php">
+					<img src="images/internetix.gif">
+				</a>
 
-		<div class="big_pic_holder" style=" width: 100%; text-align: center; background: #999967; padding-bottom: 70px;">
-			<a href="lucky.php"><img src="images/lucky_turntable4.jpg"></a>
+			</p>
+
 		</div>
-
-	</div>
 
 	<div class="text-holder">
 
-		<h2><a href="lucky.php">Lucky Strike</a></h2>
+		<h2><a href="internetix.php">Internetix</a></h2>
 
-		<div class="sub">360 Campaign. Digital. Events. Physical Computing. </div>
+		<b>Installations. Events. Data.</b>
 
+			Micro-geolocation and large-scale networked installation using motion tracking, wifi sniffing and triangulation to track conference delegates, while hacking the hacking data to find connections between them. Visualising delegate's movement, data and connections as giant artworks.
+			<br>
+			<a class="add-top" href="internetix.php">More info...</a>
 
-		A collaboration and brand curatorship with Lucky Strike that extended for over two years, encompassing and massive ammount of groundbreaking work, including digital, magazines, events, dark materkeing hacks and installations.
-		<a class="add-top" href="lucky.php">More...</a>
-
-	</div>
+		</div>
 
 </div>
 
@@ -133,34 +166,6 @@
 
 </div>
 
-<!-- INTERNETIX -->
-<a id="internetix"></a>
-<div class="sixteen columns  add-top">
-
-	<div class="big_pic_holder" style="padding-top: 70px; width: 100%; text-align: center; background: #000;">
-
-			<p>
-				<a href="internetix.php">
-					<img src="images/internetix_peeps.jpg">
-				</a>
-
-			</p>
-
-		</div>
-
-	<div class="text-holder">
-
-		<h2><a href="internetix.php">Internetix</a></h2>
-
-		<div class="sub">Installations. Events. Data.</div>
-
-			Micro-geolocation and large-scale networked installation using motion tracking, wifi sniffing and triangulation to track conference delegates, while hacking the hacking data to find connections between them. Visualising delegate's movement, data and connections as giant artworks.
-
-			<a class="add-top" href="internetix.php">More...</a>
-
-		</div>
-
-</div>
 
 <!-- DSTV -->
 <a id="dstv"></a>
@@ -177,11 +182,11 @@
 	<div class="text-holder">
 
 		<h2><a href="dstv.php">DSTV - Oscar Pistorius Trial</a></h2>
-		<div class="sub">Web. Mobile. TV. Print. Data. </div>
+		<b>Web. Mobile. TV. Print. Data. </b> <br><br>
 
-		Second screen experience and jornalist toolkit for the live coverage of the Oscar Pistorius trial for South African TV network, DSTV. <br><br>
+		Second screen experience and journalist toolkit for the live coverage of the Oscar Pistorius trial for Africa's biggest TV network, DSTV. <br>
 
-		<a class="add-top" href="dstv.php">More...</a>
+		<a class="add-top" href="dstv.php">More info...</a>
 
 	</div>
 
@@ -189,7 +194,7 @@
 
 
 <!-- QUOTE -->
-<div class="sixteen columns add-bottom">
+<div class="sixteen columns half-bottom">
 
 	<div class="quote add-bottom">
 
@@ -201,39 +206,64 @@
 
 </div>
 
-<!-- FIVE STAGES -->
-<div class="sixteen columns add-top">
 
 
+<!-- skb -->
+<a id="skb"></a>
+<div class="sixteen columns">
 
-		<div class="big_pic_holder add-bottom" style="padding-top: 0px; width: 100%; text-align: center; background: #000;">
 
-			<p>
-				<a href="five_stages.php">
-					<img src="images/elektroscope4.jpg">
-				</a>
-			</p>
+					<a href="skb.php">
+						<img src="images/skb_shots3.jpg">
+					</a>
 
+
+			<div class="text-holder">
+
+						<h2><a href="skb.php">Sokenbicha</a></h2>
+						Concept. Creative Direction. Art Direction. <br>
+						Above the line campaign for Coca Cola's number one Japanese tea brand.
+
+						<br><br>
+						<b>Campaign. TV. 360. Digital. Print. OOH.</b><br>
+						Client: Coca Cola Japan	<br><br>
+						<a class="add-top" href="skb.php">View more</a>
+
+			</div>
 		</div>
 
-		<div class="text-holder">
 
-			<h2><a href="five_stages.php">The Five Stages</a></h2>
 
-				<div class="sub">Motion and Sound Reactive Installation.</div>
+		<!-- DM2 -->
+		<a id="dm2"></a>
+		<div class="sixteen columns">
 
-			An installation deleloped at my residency at Schmiede, in Austria. An experimental AI generative feedback loop, where the computer controls the room's mood. The visuals mutate the sound and the sound in turn mutates visuals. Representing the five stages of grief, The Five Stages is sometimes calm and contemplative, other times bordering on the edge of chaos.
 
-			<a class="add-top" href="five_stages.php">More...</a>
+			<a href="dm2.php">
+				<img src="images/dm2_logo2.jpg">
+			</a>
 
-		</div>
 
-</div>
+					<div class="text-holder">
+
+								<h2><a href="dm2.php">Dentsu Mobius Rebranding</a></h2>
+								Concept. Creative Direction. Design. <br>
+								Dentsu Mobius was merging with Dentsu Medi to form DM2. I conceptualised and designed the logo, brand guide and the website.
+
+								<br><br>
+								<b>Campaign. Branding. Print. Digital.</b><br>
+								Client: Dentsu Singapore	<br><br>
+								<a class="add-top" href="dm2.php">View more</a>
+
+					</div>
+				</div>
+
+
 
 
 <!--  GIGHAM -->
 <a id="gigham"></a>
-<div class="sixteen columns add-top ">
+<div class="sixteen columns">
 
 		<div class="preview_box2">
 
@@ -250,7 +280,7 @@
 		</h2>
 
 		<div class="sub">Startup. Events. </div>
-
+		<br>
 			Co-founder of Google funded startup, Gigham, a startup that makes it easy to discover, promote and monetize events. Collating 1000s of sources and venues to be the most comprehensve event personalised reccomendation engine, Gigham helped you find what to do, no matter how obsure your interests.
 
 			<a class="add-top" href="gigham.php">More...</a>
@@ -258,6 +288,8 @@
 		</div>
 
 </div>
+
+
 
 <!--  NBA-->
 <a id="nba"></a>
@@ -309,37 +341,108 @@
 
 </div>
 
-<!--  zoo -->
-<a id="zoo"></a>
-<div class="sixteen columns">
 
-	<div class="preview_box2">
+<a id="data"></a>
+<div class="sixteen columns ">
 
-		<div class="big_pic_holder" style="width: 100%; text-align: center;">
-			<a href="zoo.php"><img src="images/zoo_wall2.jpg" ></a>
+			<a href="data.php">
+				<img src="images/data_team1.jpg" width="100%">
+			</a>
+
+
+			<div class="text-holder">
+
+				<h2><a href="data.php">Dentsu Data Project</a></h2>
+				Visualisaing complex data into usable and sortable charts.
+				<br><br>
+				<a class="add-top" href="data.php">View more</a>
+
+			</div>
+
+	</div>
+
+
+
+<a id="cumpler"></a>
+<div class="sixteen columns ">
+
+
+				<a href="crumpler.php">
+				<img src="images/mag4.jpg" width="100%">
+				</a>
+
+
+		<div class="text-holder">
+
+			<h2><a href="crumpler.php"> Crumpler</a></h2>
+			Branding. Magazines. Instore. Web.<br><br>
+			<a class="add-top" href="crumpler.php">View more</a>
+
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+	<a id="vodacom"></a>
+	<div class="sixteen columns">
+
+		<div class="preview_box2">
+
+			<div class="big_pic_holder" style="width: 100%; text-align: center;">
+
+				<a href="vodacom.php"><img src="images/voda2.jpg" width="100%"></a>
+
+			</div>
+
+		</div>
+
+		<div class="text-holder">
+
+			<h2><a href="vodacom.php">Vodacom</a></h2>
+			Concept. Creative Direction. <br>
+			Know what your data is getting up to.<br><br>
+			Client: Vodacom <br>			<a class="add-top" href="vodacom.php">View more</a>
+
 		</div>
 
 	</div>
 
-	<div class="text-holder">
-
-		<h2><a href="zoo.php">Digital Zoo</a></h2>
-		<div class="sub">Art Installation. Hardware. Social.</div>
 
 
-			Instalation at the Edinburgh Festival featuring Africa's Big 5 animals as big grumpy LED tamagochis.<br>
+	<!-- oreo -->
+	<a id="oreo"></a>
+	<div class="sixteen columns add-top">
 
-			Comissioned by the Stills Gallery and Low-Fi for the Edinburgh Arts Festival.
+		<div class="preview_box2">
 
-			<a class="add-top" href="zoo.php">More...</a>
+			<div class="big_pic_holder">
+				<a href="oreo.php"><img src="images/oreo.jpg" width="100%"></a>
+			</div>
 
 		</div>
 
-</div>
+		<div class="text-holder">
+
+			<h2><a href="">Oreo Mooncake</a></h2>
+			<div class="sub">Activation/Social.</div>
+
+			Experiential marketing is taken to a new level with Peelfresh's world-first scented bubble bus stop.
+			<br>
+			<a class="add-top" href="oreo.php">More info...</a>
+
+		</div>
+
+	</div>
+
 
 <!-- peelfresh -->
-<!-- <a id="peelfresh"></a>
-<div class="sixteen columns add-top" style="">
+<a id="peelfresh"></a>
+<div class="sixteen columns add-top">
 
 	<div class="preview_box2">
 
@@ -355,68 +458,15 @@
 		<div class="sub">Activation.</div>
 
 		Experiential marketing is taken to a new level with Peelfresh's world-first scented bubble bus stop.
-
-		<a class="add-top" href="peelfresh.php">More...</a>
-
-	</div>
-
-</div> -->
-
-
-<!-- broadcast -->
-<a id="broadcast"></a>
-<div class="sixteen columns">
-
-	<div class="preview_box2">
-
-		<div class="big_pic_holder" style="background: #ebebeb">
-			<a href="broadcast.php"><img src="images/broadcast1.jpg"></a>
-		</div>
-
-	</div>
-
-
-	<div class="text-holder">
-
-		<h2><a href="boradcast.php">Radarboy Broadcast</a></h2>
-		<div class="sub">Website. Animation. Experimental.</div>
-
-		A multi-award winning experimetal self-promotion content portal, before content was a thing. Broadcast drew from a huge pool of self-created quirky content, to create daily programming schedules.
-
-		<a class="add-top" href="boradcast.php">More...</a>
+		<br>
+		<a class="add-top" href="peelfresh.php">More info...</a>
 
 	</div>
 
 </div>
 
-
-
-
-		<!-- 	<div class="preview_box2">
-
-				<div class="big_pic_holder" style="width: 100%; text-align: center; background: #efefef;">
-					<a href="skb.php">
-						<img src="images/skb_waterfall44.jpg">
-					</a>
-				</div>
-
-			</div> -->
-
-		<!-- 	<div class="text-holder">
-
-						<h2><a href="skb.php">Sokenbicha</a></h2>
-						Concept. Creative Direction. Art Direction. <br>
-						Above the line campaign for Coca Cola's number one Japanese tea brand.
-
-						<br><br>
-						<b>Campaign. TV. 360. Digital. Print. OOH.</b><br>
-						Client: Coca Cola Japan	<br><br>
-						<a class="add-top" href="skb.php">View more</a>
-
-			</div> -->
-
-
-	<!-- <div class="sixteen columns">
+<a id="jetstar"></a>
+<div class="sixteen columns">
 
 
 			<div class="preview_box2">
@@ -440,98 +490,12 @@
 
 
 	</div>
-	 -->
 
 
+<a id="newssaver"></a>
+<div class="sixteen columns ">
 
-
-
-<!-- CAPSULE -->
-<a id="capsule"></a>
-	<div class="sixteen columns ">
-
-		<div class="preview_box2">
-
-			<div class="big_pic_holder" style="width: 100%; text-align: center;">
-				<a href="capsule.php"><img src="images/capsule.jpg"></a>
-			</div>
-
-		</div>
-
-		<div class="text-holder">
-
-			<h2><a href="capsule.php">Capsule</a></h2>
-			<div class="sub">Digital Magazine. Self-Promotion.</div>
-			Mult-award winning digital magazine, distributed on a 1.44mb Floppy Disk. Part art project, part social commentary, part experiment that to see how much content, animation and sound we could squash onto the dying format.
-
-
-			<a class="add-top" href="capsule.php">More...</a>
-
-		</div>
-
-	</div>
-
-<!-- THINKING -->
-<a id="thinking"></a>
-<div class="eight columns ">
-
-	<div class="preview_box">
-
-			<div class="pic_holder">
-				<a href="thinking.php">
-				<img src="images/thinking.jpg">
-				</a>
-			</div>
-
-	</div>
-
-	<div class="text-holder">
-
-			<h2><a href="thinking.php">Thinking Multimedia</a></h2>
-			<div class="sub">CD Rom. Content.</div>
-
-			A heavily award-winning CD Rom that pushed the bounds of what we thought digital could do, while remaining stubbornly tongue-in-cheek.
-			<a class="add-top" href="thinking.php">More...</a>
-	</div>
-
-	</div>
-
-<a id="cowsite"></a>
-<div class="eight columns">
-
-	<div class="preview_box">
-
-		<div class="pic_holder">
-			<a href="cowsite.php">
-				<img src="images/cowsite_preview.jpg">
-			</a>
-		</div>
-
-		</div>
-
-		<div class="text-holder">
-
-			<h2><a href="cowsite.php">Radarboy Cowsite</a></h2>
-			<div class="sub">Websites. Games. Animation</div>
-			Multi-award winning self-promotional site that was voted one of the top 10 flash sites in the world.
-
-			<a class="add-top" href="cowsite.php">More...</a>
-			<br>
-		</div>
-
-</div>
-
-
-
-	<!-- <div class="eight columns ">
-
-		<div class="preview_box">
-
-			<div class="pic_holder">
-				<a href="newssaver.php"><img src="images/iol.jpg"></a>
-			</div>
-
-		</div>
+		<a href="newssaver.php"><img src="images/iol.jpg" width="70%"></a>
 
 		<div class="text-holder">
 
@@ -543,7 +507,7 @@
 
 		</div>
 
-	</div> -->
+	</div>
 
 <!-- <div class="eight columns">
 
@@ -568,29 +532,6 @@
 	</div> -->
 
 
-<!-- <div class="sixteen columns">
-
-	<div class="preview_box2">
-
-		<div class="big_pic_holder" style="width: 100%; text-align: center;">
-
-			<a href="vodacom.php"><img src="images/data.jpg"></a>
-
-		</div>
-
-	</div>
-
-	<div class="text-holder">
-
-		<h2><a href="vodacom.php">Vodacom</a></h2>
-		Concept. Creative Direction. <br>
-		Know what your data is getting up to.<br><br>
-		Client: Vodacom <br>			<a class="add-top" href="vodacom.php">View more</a>
-
-	</div>
-
-</div> -->
-
 <!--
 <div class="eight columns ">
 
@@ -613,18 +554,17 @@
 	</div>
 
 </div>
+-->
 
-<div class="eight columns">
+<a id="touchscreen"></a>
+<div class="sixteen columns">
 
-	<div class="preview_box">
-
-		<div class="pic_holder">
 			<a href="bates_touchscreen.php">
-				<img src="images/bates_touchscreen.jpg">
+				<img src="images/bates_touchscreen_rice.jpg" width = "90%">
 			</a>
-		</div>
+</div>
 
-	</div>
+<div class="sixteen columns">
 
 	<div class="text-holder">
 
@@ -636,58 +576,164 @@
 	</div>
 
 </div>
--->
 
 
-<!-- 	<div class="eight columns">
 
-		<div class="preview_box">
 
-			<div class="pic_holder">
-				<a href="mitsuru.php">
-					<img src="images/mitsuru2.jpg">
+
+
+
+
+<a id="levis"></a>
+<div class="sixteen columns ">
+
+				<a href="levis.php">
+					<img src="images/levis.jpg" width="90%">
 				</a>
-			</div>
-		</div>
 
 		<div class="text-holder">
-			<h2><a href="mitsuru.php">Mitsuru</a></h2>
-			<p>Branding and site for Japanese artist</p>
+
+			<h2><a href="levis.php">Levis</a></h2>
+			Outdoor, live billboard.
 				<br><br>
-			<a class="add-top" href="mitsuru.php">View more</a>
+			<a class="add-top" href="levis.php">View more</a>
+
 		</div>
 
-	</div> -->
+	</div>
 
 
+<a id="menshealth"></a>
+<div class="sixteen columns ">
 
-
-
-<!-- <div class="sixteen columns ">
-
-		<div class="preview_box">
-
-			<div class="pic_holder">
 				<a href="menshealth.php">
-					<img src="images/menshealth.jpg" >
+					<img src="images/mens_health_drinking.jpg" width="90%">
 				</a>
-			</div>
-		</div>
 
 		<div class="text-holder">
 
 			<h2><a href="menshealth.php">Menshealth Cinema Ads</a></h2>
-			Tracking of delegates at Internetix using delegate's mac addresses over the wifi network. A first in Africa.
+			Fun, quirky animated cinema ads of life tips.
 				<br><br>
 			<a class="add-top" href="menshealth.php">View more</a>
 
 		</div>
 
-	</div> -->
+	</div>
 
 
+	<a id="americanbeef"></a>
+	<div class="sixteen columns ">
 
-<!-- 		<div class="eight columns ">
+					<a href="americanbeef.php">
+						<img src="images/americanbeef2.jpg" width="90%">
+					</a>
+
+			<div class="text-holder">
+
+				<h2><a href="americanbeef.php">American Beef Children's Book</a></h2>
+				A dynamic customisable childrens book.
+					<br><br>
+				<a class="add-top" href="americanbeef.php">View more</a>
+
+			</div>
+
+		</div>
+
+
+		<a id="mysterydome"></a>
+		<div class="sixteen columns ">
+
+						<a href="mysterydome.php">
+							<img src="images/mystery_dome.jpg" width="90%">
+						</a>
+
+				<div class="text-holder">
+
+					<h2><a href="mysterydome.php">KTV Mystery Dome</a></h2>
+					Episodic game for children's TV station.
+						<br><br>
+					<a class="add-top" href="mysterydome.php">View more</a>
+
+				</div>
+
+			</div>
+
+
+			<a id="loeries"></a>
+			<div class="sixteen columns ">
+
+							<a href="loeries.php">
+								<img src="images/loeries22.jpg" width="90%">
+							</a>
+
+					<div class="text-holder">
+
+						<h2><a href="loeries.php">Loeries</a></h2>
+						Game for South Africa's premier advertising awards.
+							<br><br>
+						<a class="add-top" href="loeries.php">View more</a>
+
+					</div>
+
+				</div>
+
+				<a id="jwt"></a>
+				<div class="sixteen columns ">
+
+								<a href="jwt.php">
+									<img src="images/jwt2.jpg" width="90%">
+								</a>
+
+						<div class="text-holder">
+
+							<h2><a href="jwt.php">JWT Africa</a></h2>
+							Corporate website.
+								<br><br>
+							<a class="add-top" href="jwt.php">View more</a>
+
+						</div>
+
+					</div>
+
+					<a id="ego"></a>
+					<div class="sixteen columns ">
+
+									<a href="ego.php">
+										<img src="images/ego_22.jpg" width="100%">
+									</a>
+
+							<div class="text-holder">
+
+								<h2><a href="ego.php">Ego Hypnotic</a></h2>
+								Brand launch website for Ego/Axe.
+									<br><br>
+								<a class="add-top" href="ego.php">View more</a>
+
+							</div>
+
+						</div>
+
+						<a id="lucky_titles"></a>
+						<div class="sixteen columns ">
+
+										<a href="lucky_titles.php">
+											<img src="images/lucky_titles2.jpg" width="90%">
+										</a>
+
+								<div class="text-holder">
+
+									<h2><a href="lucky_titles.php">Lucky Strike</a></h2>
+									Titling sequence for Lucky Strike Promotions Video
+										<br><br>
+									<a class="add-top" href="lucky_titles.php">View more</a>
+
+								</div>
+
+							</div>
+
+<!--
+<div class="sixteen columns ">
 
 		<div class="preview_box">
 
@@ -710,99 +756,6 @@
 	</div> -->
 
 
-<!--
-<div class="eight columns ">
-
-		<div class="preview_box">
-			<div class="pic_holder">
-				<a href="data.php">
-				<img src="images/data_team1.jpg">
-				</a>
-			</div>
-		</div>
-
-		<div class="text-holder">
-
-			<h2><a href="levis.php">Data Team</a></h2>
-			Visualisaing complex data into usable and sortable charts.
-				<br><br>
-			<a class="add-top" href="data.php">View more</a>
-
-		</div>
-
-	</div>
-
-<div class="eight columns ">
-
-		<div class="preview_box">
-
-			<div class="pic_holder">
-				<a href="crumpler.php">
-				<img src="images/lapland_cover3.jpg">
-				</a>
-			</div>
-		</div>
-
-		<div class="text-holder">
-
-			<h2><a href="crumpler.php"> Crumpler - Branding</a></h2>
-			Branding. Magazines. Instore. Web.<br><br>
-			<a class="add-top" href="crumpler.php">View more</a>
-
-		</div>
-
-
-
-	</div>
--->
-
-<!-- 	<div class="eight columns ">
-
-		<div class="preview_box">
-
-			<div class="pic_holder">
-				<a href="orni.php">
-				<img src="images/ornithology_cover.jpg">
-				</a>
-			</div>
-		</div>
-
-		<div class="text-holder">
-
-			<h2><a href="orni.php">Crumpler Ornithology</a></h2>
-			Photo bag brochure/magazine.<br><br>
-			<a class="add-top" href="orni.php">View more</a>
-
-		</div>
-
-
-
-	</div>
- -->
-
-<!--
-		<div class="eight columns ">
-
-		<div class="preview_box">
-
-			<div class="pic_holder">
-				<a href="crumpler2.php">
-				<img src="images/moustache.jpg">
-				</a>
-			</div>
-		</div>
-
-		<div class="text-holder">
-
-			<h2><a href="crumpler2.php">Crumpler Brand Work</a></h2>
-			Work for Crumpler Europe, a well known bag company.<br><br>
-			<a class="add-top" href="crumpler2.php">View more</a>
-
-		</div>
-
-	</div> -->
-
-
 
 
 </div> <!-- container -->
@@ -811,16 +764,8 @@
 <!-- End Document
 ================================================== -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
+<?php include("footer.php"); ?>
+<?php include("tracker.php"); ?>
 
 </body>
 </html>

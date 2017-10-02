@@ -53,19 +53,17 @@
 			<h1>TShirtmaker</h1>
 			Custom pixel tee app
 
-			<br><br>
 
-			<hr />
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-bottom">
 
-<img src="images/tshirtmaker2b.jpg" width="600"> <br>
+<img src="images/tshirtmaker2b.jpg" width="80%"> <br>
 
 </div>
 
-	<div class="one-third column">
+	<div class="two-thirds column">
 <p>
 	An application to design your own 8-bit icon, or clone or modify another design and get your very own individualized t-shirt.
 	<br><br>
@@ -81,8 +79,8 @@
 
 
 			Concept, design, programming <br>
-			Flash, php, vinyl cutting, tshirt<br>
-			
+			Flash, PHP, vinyl cutting, tshirts<br>
+			<br><br>
 	</div>
 
 
@@ -93,16 +91,9 @@
 
 	</div><!-- container -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
 
 <!-- End Document
 ================================================== -->

@@ -57,13 +57,13 @@
 		</div>
 
 
-		<div class="half-top two-thirds column">
+		<div class="sixteen columns">
 
-			<img src="images/earth_plays_the_blues5.jpg" width="600"> <br><br>
+			<img src="images/earth_plays_the_blues5.jpg" width="90%"> <br><br>
 
-			<img src="images/earth_plays_the_blues4.jpg" width="600"> <br><br>
+			<img src="images/earth_plays_the_blues4.jpg" width="90%"> <br><br>
 
-			<img src="images/earth_plays_the_blues3.jpg" width="600"> <br><br>
+			<img src="images/earth_plays_the_blues3.jpg" width="90%"> <br><br>
 
 
 
@@ -71,37 +71,33 @@
 
 		</div>
 
-		<div class="half-top one-third column">
+<div class="row">
+
+		<div class="half-top two-thirds column">
 			<h5>Listening to maps</h5>
 			<p>
-				Imagining what different places would sound like. The earth as a song. <br><br>
-				Random locations are chosen, the nearest town or city is found, and then their Google Maps RGB values are mapped to chords, while brightness effects the note's length and duration, to create a haunting and emotive soundscape. <br><br>
+				The earth as a song. A generative imagining of what different places sound like. <br><br>
+				Random locations are chosen, the nearest town or city is found, and then their colours mapped to chords, while brightness effects the note's length and duration, to create a haunting and emotive soundscape. <br><br>
 				Joint winner of the JSConf 2015 Web Audio Hackerthon.</p>
 				See it in action here:
-			<a href="http://radarboy.com/earth_plays_the_blues">http://radarboy.com/earth_plays_the_blues</a>
+			<a href="http://radarboy.com/broadcast">http://radarboy.com/earth_plays_the_blues</a>
 		</div>
 
+</div>
 
 
-
+		<p class="add-top add-bottom center">
+			<a href="five_stages.php">Next ></a>
+		</p>
 
 
 	</div><!-- container -->
 
 
-<?php include("footer.php"); ?>
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
 
 <!-- End Document
 ================================================== -->

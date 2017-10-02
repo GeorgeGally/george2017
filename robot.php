@@ -52,24 +52,18 @@
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns">
+
+			<img src="images/robomaker44.jpg" width="90%"> <br>
+			<img src="images/robomaker1.jpg" width="90%"> <br>
+			<img src="images/robot22.jpg" width="90%"> <br>
 
 
-			<img src="images/robomaker1.jpg" width="600"> <br>
-			<img src="images/robot22.jpg" width="600"> <br>
-			<video width="600" height="600" controls>
-  			<img src="images/cover.jpg" width="600"> <br>
-  			<source src="images/robot.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>	<br>
+</div>
 
+<div class="row">
 
-			<img src="images/robomaker2.jpg" width="600"> <br>
-			<img src="images/robomaker4.jpg" width="600"> <br>
-			<img src="images/robomaker3.jpg" width="600"> <br>
-		</div>
-
-		<div class="one-third column">
+		<div class="two-thirds column half-top half-bottom">
 
 			<p>
 		For the 2014 Standard Chartered Bank Arts in the Park, along with TBWA's Digital Arts Network (DAN) Hong Kong, we created the  automated Robo Maker machine, that used robotic mechanisms to enable audiences to create their own original robots by combining various body parts.
@@ -78,12 +72,47 @@ The booth was designed to resemble a robot factory, with two design machines, wh
 </p>
 <p>
 When the design was complete, a Robot Baker outputted an original paper-fold robot to take home and assemble. </p>
-Concept. Creative Direction. Creative Lead.<br>
+<p>
+Standard Chartered's CEO was so delighted with the project, she sent a personal thank you note to the team, saying how much she loved the work.
+</p>
+Concept. Creative Direction.<br>
 Client: Standard Chartered Bank, Hong Kong.<br>
 <p>	2 x Silver W³ Digital Awards winner.</p>
 
 
 		</div>
+
+</div>
+
+		<div class="sixteen columns">
+
+			<iframe src="https://player.vimeo.com/video/121977248" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/121977248">SCB AIP Robot Baker</a> from <a href="https://vimeo.com/tbwahk">Greater China</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<br>
+
+			<iframe src="https://player.vimeo.com/video/135833313" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/135833313">ROBOT BAKER - Standard Chartered Arts in the Park 2014</a> from <a href="https://vimeo.com/tbwahk">Greater China</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+			<video style=" background: #efefef" width="90%" height="600" controls>
+  			<source src="images/robot.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>	<br><br>
+			<p style="text-align: center">
+			<img src="images/robot_making_in_progress.jpg" width="60%"> <br>
+			<img src="images/robot_sketch1.jpg" width="80%"> <br>
+			<img src="images/robot_setup.jpg" width="100%"> <br>
+			</p>
+
+
+			<!-- <img src="images/robomaker3.jpg" width="90%"> <br> -->
+			<!-- <img src="images/robomaker2.jpg" width="90%"> <br> -->
+
+		</div>
+
+		</div>
+		<p class="add-top add-bottom center">
+			<a href="earth_plays_the_blues.php">Next ></a>
+		</p>
 
 	</div><!-- container -->
 

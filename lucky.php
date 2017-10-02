@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,37 +38,39 @@
 
 	<div class="back-header">
 
-		<a href="index.html#lucky">< Back</a>
+		<a href="commercial.html">< Back</a> &nbsp;
+
 
 	</div>
 
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-
 		<div class="sixteen columns">
-			<h2 class="remove-bottom add-top">Lucky Strike</h2>
-			<h4>360 Campaign, Installations, Events</h4>
-			<p>Creative Direction, Concept, Design, Animation, Coding</p>
+			<h1 class="remove-bottom" style="margin-top: 40px">Lucky Strike</h1>
+			360 Campaign, Installations, Events
+		</div>
 
-	</div>
 
-	<div class="sixteen columns add-bottom"> <br>
+
+	<div class="sixteen columns half-bottom"> <br>
 		What started out as a simple production job for a microsite, led to a more than two your collaboration and brand curatorship with Lucky Strike.  The client eventually trusted us so much that briefs turned into open briefs and the collaboration extended into the physical space with events, kiosks, projections, game cabinets and treasure hunt webcams.
 
 		<br><br>
 		I lead the concept and design team. This was social media, before social media.
 		 The project was so succesful that it was work was exported to Japan as well as being presented at the  global Lucky Strike brand managers conference as a template for the brand's tone of voice and style. <br><br>
 		 <br>
-		</div>
-		<div class="one-third column">
-		</div>
+	</div>
 
-		<div class="two-thirds column add-bottom">
 
-			<img src="images/lucky_conclusion_1.jpg" width="600"> <br>
+		<div class="sixteen columns half-bottom">
+			<img src="images/lucky_conclusion_1.jpg" width="70%"> <br>
 		</div>
 
-		<div class="one-third column">
+		<div class="two-thirds column">
 
 			<p>
 				<b>Lucky Strike Conclusion Post Event Site </b><br><br>
@@ -78,17 +80,17 @@
 				<br><br>
 				We were also involved in the events themselves, helping conceptualize activities and building touch screen kiosks, live SMS broadcast engines, digital graffiti machines, games and branded ticket/fingerprint scanning interfaces.<br><br>
 
-				<!-- <a href="http://radarboy.com/museum/luckystrike/be/be_post_demo.html">View more</a> -->
+
 			</p>
 
 		</div>
 
-<div class="two-thirds column add-bottom">
-				<img src="images/believe2.jpg" width="600"> <br><br>
-				<img src="images/lucky_drum2.gif" width="600">	<br>
+<div class="sixteen columns half-bottom">
+		<img src="images/believe2.jpg" width="70%"> <br><br>
+		<img src="images/lucky_drum2.gif" width="70%">	<br>
 </div>
 
-<div class="one-third column">
+<div class="two-thirds column">
 
 	<p>
 
@@ -101,15 +103,14 @@ The site resulted in a large amount of buzz being created around the brand and t
 </p>
 
 
+</div>
 
-			</div>
-<br><br>
-		<div class="two-thirds column add-bottom">
-			<img src="images/lucky_rerail.jpg" width="600"> <br>
-			<img src="images/lucky_mag2.jpg" width="600"> <br>
+		<div class="sixteen columns half-bottom">
+			<img src="images/lucky_rerail.jpg" width="70%"> <br>
+			<img src="images/lucky_mag2.jpg" width="70%"> <br>
 		</div>
 
-		<div class="one-third column">
+		<div class="two-thirds column half-bottom">
 			<p>
 <b>Lucky Strike Rerail Magazine Site</b> <br><br>
 
@@ -120,11 +121,11 @@ An entertaining post-event magazine site, enabling event participants to relive 
 
 		</div>
 
-		<div class="two-thirds column add-bottom">
-		<img src="images/luckykey2.jpg" width="600"> <br>
+		<div class="sixteen columns half-bottom">
+		<img src="images/luckykey2.jpg" width="70%"> <br>
 		</div>
 
-		<div class="one-third column">
+		<div class="two-thirds column">
 			<p>
 <b>Lucky Access Key Emailer </b><br><br>
 Access to a closed website was restricted to those who received the key after attending an event. The key was sent out the day after the event, the concept being a combination of key/discovery and a post-event chillout piece.
@@ -133,11 +134,11 @@ Access to a closed website was restricted to those who received the key after at
 </p><br><br>
 		</div>
 
-<div class="two-thirds column add-bottom">
-		<img src="images/mailer3.jpg" width="600"> <br>
+<div class="sixteen columns half-bottom">
+		<img src="images/mailer3.jpg" width="70%"> <br>
 </div>
 
-<div class="one-third column add-bottom">
+<div class="two-thirds column half-bottom">
 	<p>
 		<b>Lucky Strike World Emailer </b><br><br>
 		I've always believed in creating content as an effective way of brand building. A brand feel-piece mailer for Lucky Strike, communicating the character and history of the brand in a fun and irreverent way, sent as an initial introduction to all who signed up to receive correspondence from the company.
@@ -153,11 +154,11 @@ Access to a closed website was restricted to those who received the key after at
 
 </div>
 
-<div class="two-thirds column add-bottom">
-		<img src="images/lucky_parachute.jpg" width="600"> <br>
+<div class="sixteen columns half-bottom">
+		<img src="images/lucky_parachute.jpg" width="70%"> <br>
 </div>
 
-<div class="one-third column">
+<div class="two-thirds column">
 
 	<p>
 	<b>Lucky Parachute Emailer</b><br><br>
@@ -165,25 +166,24 @@ Access to a closed website was restricted to those who received the key after at
 	Role on project: concept, programming and design.
 	<br><br>
 	<!-- <a href="http://radarboy.com/museum/luckystrike/believe/believe.html">View more</a> -->
-	</p>
+</p>
 	<br><br>
 
 </div>
 
 
-<div class="two-thirds column">
+<div class="sixteen columns half-bottom">
 
-	<img src="images/palm-pilot2.jpg" width="600"><br><br>
-	<div style="background: #e3e3e3; width: 600px;">
-		<p style="text-align: center">
-			<img src="images/lucky_pda.jpg" width="400">
-		</p>
+	<img src="images/palm-pilot2.jpg" width="70%"><br><br>
+	<div style="background: #e3e3e3; width: 70%;">
+	<p style="text-align: center">
+		<img src="images/lucky_pda.jpg" width="400">
+	</p>
 	</div>
-
 
 </div>
 
-<div class="one-third column">
+<div class="two-thirds column">
 
 		<p>
 		One of the world's first mobile flash applications.
@@ -194,23 +194,16 @@ Access to a closed website was restricted to those who received the key after at
 			Lucky Strike required an interactive Brand Manual to be loaded on iPaq's for their sales consultants. It was necessary for them to be able to access System Procedure as well as having an introduction to the brand. The application introduced the brand and all it's associated elements, from sounds and smells to colour and form, as well as having the administrative procedures 2 clicks away.
 		 </p>
 
-		 <p>Creative Direction, design, coding, animation and sound. </p>
-		 #Flash #Php
+		 <br>
+		 <b>Creative Direction, design, coding, animation and sound. </b>
 
+
+</div>
 </div>
 
 
+<?php include("footer.php"); ?>
+<?php include("tracker.php"); ?>
 
-
-	</div><!-- container -->
-
-
-			<?php include("footer.php"); ?>
-			<?php include("tracker.php"); ?>
-
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>

@@ -50,39 +50,58 @@
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns">
 
-<img src="images/dstv12.jpg" width="600"> <br>
-<img src="images/dstv12b.jpg" width="600"> <br>
-<!-- <img src="images/dstv11.jpg" width="600"> <br>	 -->
-<img src="images/dstv3.jpg" style="border: 4px solid #fff" width="600"> <br>
-<img src="images/dstv4.jpg" style="border: 4px solid #fff" width="600"> <br>
-<!-- <img src="images/dstv5.jpg" style="border: 4px solid #fff" width="600"> <br>	 -->
-<!-- <img src="images/dstv6.jpg" style="border: 4px solid #fff" width="600"> <br>	 -->
-<img src="images/dstv7.jpg" style="border: 4px solid #fff" width="600"> <br>
-<!-- <img src="images/dstv1.jpg" width="600"> <br>
-<img src="images/dstv2.jpg" width="600"> <br> -->
-<br><br>
+<img src="images/dstv12.jpg" width="90%"> <br>
+<img src="images/dstv12b.jpg" width="90%"> <br>
 
 </div>
 
-	<div class="one-third column">
+
+<div class="two-thirds column add-top">
 <b>
-	Oscar Pistorius Trial Data Visualisations of social media sentiment, activity and velocity.
+Oscar Pistorius Trial Data Visualisation App.
 </b> <br><br>
 
 <p>
-	Since I turned down a job early in my career to do graphics at a TV station, I was delighted to get the opportunity	to get another chance to play on TV. <br><br>
+Since I turned down a job early in my career to do graphics at a TV station, I was chuffed to get another opportunity	to play on TV. <br><br>
 
-	This was one of the biggest media events ever in South Africa. The whole country was glued to their screens. My solution was a device and platform agnotic application visualising data, that would serve as a second screen as well as a tool for journalists, and also be able to be used as live visualisation by the TV station themself. Data was pulled from a number of social listening tools to give a user-friendly, live view of what was happening in the trial and the social media space.<br><br>
+This was one of the biggest media events ever in South Africa. The whole country was glued to their screens. My solution was a device and platform agnostic application visualising data, that would serve as a second screen as well as a tool for journalists, and also be able to be used as live visualisation by the TV station themselves.<br><br>
 
-	The data visualistions could also be used on other media properties as widgets and journalists also had the ability to be output any of the data as PDFs - and thus garnering tonnes of free media and credibility for the TV channel.
+Data was pulled from a number of social listening tools to give a user-friendly, live view of what was happening in the trial and the social media space.<br><br>
+
+The data visualisations could also be used on other media properties as widgets and journalists also had the ability to be output any of the data as PDFs - and thus garnering tonnes of free media and credibility for the TV channel.
 
 </p>
-	Concept. Creative Direction. Design. Coding (Javascript, D3, PHP, MySql)<br>
-	Client: Multichoice Africa, DSTV<br>
+Concept. Creative Direction. Design. Coding (Javascript, D3, PHP, MySql)<br>
+Client: Multichoice Africa, DSTV<br>
 
-	</div>
+</div>
+
+<div class="sixteen columns half-top">
+	<!-- <img src="images/dstv11.jpg" width="600"> <br>	 -->
+	<img src="images/dstv3.jpg" style="border: 4px solid #fff" width="90%"> <br>
+	<img src="images/dstv4.jpg" style="border: 4px solid #fff" width="90%"> <br>
+	<!-- <img src="images/dstv5.jpg" style="border: 4px solid #fff" width="600"> <br>	 -->
+	<!-- <img src="images/dstv6.jpg" style="border: 4px solid #fff" width="600"> <br>	 -->
+	<img src="images/dstv7.jpg" style="border: 4px solid #fff" width="90%"> <br>
+	<!-- <img src="images/dstv1.jpg" width="600"> <br>
+	<img src="images/dstv2.jpg" width="600"> <br> -->
+
+<br><i>
+The visualations were cross platform, desktop, tablet, mobile, and broadcast ready as shown here with my very bad mobile snaps live from the TV studio. </i><br><br><br>
+
+</div>
+
+<div class="two-thirds column add-top">
+<b>
+Oscar Pistorius Trial Data Visualisation App.
+</b> <br><br>
+
+Concept. Creative Direction. Design. Coding (Javascript, D3, PHP, MySql)<br>
+Client: Multichoice Africa, DSTV<br>
+
+</div>
 
 
 

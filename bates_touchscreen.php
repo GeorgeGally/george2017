@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,8 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
-		<a href="cowsite.php">Next ></a>
+		<a href="commercial.html#touchscreen">< Back</a> &nbsp;
 
 	</div>
 
@@ -49,41 +48,43 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns half-bottom">
 			<h1 class="remove-bottom" style="margin-top: 40px">Bates sia Touchscreen Kiosk</h1>
 			<h5>Touchscreen Kiosk</h5>
 
-			Design, front and backend programming<br>
-			<br>
 
-			<hr />
 		</div>
-	
+
+
+		<div class="sixteen columns half-bottom">
+
+			<img src="images/bates_touchscreen.jpg" width="90%"> <br>
+
+
+		</div>
 
 		<div class="two-thirds column">
 
-			<img src="images/bates_touchscreen.jpg" width="600"> <br>		
-		
-	
-		</div>	
-
-		<div class="one-third column">
-	
 			<p>
-			In Japan many companies don't usually have a front-room receptionist. This entrance lobby kiosk would enble them to find and call the person they wanted to meet, and then browse the agency's work while waitting. 
-Design, front and backend programming, Flash, PHP</p>	
+			In Japan many companies don't usually have a front-room receptionist. This entrance lobby kiosk would enble them to find and call the person they wanted to meet, and then browse the agency's work while waitting.<br>
+			And the rice animation I created became integral to the agency's branding.
+		</p>
+
+<b>Design, front and backend programming, Flash, PHP</b>
+
+
 		</div>
 
 
-	
+
 
 	</div><!-- container -->
 
 
 <div id="footer">
 	<div id="footer_details">
-			<b>Portfolio. George Gally. </b> 
-	
+			<b>Portfolio. George Gally. </b>
+
 	<p><a href="index.php">Info.</a> &nbsp; Biography, Resume, Contact Details, References. <br>
 
   <a href="web.php?id=2">Work.</a> &nbsp; Advertising, Digital, Interactive, Mobile. <br>
@@ -96,16 +97,8 @@ Design, front and backend programming, Flash, PHP</p>
 <br><br>
 </div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
+<?php include("footer.php"); ?>
+<?php include("tracker.php"); ?>
 
 <!-- End Document
 ================================================== -->

@@ -39,7 +39,7 @@
 	<div class="back-header">
 
 		<a href="index.html#nmuf">< Back</a> &nbsp;
-		<a href="lounge.php">Next ></a>
+
 
 	</div>
 
@@ -49,28 +49,27 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns half-bottom">
 			<h1>Hunger Kills</h1>
 			Game projection and Installation <br>New Media Underground Festival
 			<br><br>
 
-			<hr />
 		</div>
 
+
+		<div class="sixteen columns half-bottom">
+
+			<img src="images/hunger.jpg" width="90%"> <br>
+			<img src="images/nmuf.jpg" width="90%"> <br>
+
+      <video src="http://radarboy.com/museum/nmuf/nmuf2.mov" width="100%" height="300" controller="true" bgcolor="#b4b4b4"></video>
+
+		</div>
 
 		<div class="two-thirds column">
 
-			<img src="images/hunger.jpg" width="600"> <br>
-			<img src="images/nmuf.jpg" width="600"> <br>
-
-            <embed src="http://radarboy.com/museum/nmuf/nmuf2.mov" width="100%" height="300" controller="true" bgcolor="#b4b4b4">
-
-		</div>
-
-		<div class="one-third column">
-
 			<p>
-				Try to shoot down planes and kills more people than hunger does.
+			Try to shoot down planes and kill more people than hunger does. 
 			</p>
 
 

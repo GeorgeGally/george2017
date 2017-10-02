@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -53,30 +53,30 @@
 			<h1 class="remove-bottom" style="margin-top: 40px">Audi</h1>
 			<h5>Future technology series</h5>
 
-			Concept, design, animation, programming <br>
-			Technologies: Flash. Twitter. php.<br>
-			Medium: .<br>
-			<hr />
+
 		</div>
-	
-
-		<div class="two-thirds column">
 
 
-<img src="images/space1b.jpg" width="600"> <br>	
-<img src="images/space2b.jpg" width="600"> <br>	
-<img src="images/tanaka2a.jpg" width="600"> <br>	
-<img src="images/tanaka2b.jpg" width="600"> <br>	
+		<div class="sixteen columns half-top half-bottom">
+
+
+<img src="images/space1b.jpg" width="90%"> <br>
+<img src="images/space2b.jpg" width="90%"> <br>
+<img src="images/tanaka2a.jpg" width="90%"> <br>
+<img src="images/tanaka2b.jpg" width="90%"> <br>
 
 
 
-</div>	
+</div>
 
 	<div class="one-third column">
 
 		<p>
-		A series of articles and animations about possible technologies coming in our near future. 
+		A series of articles and animations about possible technologies coming in our near future.
 		</p>
+
+		Concept, design, animation, programming <br>
+		Technologies: Flash. Twitter. php.<br>
 
 	</div>
 
@@ -85,16 +85,9 @@
 
 </div><!-- container -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<?php include("footer.php"); ?>
+<?php include("tracker.php"); ?>
 
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
 <!-- End Document
 ================================================== -->
 </body>

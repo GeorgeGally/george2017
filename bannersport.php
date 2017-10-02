@@ -57,41 +57,33 @@
 			Flash. <br>
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
 			 <iframe src="apps/bannersport/index.html" scrolling="no" style="width: 100%;height:200px;border: none; margin: 0; padding: 0" ></iframe>
-		
 
-		</div>	
+
+		</div>
 
 		<div class="one-third column">
 
 			<p>
-				I still love this idea. And love these games. A series of highly addictive microsports banner games, circa 1999. Well ahead of their time. 
+				I still love this idea. And love these games. A series of highly addictive microsports banner games, circa 1999. Well ahead of their time.
 				Complete with leaderboard and ability to challenge friends. <br><br>
 				A technical feat in that the banners needed to weight less than 12k (the then maximum filesize allowed for banners) and were built in ActionScript 1 (ie. with only very limited frame-based scripting).
 			<br><br>
 			Impossibly fast these days because of processor improvements. But give it a try anyway. Click let's go. Then hover over batsman and click to hit. Watch out for the streaker!!!
 			</p>
-	
+
 
 		</div>
 
 	</div><!-- container -->
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
 <!-- End Document
 ================================================== -->

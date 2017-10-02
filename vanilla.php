@@ -59,7 +59,7 @@
 			Java/Processing, video camera, projector<br>
 			<hr />
 		</div>
-	
+
 
 		<div class="two-thirds column">
 
@@ -72,17 +72,17 @@
 
 
 		<iframe width="600" height="338" src="//www.youtube.com/embed/Z_pyTrDol8A" frameborder="0" allowfullscreen></iframe>
-		<br><br>	
+		<br><br>
 
 
-</div>	
+</div>
 
 	<div class="one-third column">
 <p>
 	Sound reactive lighting for music video Vanilla by Paul Gala featuring Raye.
 	<br><br>
 	Built in Processing, running through my custom RBVJ application.
-</p>	
+</p>
 
 <p>
 You can watch the video below.
@@ -103,16 +103,8 @@ You can watch the video below.
 
 	</div><!-- container -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
 <!-- End Document
 ================================================== -->

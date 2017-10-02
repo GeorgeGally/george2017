@@ -42,59 +42,72 @@
 	<div class="back-header">
 
 		<a href="index.html#sound">< Back</a> &nbsp;
-		<a href="gruntchat.php">Next ></a>
 
 	</div>
 
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
 		<div class="sixteen columns half-top">
 			<h1>Seeing Sound</h1>
 			Motion detection, sound reactive, installation, projection <br><br>
 
-			<hr />
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-top half-bottom">
 
-		<img src="images/sound1.jpg" width="600"> <br>
-		<img src="images/sound2.jpg" width="600"> <br>
-		<img src="images/sound3.jpg" width="600"> <br>
-		<img src="images/sound4.jpg" width="600"> <br>
-		<img src="images/sound5.jpg" width="600"> <br>
-		<img src="images/sound.jpg" width="600"> <br>
-		<br><br>
+			<img src="images/compendium6.jpg" width="100%"> <br>
+			<img src="images/compendium5.jpg" width="100%"> <br>
+			<img src="images/crops/Picture-27.jpg" width="100%"> <br>
 
-		</div>
+			</div>
 
-			<div class="one-third column">
+			<div class="two-thirds column">
 <p>
+	<b>Winning entry for the 2017 W3C Web Audio Award</b> <br><br>
 	I have been fascinated with visualising sound from as long as I knew it was possible.
-	My work is very heavily inflienced minimalism.
-	All graphics are completely computational.
+	Winner of the 2017 W3C Sound Visualization Award.
 	<br><br>
-	Initially built in Processing, and running through my custom RBVJ application, they are now being ported to JavaScript. <br>
-	<br>See <a href="http://radarboy.com">http://radarboy.com</a> and <a href="http://radarboy.tumblr.com">http://radarboy.tumblr.com</a> for updates.
-</p>
 
-<p>
-You can also see a couple of (very rough) showcase vids below.
-</p>
+	See <a href="http://radarboy.com">http://radarboy.com</a>
+	<a href="http://radarboy.com/sound_visualisation/three2.html#vapourwave">Three2</a>
+	and <a href="http://radarboy.tumblr.com">http://radarboy.tumblr.com</a> for updates.
+	<br>
+	Javascript, webcam<br>
+	<br><br>
+You can also see a couple of rough early vid tests below here:
 
-<p>
 
-	Concept, design, animation, programming <br>
-	Java/Processing, video camera<br>
+
 
 </p>
 
 	</div>
+
+		<div class="sixteen columns half-top half-bottom">
+
+			<img src="images/circles.png" width="100%"> <br>
+			<img src="images/crops/Picture-25c.jpg" width="100%"> <br>
+
+		<!-- <img src="images/sound1.jpg" width="100%"> <br> -->
+		<img src="images/sound2.jpg" width="100%"> <br>
+		<!-- <img src="images/sound3.jpg" width="100%"> <br><br> -->
+		<!-- <img src="images/sound4.jpg" width="100%"> <br><br> -->
+		<!-- <img src="images/sound5.jpg" width="100%"> <br><br> -->
+		<!-- <img src="images/sound.jpg" width="100%"> <br> -->
+
+		<img src="images/compendium1.jpg" width="100%"> <br>
+		<img src="images/compendium2.jpg" width="100%" style="border: 1px solid #eee"> <br>
+		<img src="images/Picture-17.jpg" width="100%" style="border: 1px solid #eee"> <br>
+		<!--  <img src="images/compendium4.jpg" width="100%"> <br> -->
+
+
+		<br><br>
+
+		</div>
+
+
 
 		<div class="sixteen columns">
 
@@ -108,13 +121,15 @@ You can also see a couple of (very rough) showcase vids below.
 
 
 
-
-
 		</div>
+
+
 
 	</div><!-- container -->
 
-
+	<p class="add-top add-bottom center">
+		<a href="blacklight.php">Next ></a>
+	</p>
 <script>
 
   $(document).ready(function(){
@@ -122,15 +137,12 @@ You can also see a couple of (very rough) showcase vids below.
     $(".sixteen.columns").fitVids();
   });
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
 </script>
+
+<?php include("footer.php"); ?>
+<?php include("tracker.php"); ?>
+
+
 <!-- End Document
 ================================================== -->
 </body>

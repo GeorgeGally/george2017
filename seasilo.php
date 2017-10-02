@@ -86,7 +86,7 @@
 
 				<div class="sixteen columns add-bottom">
 
-					<p>The outcome of an augumented architecture workshop with <a href="http://www.refikanadol.com/">Refik Anadol</a> in Amerstam for the Fiber Festival. <br>
+					<p>The outcome of an augmented architecture workshop with <a href="http://www.refikanadol.com/">Refik Anadol</a> in Amsterdam for the Fiber Festival. <br>
 					The sea has always played a massive part in human civilization. Today, it's importance is greater than it has ever been, yet it is also less acknowledged than it has ever been.
 					</p>
 					<p>To show the scale and impact shipping has, minimal large scale live data visualisations are projected onto the inside of a grain silo in Zeeburgereiland, itself, reclaimed land, essentially sitting in the sea.</p> <br><br>
@@ -96,7 +96,9 @@
 		</div>
 
 
-
+		<p class="center">
+			<a href="sound.php">< Next ></a>
+		</p>
 
 
 		</div>

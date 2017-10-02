@@ -39,7 +39,7 @@
 	<div class="back-header">
 
 		<a href="index.html#rbvj">< Back</a> &nbsp;
-		<a href="saville.php">Next ></a>
+
 
 	</div>
 
@@ -57,22 +57,20 @@
 			<h1>RBVJ</h1>
 			Application - performance
 
-			<br><br>
-			<hr />
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-top half-bottom">
 
-<img src="images/rbvj2.jpg" width="600"> <br>
-<img src="images/design_indaba.jpg" width="600"> <br>
-<img src="images/ocb_projections.jpg" width="600"> <br>
+<img src="images/rbvj2.jpg" width="90%"> <br>
+<img src="images/design_indaba.jpg" width="90%"> <br>
+<img src="images/ocb_projections.jpg" width="90%"> <br>
 
-<iframe src="//player.vimeo.com/video/97687770?byline=0&amp;portrait=0&amp;color=ff0179" width="600" height="427" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/97687770?byline=0&amp;portrait=0&amp;color=ff0179" width="100%" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 
-<div class="one-third column">
+<div class="two-thirds column">
 
 
 <p>
@@ -106,7 +104,7 @@ Technologies: Processing, Flash,
 
 	<?php include("footer.php"); ?>
 	<?php include("tracker.php"); ?>
-	
+
 
 <!-- End Document
 ================================================== -->

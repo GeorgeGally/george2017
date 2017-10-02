@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,8 +38,8 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
-		<a href="cowsite.php">Next ></a>
+		<a href="commercial.html">< Back</a> &nbsp;
+
 
 	</div>
 
@@ -49,43 +49,43 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns half-bottom">
 			<h1 class="remove-bottom" style="margin-top: 40px">Jetstar Japan</h1>
-			<h5>Campaign/Creative Lead</h5>
+			Campaign/Creative Lead
 
-			Concept, creative direction, team leader<br>
-			TV, Print, OOH, Activations<br>
-
-			<hr />
 		</div>
-	
 
-		<div class="two-thirds column">
 
-			<img src="images/jetstar_goldcoast2.jpg" width="600"> <br>	
-			
-	
-		</div>	
+		<div class="sixteen columns">
 
-		<div class="one-third column">
+			<img src="images/jetstar_goldcoast2.jpg" width="100%"> <br>
+
+
+		</div>
+
+		<div class="two-thirds column half-top add-bottom">
 			<h5>Jetstar Tokyo Launch, Brand Launch TV Campaign, Print, OOH, Activations</h5>
 			<p>
-			Jetstar is a retail brand and it's all about results - putting bums on seats. And in the year that I worked with this client we achieved this and much more. We acieved a 400% growth, in a tough market where research showed Japanese were less and less likely to travel travel abroad. Our work on Jetstar was also recognised being awarded as Ogilvy's Best 360 Brand in Asia. In this TVC, my second shoot with Jetstar, the girls spend a two day adventure in Australia. An intense and crazy schedule on a shoestring budget in which I also Directed the TVC. 
-			Shot in two cities and 10 locations in two days.</p>	
+			Jetstar is a retail brand and it's all about results - putting bums on seats. And in the year that I worked with this client we achieved this and much more. We acieved a 400% growth, in a tough market where research showed Japanese were less and less likely to travel travel abroad. Our work on Jetstar was also recognised being awarded as Ogilvy's Best 360 Brand in Asia. In this TVC, my second shoot with Jetstar, the girls spend a two day adventure in Australia. An intense and crazy schedule on a shoestring budget in which I also Directed the TVC.
+			Shot in two cities and 10 locations in two days.</p>
 		</div>
 
-		<div class="two-thirds column">
+		<div class="sixteen columns">
 
-			<img src="images/jetstar_2008_3.jpg" width="600"> <br>	
-			
-	
-		</div>	
+			<img src="images/jetstar_2008_3.jpg" width="100%"> <br>
+			<img src="images/jetstar_dotom.jpg" width="100%"> <br>
 
-		<div class="one-third column">
+		</div>
+
+		<div class="two-thirds column half-top">
 			<h5>Jetstar "Let's Go!", Brand Launch TV Campaign, Print, OOH, Activations</h5>
 			<p>
 			Proving that Australia is closer than you think (7.5 hours from Japan, closer than Hawaii, where most Japanese spend their overseas holidays) we take Japanese superstar Becky on a 3 day adventure, shooting in two cities and eight locations. The campaign was extremely successful, allowing Jetstar to expand it's routes into Japan and eventually taking over all Quantas' routes into Tokyo.
-Role on project: creative direction.</p>	
+Role on project: creative direction.</p>
+
+
+Concept, creative direction, team leader<br>
+TV, Print, OOH, Activations<br>
 		</div>
 
 
@@ -93,32 +93,9 @@ Role on project: creative direction.</p>
 	</div><!-- container -->
 
 
-<div id="footer">
-	<div id="footer_details">
-			<b>Portfolio. George Gally. </b> 
-	
-	<p><a href="resume.php">Info.</a> &nbsp; Biography, Resume, Contact Details, References. <br>
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
 
-  <a href="index.php">Work.</a> &nbsp; Advertising, Digital, Interactive, Mobile. <br>
-
-<a href="/lab">Play. </a> &nbsp;
- Personal Projects. Experiments. Motion and Sound Reactive Video, Installations, Exhibitions, Other</p>
-</div>
-
-
-<br><br>
-</div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
 
 <!-- End Document
 ================================================== -->

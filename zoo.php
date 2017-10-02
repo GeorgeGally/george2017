@@ -50,13 +50,16 @@
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-bottom">
 
-<img src="images/zoo3.jpg" width="100%"> <br>
+<img src="images/zoo_full.jpg" width="100%"> <br>
+<img src="images/zoo_full2.jpg" width="100%"> <br>
+<img src="images/zoo_full3.jpg" width="100%"> <br>
+<img src="images/zoo3.jpg" width="85%"> <br>
 
 </div>
 
-	<div class="one-third column">
+	<div class="two-thirds column">
 <p>
 		Part social experiment and part social commentary on the absurdity of zoos, <b>The Digital Zoo</b> is an exploration of a continuing theme of my work - seeing how technology can effect our emotions.
 </p>

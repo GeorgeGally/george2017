@@ -53,23 +53,22 @@
 			<h1>Reaktiv</h1>
 			Motion reactive video performance
 
-			<hr />
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-top half-bottom">
 
 <!-- <img src="images/apple_store.jpg" width="525"> <br>	 -->
-<img src="images/motion_reactiv.jpg" width="525"> <br>
-<img src="images/apple22.jpg" width="525"> <br>
-<img src="images/apple3.jpg" width="525"> <br>
-<img src="images/apple7.jpg" width="525"> <br>
-<img src="images/apple1.jpg" width="525"> <br>
-<img src="images/apple4.jpg" width="525"> <br>
-<img src="images/apple5.jpg" width="525"> <br>
+<img src="images/motion_reactiv.jpg" width="80%"> <br>
+<img src="images/apple22.jpg" width="80%"> <br>
+<img src="images/apple3.jpg" width="80%"> <br>
+<img src="images/apple7.jpg" width="80%"> <br>
+<img src="images/apple1.jpg" width="80%"> <br>
+<img src="images/apple4.jpg" width="80%"> <br>
+<img src="images/apple5.jpg" width="80%"> <br>
 </div>
 
-	<div class="one-third column">
+	<div class="two-thirds column">
 <p>
 		Motion and sound reactive graphics performance at Apple Store in Ginza, Tokyo, Japan.
 Concept. Design. Java/Processing Programming.</p>
@@ -98,7 +97,7 @@ Concept. Design. Java/Processing Programming.</p>
 
 	<?php include("footer.php"); ?>
 	<?php include("tracker.php"); ?>
-	
+
 
 <!-- End Document
 ================================================== -->

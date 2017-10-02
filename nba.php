@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#nba">< Back</a>
+		<a href="commercial.html">< Back</a>
 
 	</div>
 
@@ -50,34 +50,36 @@
 
 	<div class="container">
 
-		<div class="sixteen columns add-bottom">
-			<h2 class="remove-bottom" style="margin-top: 40px">NBA Because</h2>
-			<h4>Social Campaign</h4>
+		<div class="sixteen columns half-bottom">
+			<h1 class="remove-bottom" style="margin-top: 40px">NBA Because</h1>
+			Social Campaign Pitch
 
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-bottom">
+
 <img src="images/nba-screens.jpg" width="100%" style="border: 4px solid #fff"> <br>
 <img src="images/challenge-popup.jpg" width="100%" style="border: 4px solid #fff"> <br>
 <img src="images/nba-mobile.jpg" width="100%" style="border: 4px solid #fff"> <br>
+<img src="images/nba-poster2b.jpg" width="100%" style="border: 4px solid #fff"> <br>	
 <img src="images/NBA-stickers1.jpg" width="100%" style="border: 4px solid #fff"> <br>
 <img src="images/NBA-trumps2.jpg" width="100%" style="border: 4px solid #fff"> <br>
 <img src="images/nba-poster.jpg" width="100%" style="border: 4px solid #fff"> <br>
 <!-- <img src="images/nba_post_match.jpg" width="100%" style="border: 4px solid #fff"> <br>
 <img src="images/nba-news2b.jpg" width="100%" style="border: 4px solid #fff"> <br>	 -->
-<!-- <img src="images/nba_posts.jpg" width="100%" style="border: 4px solid #fff"> <br>	 -->
+
 <img src="images/nba_posts2.jpg" width="100%" style="border: 4px solid #fff"> <br>
 </div>
 
-	<div class="one-third column">
+	<div class="two-thirds column">
 <p>
 		Based on the premise of you're not a real fan until you have a team, we built a social campaign in Asia to get fans to recruit their freinds to pledge allegiance to their team. <br><br>
 		A Social league awarded you points for recruitment and for posts and tweets about your team.
 		Your points could also be used to bet against for friends for each game. The hightest ranking fans got to go to the playoffs, while everyone got to spread the reason to love their teams and players. Because... NBA.
 	</p>
 
-	Concept. Creative Direction. Creative Lead. Design. <br>
+	Concept. Creative Direction. Design. <br>
 	Client: NBA Asia Pacific.
 	</div>
 

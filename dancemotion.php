@@ -49,38 +49,36 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns half-bottom">
 			<h1>Dance Motion</h1>
 			Dance Perfomance Ruam 4, Berlin
 
-			<br><br>
-			<hr />
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-bottom">
 
 
-<img src="images/dance1.jpg" width="600"> <br>
-<img src="images/dance2.jpg" width="600"> <br>
-<img src="images/dance3.jpg" width="600"> <br>
-<img src="images/dance4.jpg" width="600"> <br>
-<img src="images/dance.png" width="600"> <br>
+<img src="images/dance1.jpg" width="90%"> <br>
+<img src="images/dance2.jpg" width="90%"> <br>
+<img src="images/dance3.jpg" width="90%"> <br>
+<!-- <img src="images/dance4.jpg" width="90%"> <br> -->
+<img src="images/dance.png" width="90%"> <br>
 
 </div>
 
-	<div class="one-third column">
+	<div class="two-thirds column">
 <p>
-	Performance at Raum 40 Berlin with reknowned French Candian dancer Lysandre Coutu-Sauvé where lighting reacts to the dancer
+	Performance at Raum 40 Berlin in collaboration with Candian dancer Lysandre Coutu-Sauvé where lighting reacts to the dancer
 	and the dancer reacts to the lighting.
 </p>
 
 <p>
-	Unfortunately the video of the night died on the camaeraman's drive.
+	<!-- Unfortunately the video of the night died on the camaeraman's drive. -->
 </p>
 Motion detection, sound reactive, installation, projection <br>
 Concept, design, animation, programming <br>
-Technologies: Java/Processing, video camera, one very cute dancer<br>
+Technologies: Java/Processing, video camera<br>
 
 
 	</div>
@@ -92,6 +90,10 @@ Technologies: Java/Processing, video camera, one very cute dancer<br>
 		</div>
 
 	</div><!-- container -->
+
+	<?php include("footer.php"); ?>
+	<?php include("tracker.php"); ?>
+
 
 
 <!-- End Document

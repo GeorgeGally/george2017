@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,58 +38,48 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
-		<a href="crumpler.php">Next ></a>
+		<a href="commercial.html#levis">< Back</a> &nbsp;
+
 
 	</div>
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns half-bottom">
 			<h1 class="remove-bottom" style="margin-top: 40px">Levis Lady Style</h1>
-			<h5>Levis Store, Shibuya, Tokyo</h5>
+			Levis Store, Shibuya, Tokyo
 
-			Concept, design, programming <br>
-			Flash. Projection.<br>
-
-			<hr />
 		</div>
-	
+
+
+		<div class="sixteen columns half-bottom">
+
+
+			<img src="images/levis.jpg" width="90%"> <br>
+
+		</div>
 
 		<div class="two-thirds column">
 
-		
-			<img src="images/levis.jpg" width="600"> <br>		
-
-		</div>	
-
-		<div class="one-third column">
+			<p>
+			To promote the Levis Lady campaign with Japanese model Devon Aoki, I developed a store projection for their flagship store in Shibuya, Japan. Based around print campaign, challenging conventions on how a "propper" Japanese woman should behave. Visitors could text their statements from their cellphone to be dynamically pulled from a database and displayed on screen, taking careful consideration to make them as visually appealing as the rest of the campaign. </p>
 
 			<p>
-			To promote the Levis Lady campaign with Japanese model Devon Aoki, I developed a store projection for their flagship store in Shibuya, Japan. Based around print campaign, challenging conventions on how a "propper" Japanese woman should behave, I developed a system whereby visitors could text their statements from their cellphone to be dynamically pulled from a database and displayed on screen. </p>
+			<!-- Unfortunately at the last minute, the client got cold feet, and canned statements were used instead. -->
+			</p>
 
-			<p>
-			Unfortunately at the last minute, the client got cold feet, and canned statements were used instead. 
-			</p>	
+			<b>
+				Concept, design, programming <br>
+				Flash. Projection.<br>
+			</b>
 		</div>
 
 	</div><!-- container -->
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
+				<?php include("footer.php"); ?>
+				<?php include("tracker.php"); ?>
 
 
 <!-- End Document

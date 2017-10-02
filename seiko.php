@@ -18,9 +18,9 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,8 +38,8 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
-		<a href="bannersport.php">Next ></a>
+		<a href="commercial.html#seiko">< Back</a> &nbsp;
+
 
 	</div>
 
@@ -49,49 +49,39 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns half-bottom">
 			<h1 class="remove-bottom" style="margin-top: 40px">Seiko</h1>
-			<h5>Reactive Video Installation</h5>
-
-			Concept, design, programming<br>
-			Processing. Video Camera. Projector.  <br>
-			<hr />
+			Reactive Video Installation
 		</div>
-	
+
+
+		<div class="sixteen columns half-bottom">
+
+			<img src="images/ballpit.jpg" width="90%"> <br>
+
+		</div>
 
 		<div class="two-thirds column">
 
-			<img src="images/ballpit.jpg" width="600"> <br>		
-
-		</div>	
-
-		<div class="one-third column">
-
 			<p>
-			Projected onto a 20m wall for Seiko, a giant virtual ball pit for event attendees to play with. The application tracks a person's position through comparing light and frame differencing. Built in Processing. (Concept, art direction, programming.) 
+			Projected onto a 20m wall for Seiko, a giant virtual ball pit for event attendees to play with. The application tracks a person's position through comparing light and frame differencing. Built in Processing. (Concept, art direction, programming.)
 			<p><s>
-		View here. 
+		View here.
 You need a webcam to view. Instructions: Stand back from camera. Move around. Move slider to adjust light sensitivity.</s></p>
-			
-	<p>
-	Medium: Video Projector, Processing.
-	</p>
+
+	<b>
+		Concept, design, programming<br>
+		Processing. Video Camera. Projector.  <br>
+	</b>
 
 		</div>
 
 	</div><!-- container -->
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-49426919-1', 'radarboy.com');
-  ga('send', 'pageview');
-
-</script>
+				<?php include("footer.php"); ?>
+				<?php include("tracker.php"); ?>
 
 
 <!-- End Document

@@ -49,26 +49,23 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-		<div class="sixteen columns half-bottom">
+		<div class="sixteen columns">
 			<h1>Trailer GifMag</h1>
 			Animated gif magazine
 
-			<br><br>
-
-			<hr />
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-top half-bottom">
 
-<img src="images/gifmag2.gif" width="600"> <br>
+<img src="images/gifmag2.gif" width="70%"> <br>
 
 
 
 
 </div>
 
-	<div class="one-third column">
+	<div class="two-thirds column">
 
 
 <p>

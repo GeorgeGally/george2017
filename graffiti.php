@@ -39,7 +39,7 @@
 	<div class="back-header">
 
 		<a href="index.html#graffiti">< Back</a> &nbsp;
-		<a href="shesaid.php">Next ></a>
+
 
 	</div>
 
@@ -53,26 +53,24 @@
 			<h1>Graffiti Machine</h1>
 			Graffiti Box Installation <br>RESFEST, Cape Town
 
-			<br><br>
-
-			<hr />
 		</div>
 
+
+		<div class="sixteen columns half-bottom">
+
+			<img src="images/resfest.gif" width="90%"> <br>
+			<img src="images/graffiti.jpg" width="90%"> <br>
+
+		</div>
 
 		<div class="two-thirds column">
 
-			<img src="images/resfest.gif" width="600"> <br>
-			<img src="images/graffiti.jpg" width="600"> <br>
-
-		</div>
-
-		<div class="one-third column">
-
 			<p>
-			I made this graffiti box in the days before Flash could easily be interfaced with physical computing environments by pulling apart an old keyboard and wiring it to an arcade joystick. This method proved to be quite effective as we used it in a few other installations.
+			A graffiti box made in the days before Flash could easily be interfaced with physical computing environments by pulling apart an old keyboard and wiring it to an arcade joystick. This method proved to be quite effective as we used it in a few other installations.
 			</p>
 			Concept, design, hacking, programming <br>
 			Flash. Discarded keyboard.<br>
+			In collaboration with Gareth Chisholm.
 		</div>
 
 	</div><!-- container -->

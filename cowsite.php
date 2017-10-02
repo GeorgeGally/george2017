@@ -52,23 +52,23 @@
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-top half-bottom">
 
-			<img src="images/cowsite3.jpg" width="600"> <br>
+			<img src="images/cowsite3.jpg" width="70%"> <br>
 
-
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/JhNFM8Ra000" frameborder="0" allowfullscreen></iframe>
 
 		</div>
 
-		<div class="one-third column">
+		<div class="two-thirds column">
 
 			<p>
-				Radarboy's original flash site built around the concept of gaming. <br><br>Voted one of the world's top 10 flash sites. Awarded a Gold Loerie and Business Day award.
+				Radarboy's original flash site built around the concept of gaming. <br><br>Voted one of the world's top 10 flash sites. <br>Awarded a Gold Loerie and Business Day award.
 			</p>
 
 
 						Concept, design, animation<br>
-						Flash. <br>
+
 
 		</div>
 

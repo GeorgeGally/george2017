@@ -54,19 +54,19 @@
 		</div>
 
 
-		<div class="two-thirds column">
+		<div class="sixteen columns half-bottom">
 
-			<img src="images/elektroscope.jpg" width="600"> <br>
+			<img src="images/elektroscope4.jpg" width="90%"> <br>
 
-			<img src="images/elektroscope2.jpg" width="600"> <br>
+			<!-- <img src="images/elektroscope.jpg" width="90%"> <br> -->
 
-			<img src="images/elektroscope3.jpg" width="600"> <br>
+			<img src="images/elektroscope2.jpg" width="90%"> <br>
 
-			<img src="images/elektroscope4.jpg" width="600"> <br>
+
 
 		</div>
-
-		<div class="one-third column">
+		<div class="row">
+		<div class="two-thirds column">
 
 			<h5>The emotional machine</h5>
 			<p>
@@ -80,9 +80,14 @@
 			<b>The Five Stages</b> was developed as part of my Schmiede Residency in Hallein, Austria in September 2016.
 			</p>
 
-			<h3><p>Concept. Design. Coding. Sound Design</p></h3>
+			<b>Concept. Design. Coding. Sound Design</b><br><br>
 			<p>#Javascript #ProjectionMapping #SoundReactive #MotionReactive #SoundDesign</p>
 		</div>
+		</div>
+
+		<p class="add-top add-bottom center">
+			<a href="robot.php">Next ></a>
+		</p>
 
 
 	</div><!-- container -->
