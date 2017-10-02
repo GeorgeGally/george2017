@@ -83,14 +83,14 @@
 			<div class="big_pic_holder" style="padding-top: 0px; width: 100%; text-align: center; background: #000;">
 
 					<p>
-						<a href="http://radarboy.com/ny_collision"><img src="images/highway_twirlz2.jpg"></a>
+						<a href="http://radarboy.com/ny_collision/"><img src="images/highway_twirlz2.jpg"></a>
 					</p>
 
 				</div>
 
 			<div class="text-holder">
 
-				<h2><a href="http://radarboy.com/ny_collision">Highway to the Dangerzone</a></h2>
+				<h2><a href="http://radarboy.com/ny_collision/">Highway to the Dangerzone</a></h2>
 
 				<h3>Data Story.</h3>
 
