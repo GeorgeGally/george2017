@@ -48,7 +48,7 @@
 	<div class="menu">
 
 
-		<a href="index.html" class="button none"><button> Works</button></a>
+		<a href="index.php" class="button none"><button> Works</button></a>
 		<a href="commercial.html" class="button"><button> Commercial</button></a>
 		<a href="http://radarboy.com/george/George_Gally_Resume_2017.pdf"><button>Resume</button></a>
 		<a href="awards.php"><button class="button">Awards</button></a>
