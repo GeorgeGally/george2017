@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#looktothesky">< Back</a> &nbsp;
+		<a href="index.php#looktothesky">< Back</a> &nbsp;
 
 
 	</div>

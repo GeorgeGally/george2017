@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#graffiti">< Back</a> &nbsp;
+		<a href="index.php#graffiti">< Back</a> &nbsp;
 
 
 	</div>

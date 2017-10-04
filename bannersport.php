@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.php">< Back</a> &nbsp;
 		<a href="levis.php">Next ></a>
 
 	</div>
@@ -61,7 +61,7 @@
 
 		<div class="two-thirds column">
 
-			 <iframe src="apps/bannersport/index.html" scrolling="no" style="width: 100%;height:200px;border: none; margin: 0; padding: 0" ></iframe>
+			 <iframe src="apps/bannersport/index.php" scrolling="no" style="width: 100%;height:200px;border: none; margin: 0; padding: 0" ></iframe>
 
 
 		</div>

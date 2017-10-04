@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#lounge">< Back</a> &nbsp;
+		<a href="index.php#lounge">< Back</a> &nbsp;
 		<a href="seiko.php">Next ></a>
 
 	</div>

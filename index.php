@@ -90,7 +90,7 @@
 
 			<div class="text-holder">
 
-				<h2><a href="http://radarboy.com/ny_collision/">Highway to the Dangerzone</a></h2>
+				<h2><a href="http://radarboy.com/ny_collision/">NY Collisions</a></h2>
 
 				<h3>Data Story.</h3>
 

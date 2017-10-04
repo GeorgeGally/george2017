@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#dancemotion">< Back</a> &nbsp;
+		<a href="index.php#dancemotion">< Back</a> &nbsp;
 		<a href="ydetag.php">Next ></a>
 
 	</div>

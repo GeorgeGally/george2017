@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#tshirtmaker">< Back</a> &nbsp;
+		<a href="index.php#tshirtmaker">< Back</a> &nbsp;
 		<a href="dancemotion.php">Next ></a>
 
 	</div>

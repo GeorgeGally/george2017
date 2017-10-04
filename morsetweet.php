@@ -44,7 +44,7 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 	<div class="back-header">
 
-		<a href="index.html#morsetweet">< Back</a> &nbsp;
+		<a href="index.php#morsetweet">< Back</a> &nbsp;
 		<a href="reaktiv.php">Next ></a>
 
 	</div>
@@ -75,7 +75,7 @@
 		</div>
 
 		<div class="one-third column">
-			Inspired by Jens Wunderling's <a href="http://defaulttopublic.net/tweetleak/index.html">Default to Public</a> and a fantastic kids book "How to be a spy"
+			Inspired by Jens Wunderling's <a href="http://defaulttopublic.net/tweetleak/index.php">Default to Public</a> and a fantastic kids book "How to be a spy"
 			I wanted to hack the privacy message in a playful way. And using Twitter to send 'encoded' messages seemed
 			ridiculous enough to make me build MorseTweet. <br>
 		</div>

@@ -40,7 +40,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#blacklight">< Back</a> &nbsp;
+		<a href="index.php#blacklight">< Back</a> &nbsp;
 
 	</div>
 

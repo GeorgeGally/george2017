@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#reaktiv">< Back</a> &nbsp;
+		<a href="index.php#reaktiv">< Back</a> &nbsp;
 		<a href="capsule.php">Next ></a>
 
 	</div>

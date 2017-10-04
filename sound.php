@@ -41,7 +41,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#sound">< Back</a> &nbsp;
+		<a href="index.php#sound">< Back</a> &nbsp;
 
 	</div>
 

@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#dstv">< Back</a> &nbsp;
+		<a href="index.php#dstv">< Back</a> &nbsp;
 
 	</div>
 

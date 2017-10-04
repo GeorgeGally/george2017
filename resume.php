@@ -41,7 +41,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html">< Back</a> &nbsp;
+		<a href="index.php">< Back</a> &nbsp;
 		<a href="awards.php">Awards ></a>
 
 	</div>

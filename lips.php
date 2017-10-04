@@ -41,7 +41,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#lips">< Back</a> &nbsp;
+		<a href="index.php#lips">< Back</a> &nbsp;
 
 	</div>
 

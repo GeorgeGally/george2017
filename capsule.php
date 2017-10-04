@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#capsule">< Back</a>
+		<a href="index.php#capsule">< Back</a>
 
 	</div>
 
@@ -87,8 +87,8 @@
 
 <!-- <p>
 
-<a href="http://radarboy.com/museum/capsule02/index.html">View capsule02</a> (Allow to load fully - no preloader) <br>
-<a href="http://radarboy.com/museum/capsule01/index.html">View capsule01</a> (Allow to load fully - no preloader)
+<a href="http://radarboy.com/museum/capsule02/index.php">View capsule02</a> (Allow to load fully - no preloader) <br>
+<a href="http://radarboy.com/museum/capsule01/index.php">View capsule01</a> (Allow to load fully - no preloader)
 </p> -->
 
 	</div>

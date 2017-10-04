@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#cowsite">< Back</a> &nbsp;
+		<a href="index.php#cowsite">< Back</a> &nbsp;
 
 	</div>
 

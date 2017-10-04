@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#gigham">< Back</a>
+		<a href="index.php#gigham">< Back</a>
 
 	</div>
 

@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#rbvj">< Back</a> &nbsp;
+		<a href="index.php#rbvj">< Back</a> &nbsp;
 
 
 	</div>

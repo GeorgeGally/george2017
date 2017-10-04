@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#ydetag">< Back</a> &nbsp;
+		<a href="index.php#ydetag">< Back</a> &nbsp;
 
 	</div>
 

@@ -42,7 +42,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#monolith">< Back</a> &nbsp;
+		<a href="index.php#monolith">< Back</a> &nbsp;
 
 	</div>
 

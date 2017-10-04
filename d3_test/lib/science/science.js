@@ -113,7 +113,7 @@ science.vector.determinant = function(matrix) {
 // Performs in-place Gauss-Jordan elimination.
 //
 // Based on Jarno Elonen's Python version (public domain):
-// http://elonen.iki.fi/code/misc-notes/python-gaussj/index.html
+// http://elonen.iki.fi/code/misc-notes/python-gaussj/index.php
 science.vector.gaussjordan = function(m, eps) {
   if (!eps) eps = 1e-10;
 

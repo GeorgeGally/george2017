@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#ocb">< Back</a> &nbsp;
+		<a href="index.php#ocb">< Back</a> &nbsp;
 		<a href="dstv.php">Next ></a>
 
 	</div>
