@@ -52,7 +52,7 @@
 
 		<div class="sixteen columns half-bottom">
 
-<img src="images/zoo_full.jpg" width="100%"> <br>
+<img src="images/zoo_wall2.jpg" width="100%"> <br>
 <img src="images/zoo_full2.jpg" width="100%"> <br>
 <img src="images/zoo_full3.jpg" width="100%"> <br>
 <img src="images/zoo3.jpg" width="85%"> <br>

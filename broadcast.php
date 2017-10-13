@@ -38,7 +38,7 @@
 
 	<div class="back-header">
 
-		<a href="index.html#broadcast">< Back</a>
+		<a href="index.php#broadcast">< Back</a>
 
 	</div>
 

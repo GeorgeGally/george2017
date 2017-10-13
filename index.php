@@ -75,9 +75,39 @@
 
 	</div>
 
+	<!-- silosofthesea -->
+	<a id="silosofthesea"></a>
+	<div class="sixteen columns">
 
-		<!-- DangerZone -->
-		<a id="monolith"></a>
+		<div class="big_pic_holder" style="padding-top: 0px; width: 100%; text-align: center; background: #000;">
+
+				<p>
+					<a href="http://radarboy.com/seasilo/"><img src="images/seasilo2.jpg"></a>
+				</p>
+
+			</div>
+
+		<div class="text-holder">
+
+			<h2><a href="http://radarboy.com/seasilo/">Silos of the Sea</a></h2>
+
+			<h3><a href="http://radarboy.com/seasilo/">Data Story.</a></h3>
+
+			Container ships, with the sea as their highway, are sailing us into a beautiful, scary technological and industrial future.
+
+ <br><br>
+
+ <br>
+
+			<a class="add-top" href="http://radarboy.com/ny_collision">More...</a>
+
+		</div>
+
+</div>
+
+
+		<!-- NYCollision -->
+		<a id="nycollision"></a>
 		<div class="sixteen columns">
 
 			<div class="big_pic_holder" style="padding-top: 0px; width: 100%; text-align: center; background: #000;">
@@ -92,7 +122,7 @@
 
 				<h2><a href="http://radarboy.com/ny_collision/">NY Collisions</a></h2>
 
-				<h3>Data Story.</h3>
+				<h3><a href="http://radarboy.com/ny_collision/">Data Story.</a></h3>
 
 				Autonomous driving is coming. And not a moment too soon. There's absolute chaos on the roads. Data art of New York City motor vehicile collisions.
 
@@ -122,8 +152,7 @@
 		<div class="text-holder">
 
 			<h2><a href="monolith.php">Monolith</a></h2>
-
-			<h3>Installation. Augumented Architecture. Data.</h3>
+			<h3><a href="monolith.php">Installation. Augumented Architecture. Data.</a></h3>
 
 			The Monolith is an extraterrestrial satellite broadcasting station. It takes recordings from the historic Soyuz 4 mission from 1969, re-processing them as generative visual artworks to be then rebroadcasts them back to space as binary pixel values.
  <br><br>
@@ -152,7 +181,7 @@
 
 		<h2><a href="seasilo.php">Sea Silo</a></h2>
 
-		<h3>Installation. Augmented Architecture. Data.</h3>
+		<h3><a href="seasilo.php">Installation. Augumented Architecture. Data.</a></h3>
 
 			Amsterdam’s identity has always been linked to the sea. And the sea is changing. 90% everything we own and use, at some point, travels to us by container ship, through a vast network of ocean routes and ports that most of us know almost nothing about. <br><br>
 
@@ -180,7 +209,7 @@
 				<div class="text-holder">
 
 					<h2><a href="sound.php">Seeing Sound</a></h2>
-					<h3>Installation. Sound Reactive.</h3>
+					<h3><a href="sound.php">Installation. Sound Reactive. Data. Generative.</a></h3>
 					Sound reactive installation exploring minimalism and sound visualisation. <br>
 					Winner 2017 W3C Webaudio challenge. <br>
 					Concept. Design. Coding.<br><br>
@@ -218,7 +247,7 @@
 
 		<h2><a href="http://instagram.com/radarboy3000">Code365</a></h2>
 
-			<h3>Sound Reactive. Motion Reactive. Generative.</h3>
+			<h3><a href="http://instagram.com/radarboy3000">Motion Reactive. Sound Reactive. Data. Generative.</a></h3>
 
 				I've spend the 500+ days on a personal project called <b>#code365</b> - coding a new visualisation project each and #everyday. The project was born out of me wanting to concentrate more on media art and in order to improve my Javascript skills, having been mainly working in Processing for the last couple of years.<br><br>
 				<a class="add-top" href="http://instagram.com/radarboy3000">More...</a>
@@ -246,7 +275,8 @@
 
 		<h2><a href="internetix.php">Internetix</a></h2>
 
-		<h3>Installation. Micro-geolocation. Data.</h3>
+		<h3><a href="internetix.php">Installation. Micro-geolocation. Data.</a></h3>
+
 
 				Micro-geolocation and large-scale networked installation using motion tracking, wifi sniffing and triangulation to track conference delegates, while hacking the hacking data to find connections between them. Visualising delegate's movement, data and connections as giant artworks.
 			<br><br>
@@ -272,7 +302,8 @@
 		<div class="text-holder">
 
 			<h2><a href="dstv.php">DSTV - Oscar Pistorius Trial</a></h2>
-			<h3>Web. Mobile. TV. Print. Data. </h3>
+			<h3><a href="dstv.php">Web. Mobile. TV. Print. Data. </a></h3>
+
 
 			Second screen experience and journalist toolkit for the live coverage of the Oscar Pistorius trial for Africa's biggest TV network, DSTV. <br><br>
 
@@ -303,8 +334,8 @@
 			<div class="text-holder">
 
 				<h2><a href="five_stages.php">The Five Stages</a></h2>
+					<h3><a href="sound.php">Motion and Sound Reactive. Installation. Data. Generative. </a></h3>
 
-					<h3>Motion and Sound Reactive Installation.</h3>
 
 				An installation deleloped at my residency at Schmiede, in Austria. An experimental AI generative feedback loop, where the computer controls the room's mood. The visuals mutate the sound and the sound in turn mutates visuals. Representing the five stages of grief, The Five Stages is sometimes calm and contemplative, other times bordering on the edge of chaos.
 				<br><br>
@@ -334,7 +365,7 @@
 
 		<h2><a href="blacklight.php">Blacklight</a></h2>
 
-			<h3>Data Light.</h3>
+			<h3><a href="blacklight.php">Product Development. Data. Light. Hardware</a></h3>
 
 				A concept developed in China, with <a href="https://honnet.github.io/">Cedric Honnet</a>. Light can display a number of different data sets. <br><br>
 				<a class="add-top" href="blacklight.php">More...</a>
@@ -354,11 +385,11 @@
 
 		<div class="text-holder">
 
-			<h2><a href="../radarboy3000/colour_friends/">Colour of my Friends</a></h2>
-			<h3>Facebook Scrape</h3>
+			<h2><a href="http://radarboy.com/radarboy3000/colour_friends/">Colour of my Friends</a></h2>
+			<h3><a href="http://radarboy.com/radarboy3000/colour_friends/">Net Art. Data.</a></h3>
 			Sampling my Facebook friends down to their basic colours. We are all doggy poo brown.
 
-			<a class="add-top" href="../radarboy3000/colour_friends/">More...</a>
+			<a class="add-top" href="http://radarboy.com/radarboy3000/colour_friends/">More...</a>
 			<br>
 		</div>
 
@@ -383,8 +414,7 @@
 			<div class="text-holder">
 
 				<h2><a href="robot.php">Robo Maker</a></h2>
-				<h3>Installation. Creative Technology. </h3>
-
+				<h3><a href="robot.php">Installation. Creative Technology.</a></h3>
 
 					For Standard Chartered Bank Arts in the Park - their most important community outreach project - we created a fully automated robot builder that enables kids to create and assemble their own original papercraft robots.
 					<br><br>
@@ -400,7 +430,7 @@
 
 
 <!-- lips -->
-<a id="lips"></a>
+<!-- <a id="lips"></a>
 <div class="sixteen columns">
 
 	<div class="preview_box2">
@@ -423,7 +453,7 @@
 
 	</div>
 
-</div>
+</div> -->
 
 
 
@@ -446,8 +476,7 @@
 			<div class="text-holder">
 
 				<h2><a href="earth_plays_the_blues.php">Earth Plays the Blues</a></h2>
-
-					<h3>Visualisation. Generative.</h3>
+					<h3><a href="earth_plays_the_blues.php">Net Art. Visualisation. Maps. Data. Generative.</a></h3>
 
 					In synesthesia a place can have a colir, taste or smell. But what would a place sound like? Earth Plays the Blues is a generative soundtrack for random places on the earth. <br>Joint winner of JSConf Web Audio hackerthon.
 
@@ -474,12 +503,12 @@
 
 			<div class="text-holder">
 
-				<h2><a href="boradcast.php">Radarboy Broadcast</a></h2>
-				<h3>Website. Animation. Experimental.</h3>
+				<h2><a href="broadcast.php">Radarboy Broadcast</a></h2>
+				<h3><a href="broadcast.php">Net Art. Content. Experimental.</a></h3>
 
 				A multi-award winning experimetal self-promotion content portal, before content was a thing. Broadcast drew from a huge pool of self-created quirky content, to create daily programming schedules.
 
-				<a class="add-top" href="boradcast.php">More...</a>
+				<a class="add-top" href="broadcast.php">More...</a>
 
 			</div>
 
@@ -502,7 +531,7 @@
 			<div class="text-holder">
 
 					<h2><a href="looktosky.php">Look to the Sky</a></h2>
-					<h3>Installation. Electronics. EL Wire.</h3>
+					<h3><a href="looktosky.php">Installation. Electronics.</a></h3>
 					Comissioned by Mind The Box, Berlin, and Process 4 Labs, Milan.
 					<br><br>
 
@@ -538,8 +567,7 @@
 	<div class="text-holder">
 
 		<h2><a href="../this_is_how_i_roll" target="_blank">This is how I roll</a></h2>
-
-			<h3>Generative. Geolocation. Visualisation. </h3>
+			<h3><a href="../this_is_how_i_roll">Generative. Geolocation. Data. Maps.</a></h3>
 
 			Generative sound from a month's worth of my location data.<br><br>
 
@@ -558,7 +586,7 @@
 	<div class="preview_box2">
 
 		<div class="big_pic_holder" style="width: 100%; text-align: center;">
-			<a href="zoo.php"><img src="images/zoo_wall2.jpg" ></a>
+			<a href="zoo.php"><img src="images/zoo_full2.jpg" ></a>
 		</div>
 
 	</div>
@@ -566,7 +594,7 @@
 	<div class="text-holder">
 
 		<h2><a href="zoo.php">Digital Zoo</a></h2>
-		<h3>Art Installation. Hardware. Social.</h3>
+		<h3><a href="zoo.php">Installation. Electronics. Social.</a></h3>
 
 
 			Instalation at the Edinburgh Festival featuring Africa's Big 5 animals as big grumpy LED tamagochis.<br>
@@ -595,7 +623,7 @@
 		<div class="text-holder">
 
 				<h2><a href="shesaid.php">What She Said</a></h2>
-				<h3>Art Installation</h3>
+				<h3><a href="shesaid.php">Installation. Visualisation.  Generative. Twitter.</a></h3>
 				Comissioned by Art And Kunst, Berlin
 				<br>
 				<br>
@@ -625,10 +653,8 @@
 	<div class="text-holder">
 
 		<h2><a href="morsetweet.php">Morsetweet</a></h2>
+			<h3><a href="morsetweet.php">Net Art. Data. Twitter.</a></h3>
 
-			<h3>Art. Twitter hack.</h3>
-
-			Client: Self <br><br>
 			Tweet in MorseCode. Amaze your friends. Confuse the enemy. <br>
 
 			<b>Concept. Creative coding. Database. </b><br><br>
@@ -654,7 +680,7 @@
 		<div class="text-holder">
 
 			<h2><a href="capsule.php">Capsule</a></h2>
-			<h3>Digital. Product. Magazine. Giveaway</h3>
+			<h3><a href="capsule.php">Digital. Physical.  Magazine. Giveaway.</a></h3>
 			Mult-award winning digital magazine, that fitted a large amount of content, animation and sound onto a 1MB Floppy Disk.
 			<br><br>
 			<a class="add-top" href="capsule.php">View More...</a>
